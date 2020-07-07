@@ -1,0 +1,14 @@
+QLabel#notice{
+    font-size: 25px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+QLabel#notice[notice_level="normal"]{
+    color: green;
+    border-color: green;
+}
+QLabel#notice[notice_level="warning"]{
+    color: yellow;
+    border-color: yellow;
+}
