@@ -13,7 +13,8 @@ class Window(QWidget):
         # self.QObject继承结构测试()
         # self.QObject对象名称和属性的操作()
         # self.QObject案例测试()
-        self.QObject对象的父子关系操作()
+        # self.QObject对象的父子关系操作()
+        self.QObject对象父子关系的内存释放()
 
     def QObject继承结构测试(self):
         mros = QObject.mro()
@@ -82,6 +83,17 @@ class Window(QWidget):
         print(obj0.findChild(QObject, '3', Qt.FindDirectChildrenOnly))
         print(obj0.findChildren(QObject))
         # print(obj0.findChild(QLabel))  # 会报错
+
+    def QObject对象父子关系的内存释放(self):
+        obj1 = QObject()
+        self.obj1 = obj1  # 把obj1设置为self的属性，则obj1不会被自动释放
+        obj2 = QObject()
+
+        obj2.setParent(obj1)
+        # 父控件被删除时子控件自动被删除
+        # 监听obj2对象被释放
+        obj2.destroyed.connect(lambda :print("obj2对象被释放了"))
+        del self.obj1
 
 
 if __name__ == '__main__':
