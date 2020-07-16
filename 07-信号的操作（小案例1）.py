@@ -16,6 +16,7 @@ class Window(QWidget):
 
         def cao():
             print('点我干哈？')
+
         btn.clicked.connect(cao)
 
 

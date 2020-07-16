@@ -1,9 +1,12 @@
 from PyQt5.Qt import *
 import sys
+
 # 要求： 每次改变窗口标题，都自动加上muzing前缀，能重复使用
 app = QApplication(sys.argv)
 
 window = QWidget()
+
+
 # 连接窗口标题变化的 信号 与 槽
 
 

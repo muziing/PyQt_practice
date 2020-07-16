@@ -19,6 +19,7 @@ class Window(QWidget):
 
         def destroy_cao(obj):
             print("对象被释放了", obj)
+
         self.obj.destroyed.connect(destroy_cao)
 
     def QObject信号的操作_namechanged(self):
@@ -26,12 +27,14 @@ class Window(QWidget):
 
         def obj_name_cao(name):
             print("对象名称发生了改变", name)
+
         self.obj.objectNameChanged.connect(obj_name_cao)  # 建立信号与槽的连接
         self.obj.setObjectName("AAA")
         print("此时有", self.obj.receivers(self.obj.objectNameChanged), "个槽与该信号连接")  # 该信号连接的槽的数量
 
         def receivers_test_cao():
             pass
+
         self.obj.objectNameChanged.connect(receivers_test_cao)
         print("此时有", self.obj.receivers(self.obj.objectNameChanged), "个槽与该信号连接")  # 该信号连接的槽的数量
 
