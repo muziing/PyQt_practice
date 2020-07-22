@@ -29,7 +29,6 @@ label.resize(200, 200)
 label.move(100, 100)
 label.setStyleSheet("background-color: cyan;")
 
-
 # 2.3展示控件
 window.show()
 

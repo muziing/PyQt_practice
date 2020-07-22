@@ -18,7 +18,6 @@ app = QApplication(sys.argv)
 
 window = QWidget()
 
-
 window.setWindowTitle("QWidget案例2")
 window.resize(500, 500)
 window.move(400, 250)
