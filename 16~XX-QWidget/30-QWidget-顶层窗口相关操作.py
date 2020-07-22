@@ -11,7 +11,14 @@ window = QWidget()
 window.resize(500, 500)
 window.move(400, 250)
 icon = QIcon('Photoshop.ico')
-window.setWindowIcon(icon)
+window.setWindowIcon(icon)  # 设置图标
+# print(window.windowIcon())
+
+window.setWindowTitle("这是窗口的标题")  # 设置标题
+# print(window.windowTitle())
+
+window.setWindowOpacity(0.78)  # 设置窗口不透明度
+# print(window.windowOpacity())
 
 # 2.3展示控件
 window.show()
