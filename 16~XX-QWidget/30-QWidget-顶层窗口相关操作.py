@@ -10,7 +10,7 @@ window = QWidget()
 
 window.resize(500, 500)
 window.move(400, 250)
-icon = QIcon('Photoshop.ico')
+icon = QIcon('./Icons/Photoshop.ico')
 window.setWindowIcon(icon)  # 设置图标
 # print(window.windowIcon())
 
