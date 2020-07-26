@@ -8,17 +8,17 @@ app = QApplication(sys.argv)
 window = QWidget()
 # 2.2设置控件
 
+window.setWindowTitle("QPUshButton-扁平化")
 window.resize(500, 500)
 window.move(400, 250)
-icon = QIcon('../Icons/Photoshop.ico')
-window.setWindowIcon(icon)  # 设置图标
-# print(window.windowIcon())
 
-window.setWindowTitle("这是窗口的标题")  # 设置标题
-# print(window.windowTitle())
+btn = QPushButton("按钮", window)
+btn.move(190, 200)
+btn.setStyleSheet("background-color: cyan")
 
-window.setWindowOpacity(0.78)  # 设置窗口不透明度
-# print(window.windowOpacity())
+btn.setFlat(True)
+print("btn是否为扁平化：", btn.isFlat())
+# 设置扁平化之后，按钮的背景也不再绘制
 
 # 2.3展示控件
 window.show()

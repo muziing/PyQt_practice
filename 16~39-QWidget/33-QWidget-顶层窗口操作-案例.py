@@ -24,19 +24,19 @@ class Window(QWidget):
         """在窗口的右上角添加关闭、最大化、最小化 三个按钮。注意三个按钮的位置没有在本方法中确定"""
         close_btn = QPushButton(self)
         self.close_btn = close_btn  # 通过把局部变量存储为对象属性来实现跨方法使用
-        close_btn.setIcon(QIcon("./Icons/cross_48px.ico"))
+        close_btn.setIcon(QIcon("../Icons/cross_48px.ico"))
         # close_btn.setText("关闭")
         close_btn.resize(self.btn_w, self.btn_h)
 
         max_btn = QPushButton(self)
         self.max_btn = max_btn  # 通过把局部变量存储为对象属性来实现跨方法使用
-        max_btn.setIcon(QIcon("./Icons/expand_48px.ico"))
+        max_btn.setIcon(QIcon("../Icons/expand_48px.ico"))
         # max_btn.setText("最大化")
         max_btn.resize(self.btn_w, self.btn_h)
 
         mini_btn = QPushButton(self)
         self.mini_btn = mini_btn  # 通过把局部变量存储为对象属性来实现跨方法使用
-        mini_btn.setIcon(QIcon("./Icons/minus_48px.ico"))
+        mini_btn.setIcon(QIcon("../Icons/minus_48px.ico"))
         # mini_btn.setText("最小化")
         mini_btn.resize(self.btn_w, self.btn_h)
 
@@ -47,11 +47,11 @@ class Window(QWidget):
         def max_normal():
             """最大化/恢复 按钮的槽函数"""
             if self.isMaximized():
-                max_btn.setIcon(QIcon("./Icons/expand_48px.ico"))
+                max_btn.setIcon(QIcon("../Icons/expand_48px.ico"))
                 self.showNormal()
             else:
                 self.showMaximized()
-                max_btn.setIcon(QIcon("./Icons/contract_48px.ico"))
+                max_btn.setIcon(QIcon("../Icons/contract_48px.ico"))
 
         max_btn.pressed.connect(max_normal)
 

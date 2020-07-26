@@ -8,17 +8,15 @@ app = QApplication(sys.argv)
 window = QWidget()
 # 2.2设置控件
 
+window.setWindowTitle("QToolButton的使用")
 window.resize(500, 500)
 window.move(400, 250)
-icon = QIcon('../Icons/Photoshop.ico')
-window.setWindowIcon(icon)  # 设置图标
-# print(window.windowIcon())
 
-window.setWindowTitle("这是窗口的标题")  # 设置标题
-# print(window.windowTitle())
-
-window.setWindowOpacity(0.78)  # 设置窗口不透明度
-# print(window.windowOpacity())
+tb = QToolButton(window)
+tb.setText("工具")
+tb.setIcon(QIcon('../Icons/search_48px.ico'))  # 同时设置文本和图标，只显示图标
+tb.setIconSize(QSize(50, 50))
+tb.setToolTip("这是一个提示")  # 鼠标放在按钮上一段时间后出现提示信息
 
 # 2.3展示控件
 window.show()

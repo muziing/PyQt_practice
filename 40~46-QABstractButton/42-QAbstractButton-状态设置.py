@@ -13,7 +13,7 @@ window.resize(500, 500)
 window.move(400, 250)
 
 btn = QPushButton(window)
-icon = QIcon('./Icons/minus_48px.ico')
+icon = QIcon('../Icons/minus_48px.ico')
 btn.setIcon(icon)
 
 push_button = QPushButton(window)

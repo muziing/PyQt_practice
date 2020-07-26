@@ -1,5 +1,7 @@
 from PyQt5.Qt import *
 import sys
+
+"""QCommandLinkButton 继承自 QPushButton"""
 # 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
@@ -8,17 +10,15 @@ app = QApplication(sys.argv)
 window = QWidget()
 # 2.2设置控件
 
+window.setWindowTitle("QCommandLinkButton的使用")
 window.resize(500, 500)
 window.move(400, 250)
-icon = QIcon('../Icons/Photoshop.ico')
-window.setWindowIcon(icon)  # 设置图标
-# print(window.windowIcon())
 
-window.setWindowTitle("这是窗口的标题")  # 设置标题
-# print(window.windowTitle())
+btn = QCommandLinkButton("标题", "描述", window)
+btn.setText("标题2")
+btn.setDescription("这是描述2")
+btn.setIcon(QIcon('../Icons/play_48px.ico'))
 
-window.setWindowOpacity(0.78)  # 设置窗口不透明度
-# print(window.windowOpacity())
 
 # 2.3展示控件
 window.show()

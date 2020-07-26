@@ -8,17 +8,14 @@ app = QApplication(sys.argv)
 window = QWidget()
 # 2.2设置控件
 
+window.setWindowTitle("QPushButton的创建")
 window.resize(500, 500)
 window.move(400, 250)
-icon = QIcon('../Icons/Photoshop.ico')
-window.setWindowIcon(icon)  # 设置图标
-# print(window.windowIcon())
 
-window.setWindowTitle("这是窗口的标题")  # 设置标题
-# print(window.windowTitle())
-
-window.setWindowOpacity(0.78)  # 设置窗口不透明度
-# print(window.windowOpacity())
+btn = QPushButton(QIcon("../Icons/minus_48px.ico"), "这是一个按钮", window)  # 设置图标、文本、父控件
+# btn.setParent(window)  # 手动设置父控件
+# btn.setIcon()
+# btn.setText()
 
 # 2.3展示控件
 window.show()
