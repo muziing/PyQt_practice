@@ -5,7 +5,7 @@ import sys
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("QOBject对象删除")
+        self.setWindowTitle("QObject对象删除")
         self.resize(500, 500)
         self.move(400, 250)
         self.setup_ui()

@@ -11,6 +11,7 @@ class Window(QWidget):
         self.setWindowFlags(Qt.FramelessWindowHint)  # 设置了无边框的Flag
         self.setWindowOpacity(0.85)  # 设置不透明度
         self.setWindowTitle("顶层窗口操作-案例")
+        self.setWindowIcon(QIcon('../Icons/snowflake_128px.ico'))
         self.resize(500, 500)
         self.move(400, 240)
         # 公共数据 （通过保存为 self的属性来实现跨方法使用）
@@ -48,18 +49,33 @@ class Window(QWidget):
             """最大化/恢复 按钮的槽函数"""
             if self.isMaximized():
                 max_btn.setIcon(QIcon("../Icons/expand_48px.ico"))
+                self.label.setText("Hello World")
+                self.label.setStyleSheet("font-size: 30px;")
+                self.label.adjustSize()
                 self.showNormal()
             else:
+                self.label.setText("Life is short, use Python.")
+                self.label.setStyleSheet("font-size: 40px;")
+                self.label.adjustSize()
                 self.showMaximized()
                 max_btn.setIcon(QIcon("../Icons/contract_48px.ico"))
 
         max_btn.pressed.connect(max_normal)
+
+        label = QLabel("Hello World", self)
+        self.label = label
+        label.setStyleSheet("font-size: 30px;")
+        label.adjustSize()
+        lab_x = (self.width() - label.width()) / 2
+        lab_y = (self.height() - label.height()) / 2
+        label.move(lab_x, lab_y)
 
     def resizeEvent(self, a0: QtGui.QResizeEvent) -> None:
         """当窗口大小改变时，重新移动三个按钮的位置"""
         self.close_btn.move(self.width() - self.btn_w, self.top_margin)
         self.max_btn.move(self.width() - self.btn_w * 2, self.top_margin)
         self.mini_btn.move(self.width() - self.btn_w * 3, self.top_margin)
+        self.label.move((self.width() - self.label.width()) / 2, (self.height() - self.label.height()) / 2)
 
     def mousePressEvent(self, evt):
         # print("鼠标按下")
