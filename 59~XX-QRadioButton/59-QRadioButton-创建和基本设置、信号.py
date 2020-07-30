@@ -21,7 +21,9 @@ rb_male.setChecked(True)
 rb_female = QRadioButton("女-&Female", window)
 rb_female.setIcon(QIcon('../Icons/woman_96px.ico'))
 rb_female.move(100, 150)
-
+rb_female.toggled.connect(lambda isChecked: print(isChecked))  # 选中状态发生改变时
+rb_female.setAutoExclusive(False)  # 取消了独占性
+"""独占性：在同一父控件下，且独占性为True的控件之间才存在"""
 # 2.3展示控件
 window.show()
 
