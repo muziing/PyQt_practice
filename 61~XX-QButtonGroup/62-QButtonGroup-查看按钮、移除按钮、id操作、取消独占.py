@@ -38,6 +38,9 @@ answer_group.setId(rb_no, 2)
 print("rb_no的id是：", answer_group.id(rb_no))
 print("answer_group中被选中按钮的id：", answer_group.checkedId())  # -1 表示没有按钮被选中
 
+# answer_group.setExclusive(False)  # 把一个按钮组取消独占，里面的单选按钮不再互斥
+# print(answer_group.exclusive())
+
 print(sex_group.buttons())
 print(sex_group.button(2))  # sex_group 中 id 为 2 的按钮
 print(sex_group.checkedButton())  # 被选中的按钮
