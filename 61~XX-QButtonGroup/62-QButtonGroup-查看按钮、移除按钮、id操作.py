@@ -32,6 +32,12 @@ answer_group = QButtonGroup(window)
 answer_group.addButton(rb_yes)
 answer_group.addButton(rb_no)
 
+answer_group.setId(rb_yes, 1)  # 除了在 addButton 时设置 id，也可以独立设置
+answer_group.setId(rb_no, 2)
+
+print("rb_no的id是：", answer_group.id(rb_no))
+print("answer_group中被选中按钮的id：", answer_group.checkedId())  # -1 表示没有按钮被选中
+
 print(sex_group.buttons())
 print(sex_group.button(2))  # sex_group 中 id 为 2 的按钮
 print(sex_group.checkedButton())  # 被选中的按钮
