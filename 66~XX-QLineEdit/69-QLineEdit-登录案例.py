@@ -29,7 +29,9 @@ class Window(QWidget):
     def setup_ui(self):
         # 添加三个控件
         self.account_le = QLineEdit(self)
+        self.account_le.setPlaceholderText("请输入账号")
         self.pwd_le = QLineEdit(self)
+        self.pwd_le.setPlaceholderText("请输入密码")
         self.pwd_le.setEchoMode(QLineEdit.Password)
         self.login_btn = QPushButton("登   录", self)
         self.login_btn.clicked.connect(self.login_cao)
