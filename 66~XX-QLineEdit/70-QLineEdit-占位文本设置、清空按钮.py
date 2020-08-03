@@ -14,7 +14,9 @@ window.move(400, 250)
 
 le = QLineEdit(window)
 le.setPlaceholderText("在这里输入用户名")
-print(le.placeholderText())
+# print(le.placeholderText())
+le.setClearButtonEnabled(True)  # 加入清空按钮
+# print(le.isClearButtonEnabled())
 
 # 2.3展示控件
 window.show()
