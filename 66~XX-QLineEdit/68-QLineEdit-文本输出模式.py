@@ -13,12 +13,10 @@ window.setWindowTitle("QLineEdit-文本输出模式")
 window.resize(500, 500)
 window.move(400, 250)
 """
-    LeadingPosition = 0
     NoEcho = 1  # 类似 Linux 下密码输入
     Normal = 0
     Password = 2
     PasswordEchoOnEdit = 3  # 用户输入时为明文，结束编辑后变密文
-    TrailingPosition = 1
     """
 le = QLineEdit(window)
 le.move(100, 150)
