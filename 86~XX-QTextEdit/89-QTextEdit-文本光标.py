@@ -20,7 +20,18 @@ class Window(QWidget):
 
     def test_btn_cao(self):
         # print(self.te.document())
-        print(self.te.textCursor())
+        # print(self.te.textCursor())
+        self.光标插入内容()
+
+    def 光标插入内容(self):
+        tcf = QTextCharFormat()  # 文本字符格式
+        tcf.setToolTip("我是一个ToolTip")
+        # tcf.setFontFamily('PingFang SC-Regular')
+        tcf.setFontPointSize(30)
+        tc = self.te.textCursor()  # 创建一个光标对象
+        # tc.insertText("光标插入文字", tcf)
+
+        tc.insertHtml("<a href='muzing.qicp.vip'>muzing的个人博客</a>")
 
 
 if __name__ == '__main__':
