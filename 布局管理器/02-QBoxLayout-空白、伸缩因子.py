@@ -31,9 +31,11 @@ class Window(QWidget):
         layout.addWidget(lb2, 2)
         layout.addStretch(1)  # 添加空白的伸缩因子
         layout.addWidget(lb3, 2)
-        layout.addWidget(lb4)
+        layout.addWidget(lb4)  # 默认伸缩因子为 0
 
-        # layout.insertSpacing(3, 50)
+        # layout.insertSpacing(3, 50)  # 插入空白
+
+        layout.setStretchFactor(lb1, 1)  # 给lb1设置伸缩因子为 1
 
 
 if __name__ == '__main__':
