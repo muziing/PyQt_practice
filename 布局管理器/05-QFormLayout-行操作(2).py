@@ -16,11 +16,19 @@ class Window(QWidget):
         name_le = QLineEdit()
         age_sb = QSpinBox()
 
+        male_rb = QRadioButton('男')
+        female_rb = QRadioButton('女')
+        h_layout = QHBoxLayout()
+        h_layout.addWidget(male_rb)
+        h_layout.addWidget(female_rb)
+
         layout = QFormLayout()
         self.setLayout(layout)
 
         layout.setWidget(0, QFormLayout.LabelRole, name_label)  # 设置行，行号、左右位置、设置为
         layout.setWidget(0, QFormLayout.FieldRole, name_le)  # 这种方法只能设置原来空白的单元格，否则无效
+        # layout.addRow(name_label)
+        # layout.setLayout(0, QFormLayout.LabelRole, h_layout)
 
 
 if __name__ == '__main__':
