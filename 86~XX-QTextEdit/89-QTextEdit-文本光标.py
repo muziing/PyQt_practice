@@ -31,7 +31,7 @@ class Window(QWidget):
         tc = self.te.textCursor()  # 创建一个光标对象
         # tc.insertText("光标插入文字", tcf)
 
-        tc.insertHtml("<a href='muzing.qicp.vip'>muzing的个人博客</a>")
+        tc.insertHtml("<a href='https://muzing.top'>muzing的个人博客</a>")
 
 
 if __name__ == '__main__':
