@@ -1,6 +1,13 @@
 from PyQt5.Qt import *
 import sys
 
+'''
+修改行
+删除行
+移除行
+标签
+'''
+
 
 class Window(QWidget):
     def __init__(self):
@@ -32,7 +39,7 @@ class Window(QWidget):
         # layout.setLayout(0, QFormLayout.LabelRole, h_layout)
 
         # 移除和删除行
-        age_sb.destroyed.connect(lambda: print("年龄步长被释放"))
+        age_sb.destroyed.connect(lambda: print("年龄步长调节器被释放"))
         age_label.destroyed.connect(lambda: print("年龄label被释放"))
         # layout.removeRow(1)  # 释放
         # layout.removeRow(age_sb)  # 也可以移除一整行
@@ -44,6 +51,9 @@ class Window(QWidget):
         # age_label.hide()
         # age_sb.hide()
         # print(dir(QFormLayout.TakeRowResult))
+
+        print(layout.labelForField(name_le))  # 提取标签
+        # layout.labelForField(name_le).setText('XXX')  # 可以用提取出的标签直接修改对象
 
 
 if __name__ == '__main__':

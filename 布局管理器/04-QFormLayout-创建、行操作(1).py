@@ -13,6 +13,12 @@ import sys
     WrapLongRows = 1
 '''
 
+'''
+添加行
+插入行
+获取行信息
+'''
+
 
 class Window(QWidget):
     def __init__(self):
