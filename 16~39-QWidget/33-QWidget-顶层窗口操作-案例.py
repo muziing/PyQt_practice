@@ -66,8 +66,8 @@ class Window(QWidget):
         self.label = label
         label.setStyleSheet("font-size: 30px;")
         label.adjustSize()
-        lab_x = (self.width() - label.width()) / 2
-        lab_y = (self.height() - label.height()) / 2
+        lab_x = int((self.width() - label.width()) / 2)
+        lab_y = int((self.height() - label.height()) / 2)
         label.move(lab_x, lab_y)
 
     def resizeEvent(self, a0: QtGui.QResizeEvent) -> None:
@@ -75,7 +75,7 @@ class Window(QWidget):
         self.close_btn.move(self.width() - self.btn_w, self.top_margin)
         self.max_btn.move(self.width() - self.btn_w * 2, self.top_margin)
         self.mini_btn.move(self.width() - self.btn_w * 3, self.top_margin)
-        self.label.move((self.width() - self.label.width()) / 2, (self.height() - self.label.height()) / 2)
+        self.label.move(int((self.width() - self.label.width()) / 2), int((self.height() - self.label.height()) / 2))
 
     def mousePressEvent(self, evt):
         # print("鼠标按下")

@@ -33,13 +33,11 @@ class Window(QWidget):
         # 如果字段的最小大小比可用空间宽，则该字段将换行到下一行
         layout.setRowWrapPolicy(QFormLayout.WrapAllRows)  # 字段总是位于其标签下方
 
-        
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    
+
     window = Window()
     window.show()
-    
+
     sys.exit(app.exec_())
-   
