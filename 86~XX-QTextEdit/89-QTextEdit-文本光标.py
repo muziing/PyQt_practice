@@ -24,14 +24,21 @@ class Window(QWidget):
         self.光标插入内容()
 
     def 光标插入内容(self):
-        tcf = QTextCharFormat()  # 文本字符格式
-        tcf.setToolTip("我是一个ToolTip")
-        # tcf.setFontFamily('PingFang SC-Regular')
-        tcf.setFontPointSize(30)
+        # tcf = QTextCharFormat()  # 文本字符格式
+        # tcf.setToolTip("我是一个ToolTip")
+        # # tcf.setFontFamily('PingFang SC-Regular')
+        # tcf.setFontPointSize(30)
         tc = self.te.textCursor()  # 创建一个光标对象
-        # tc.insertText("光标插入文字", tcf)
+        # # tc.insertText("光标插入文字", tcf)
+        #
+        # tc.insertHtml("<a href='https://muzing.top'>muzing的个人博客</a>")
 
-        tc.insertHtml("<a href='https://muzing.top'>muzing的个人博客</a>")
+        # --------插入图片------------
+        tif = QTextImageFormat()
+        tif.setName('../Icons/search_48px.ico')
+        tif.setWidth(30)
+        tif.setHeight(30)
+        tc.insertImage(tif)
 
 
 if __name__ == '__main__':
