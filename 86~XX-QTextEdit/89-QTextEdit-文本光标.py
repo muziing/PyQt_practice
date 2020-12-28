@@ -34,11 +34,16 @@ class Window(QWidget):
         # tc.insertHtml("<a href='https://muzing.top'>muzing的个人博客</a>")
 
         # --------插入图片------------
-        tif = QTextImageFormat()
-        tif.setName('../Icons/search_48px.ico')
-        tif.setWidth(30)
-        tif.setHeight(30)
-        tc.insertImage(tif)
+        # tif = QTextImageFormat()
+        # tif.setName('../Icons/search_48px.ico')
+        # tif.setWidth(30)
+        # tif.setHeight(30)
+        # tc.insertImage(tif)
+
+        # ------插入句子----------
+        # tdf = QTextDocumentFragment.fromHtml('<h2>muzing</h2>')
+        tdf = QTextDocumentFragment.fromPlainText('<h2>muzing</h2>')
+        tc.insertFragment(tdf)
 
 
 if __name__ == '__main__':
