@@ -33,14 +33,17 @@ class Window(QWidget):
         # tc.insertList(QTextListFormat.Style) -> QTextList
         # 在当前位置插入一个新块，并使其成为具有给定格式的新创建列表的第一个列表项。返回创建的列表
 
-        # tc.insertList(QTextListFormat.ListDisc)  # 样式为圆圈
-        # tc.insertList(QTextListFormat.ListCircle)  # 样式为空心圆圈
+        '''
+        QTextListFormat.ListDisc  # 样式为圆圈
+        QTextListFormat.ListCircle  # 样式为空心圆圈
+        QTextListFormat.ListSquare  # 样式为方块
+        QTextListFormat.ListDecimal  # 小写阿拉伯数字，最大4999
+        QTextListFormat.ListLowerAlpha  # 小写拉丁字符，按字母顺序
+        QTextListFormat.ListUpperAlpha  # 大写拉丁字符，按字母顺序
+        QTextListFormat.ListLowerRoman  # 小写罗马数字，最大4999
+        QTextListFormat.ListUpperRoman  # 大写罗马数字，最大4999
+        '''
         tc.insertList(QTextListFormat.ListSquare)  # 样式为方块
-        # tc.insertList(QTextListFormat.ListDecimal)  # 小写阿拉伯数字，最大4999
-        # tc.insertList(QTextListFormat.ListLowerAlpha)  # 小写拉丁字符，按字母顺序
-        # tc.insertList(QTextListFormat.ListUpperAlpha)  # 大写拉丁字符，按字母顺序
-        # tc.insertList(QTextListFormat.ListLowerRoman)  # 小写罗马数字，最大4999
-        # tc.insertList(QTextListFormat.ListUpperRoman)  # 大写罗马数字，最大4999
 
     def cursor_insert2(self):
         tc = self.te.textCursor()  # 创建一个光标对象
