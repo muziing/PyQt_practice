@@ -38,8 +38,17 @@ class Window(QWidget):
 
     def setup_ui(self):
         asb = MyASB(self)
+        self.asb = asb
         asb.resize(120, 30)
         asb.move(150, 100)
+
+        test_btn = QPushButton('测试按钮', self)
+        test_btn.move(300, 100)
+        test_btn.clicked.connect(self.btn_test)
+
+    def btn_test(self):
+        print(self.asb.text())  # 获取文本
+        self.asb.lineEdit().setText('888')  # 设置文本
 
 
 if __name__ == '__main__':
