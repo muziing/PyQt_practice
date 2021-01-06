@@ -5,7 +5,7 @@ import sys
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("QLabel-内容缩放")
+        self.setWindowTitle("QLabel")
         self.resize(500, 500)
         self.move(400, 250)
         self.setup_ui()
