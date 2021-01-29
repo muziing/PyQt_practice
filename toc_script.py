@@ -13,6 +13,7 @@ with open('./toc.md', 'wt', encoding='UTF-8') as f:
         os.chdir(f'{abs_addr}/{n}')
         file_names = os.listdir('./')
         for m in file_names:
-            lines.append(f'[{m}](./{n}/{m})\n\n')
+            if m.endswith('.py'):
+                lines.append(f'[{m}](./{n}/{m})\n\n')
     f.writelines(lines)
 
