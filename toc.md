@@ -30,8 +30,6 @@
 
 [11-QObject定时器-案例.py](./02-QObject/11-QObject定时器-案例.py)
 
-[QObject.qss](./02-QObject/QObject.qss)
-
 ### 03-QWidget
 [01-QWidget-简介.py](./03-QWidget/01-QWidget-简介.py)
 
@@ -63,7 +61,7 @@
 
 [15-QWidget-顶层窗口相关操作.py](./03-QWidget/15-QWidget-顶层窗口相关操作.py)
 
-[16-Qwidget-窗口状态.py](./03-QWidget/16-Qwidget-窗口状态.py)
+[16-QWidget-窗口状态.py](./03-QWidget/16-QWidget-窗口状态.py)
 
 [17-QWidget-窗口最大化最小化、WindowFlags笔记.py](./03-QWidget/17-QWidget-窗口最大化最小化、WindowFlags笔记.py)
 
@@ -73,7 +71,7 @@
 
 [20-QWidget-交互状态-是否被编辑、是否为活动窗口.py](./03-QWidget/20-QWidget-交互状态-是否被编辑、是否为活动窗口.py)
 
-[21-Qwidget-交互状态-关闭与释放.py](./03-QWidget/21-Qwidget-交互状态-关闭与释放.py)
+[21-QWidget-交互状态-关闭与释放.py](./03-QWidget/21-QWidget-交互状态-关闭与释放.py)
 
 [22-QWidget-交互状态-案例-登录界面.py](./03-QWidget/22-QWidget-交互状态-案例-登录界面.py)
 
@@ -81,24 +79,20 @@
 
 [24-QWidget-焦点控制.py](./03-QWidget/24-QWidget-焦点控制.py)
 
-[ABC.png](./03-QWidget/ABC.png)
+### 04-QAbstractButton
+[01-QAbstractButton-简单介绍.py](./04-QAbstractButton/01-QAbstractButton-简单介绍.py)
 
-[snowflake.png](./03-QWidget/snowflake.png)
+[02-QAbstractButton-功能测试.py](./04-QAbstractButton/02-QAbstractButton-功能测试.py)
 
-### 04-QABstractButton
-[01-QAbstractButton-简单介绍.py](./04-QABstractButton/01-QAbstractButton-简单介绍.py)
+[03-QAbstractButton-状态设置.py](./04-QAbstractButton/03-QAbstractButton-状态设置.py)
 
-[02-QAbstractButton-功能测试.py](./04-QABstractButton/02-QAbstractButton-功能测试.py)
+[04-QAbstractButton-排他性.py](./04-QAbstractButton/04-QAbstractButton-排他性.py)
 
-[03-QAbstractButton-状态设置.py](./04-QABstractButton/03-QAbstractButton-状态设置.py)
+[05-QAbstractButton-模拟点击.py](./04-QAbstractButton/05-QAbstractButton-模拟点击.py)
 
-[04-QAbstractButton-排他性.py](./04-QABstractButton/04-QAbstractButton-排他性.py)
+[06-QAbstractButton-点击有效区域.py](./04-QAbstractButton/06-QAbstractButton-点击有效区域.py)
 
-[05-QAbstractButton-模拟点击.py](./04-QABstractButton/05-QAbstractButton-模拟点击.py)
-
-[06-QabstractButton-点击有效区域.py](./04-QABstractButton/06-QabstractButton-点击有效区域.py)
-
-[07-QAbstractButton-可用信号.py](./04-QABstractButton/07-QAbstractButton-可用信号.py)
+[07-QAbstractButton-可用信号.py](./04-QAbstractButton/07-QAbstractButton-可用信号.py)
 
 ### 05-QPushButton
 [01-QPushButton-构造函数.py](./05-QPushButton/01-QPushButton-构造函数.py)
@@ -146,7 +140,7 @@
 ### 10-QLineEdit
 [01-QLineEdit-创建、插入与获取内容.py](./10-QLineEdit/01-QLineEdit-创建、插入与获取内容.py)
 
-[02-QlineEdit-文本的设置与获取-案例.py](./10-QLineEdit/02-QlineEdit-文本的设置与获取-案例.py)
+[02-QLineEdit-文本的设置与获取-案例.py](./10-QLineEdit/02-QLineEdit-文本的设置与获取-案例.py)
 
 [03-QLineEdit-文本输出模式.py](./10-QLineEdit/03-QLineEdit-文本输出模式.py)
 
