@@ -25,6 +25,8 @@ class Window(QWidget):
         # pte.redoAvailable.connect(lambda val: print('重做可用时', val))
         # pte.undoAvailable.connect(lambda val: print('撤销可用时', val))
 
+        pte.updateRequest.connect(lambda rect, dy: print("内容区域更新", rect, dy))  # 重新绘制时发送的信号，dy为滚动距离
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
