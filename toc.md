@@ -204,6 +204,10 @@
 
 [05-QPlainTextEdit-光标操作.py](./14-QPlainTextEdit/05-QPlainTextEdit-光标操作.py)
 
+[06-QPlainTextEdit-信号.py](./14-QPlainTextEdit/06-QPlainTextEdit-信号.py)
+
+[07-QPlainTextEdit-案例-显示行号.py](./14-QPlainTextEdit/07-QPlainTextEdit-案例-显示行号.py)
+
 ### 15-QKeySequenceEdit
 [01-QKeySequenceEdit-创建、功能、信号.py](./15-QKeySequenceEdit/01-QKeySequenceEdit-创建、功能、信号.py)
 
@@ -262,6 +266,10 @@
 ### 30-QFontDialog
 ### 31-QColorDialog
 [01-QColorDialog-创建.py](./31-QColorDialog/01-QColorDialog-创建.py)
+
+[02-QColorDialog-功能作用.py](./31-QColorDialog/02-QColorDialog-功能作用.py)
+
+[03-QColorDialog-静态方法.py](./31-QColorDialog/03-QColorDialog-静态方法.py)
 
 ### 32-QFileDialog
 [01-QFileDialog-静态方法-弹出文件操作对话框.py](./32-QFileDialog/01-QFileDialog-静态方法-弹出文件操作对话框.py)

@@ -1,11 +1,13 @@
 # PyQt 5 学习笔记
-个人的学习笔记代码，为方便在多设备间同步上传至[gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice) \
-我使用的PyQt版本: 5.15 \
-原课程： 王顺子 撩课-Python-GUI编程-PyQt5 \
+个人的学习笔记代码，为方便在多设备间同步上传至[gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
+
+我使用的PyQt版本: 5.15
+
+原课程： 王顺子 撩课-Python-GUI编程-PyQt5
+
 基本在每个课程视频后做一次commit
 
 ### 01-PyQt基本结构
-
 [01-PyQt5-初体验.py](./01-PyQt基本结构/01-PyQt5-初体验.py)
 
 [02-PyQt5程序基本结构分析.py](./01-PyQt基本结构/02-PyQt5程序基本结构分析.py)
@@ -15,7 +17,6 @@
 [04-控件类的继承关系.py](./01-PyQt基本结构/04-控件类的继承关系.py)
 
 ### 02-QObject
-
 [01-QObject.py](./02-QObject/01-QObject.py)
 
 [02-QObject_2.py](./02-QObject/02-QObject_2.py)
@@ -39,7 +40,6 @@
 [11-QObject定时器-案例.py](./02-QObject/11-QObject定时器-案例.py)
 
 ### 03-QWidget
-
 [01-QWidget-简介.py](./03-QWidget/01-QWidget-简介.py)
 
 [02-QWidget-大小位置.py](./03-QWidget/02-QWidget-大小位置.py)
@@ -89,7 +89,6 @@
 [24-QWidget-焦点控制.py](./03-QWidget/24-QWidget-焦点控制.py)
 
 ### 04-QAbstractButton
-
 [01-QAbstractButton-简单介绍.py](./04-QAbstractButton/01-QAbstractButton-简单介绍.py)
 
 [02-QAbstractButton-功能测试.py](./04-QAbstractButton/02-QAbstractButton-功能测试.py)
@@ -105,7 +104,6 @@
 [07-QAbstractButton-可用信号.py](./04-QAbstractButton/07-QAbstractButton-可用信号.py)
 
 ### 05-QPushButton
-
 [01-QPushButton-构造函数.py](./05-QPushButton/01-QPushButton-构造函数.py)
 
 [02-QPushButton-菜单.py](./05-QPushButton/02-QPushButton-菜单.py)
@@ -119,7 +117,6 @@
 [06-QCommandLinkButton.py](./05-QPushButton/06-QCommandLinkButton.py)
 
 ### 06-QToolButton
-
 [01-QToolButton-创建与基本显示.py](./06-QToolButton/01-QToolButton-创建与基本显示.py)
 
 [02-QToolButton-样式设置.py](./06-QToolButton/02-QToolButton-样式设置.py)
@@ -133,13 +130,11 @@
 [06-QToolButton-可用信号.py](./06-QToolButton/06-QToolButton-可用信号.py)
 
 ### 07-QRadioButton
-
 [01-QRadioButton-创建和基本设置、信号.py](./07-QRadioButton/01-QRadioButton-创建和基本设置、信号.py)
 
 [02-QRadioButton-多组互斥问题.py](./07-QRadioButton/02-QRadioButton-多组互斥问题.py)
 
 ### 08-QButtonGroup
-
 [01-QButtonGroup-创建与使用.py](./08-QButtonGroup/01-QButtonGroup-创建与使用.py)
 
 [02-QButtonGroup-查看按钮、移除按钮、id操作、取消独占.py](./08-QButtonGroup/02-QButtonGroup-查看按钮、移除按钮、id操作、取消独占.py)
@@ -147,13 +142,11 @@
 [03-QButtonGroup-信号.py](./08-QButtonGroup/03-QButtonGroup-信号.py)
 
 ### 09-QCheckBox
-
 [01-QCheckBox-功能使用.py](./09-QCheckBox/01-QCheckBox-功能使用.py)
 
 [02-QCheckBox-信号.py](./09-QCheckBox/02-QCheckBox-信号.py)
 
 ### 10-QLineEdit
-
 [01-QLineEdit-创建、插入与获取内容.py](./10-QLineEdit/01-QLineEdit-创建、插入与获取内容.py)
 
 [02-QLineEdit-文本的设置与获取-案例.py](./10-QLineEdit/02-QLineEdit-文本的设置与获取-案例.py)
@@ -189,17 +182,14 @@
 [17-QLineEdit-信号.py](./10-QLineEdit/17-QLineEdit-信号.py)
 
 ### 11-QFrame
-
 [01-QFrame-创建.py](./11-QFrame/01-QFrame-创建.py)
 
 [02-QFrame-功能作用.py](./11-QFrame/02-QFrame-功能作用.py)
 
 ### 12-QAbstractScrollArea
-
 [01-QAbstractScrollArea.py](./12-QAbstractScrollArea/01-QAbstractScrollArea.py)
 
 ### 13-QTextEdit
-
 [01-QTextEdit-创建.py](./13-QTextEdit/01-QTextEdit-创建.py)
 
 [02-QTextEdit-占位文本的设置.py](./13-QTextEdit/02-QTextEdit-占位文本的设置.py)
@@ -213,7 +203,6 @@
 [06-QTextEdit-文本光标-插入表格.py](./13-QTextEdit/06-QTextEdit-文本光标-插入表格.py)
 
 ### 14-QPlainTextEdit
-
 [01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py](./14-QPlainTextEdit/01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py)
 
 [02-QPlainTextEdit-软换行、覆盖模式、tab控制.py](./14-QPlainTextEdit/02-QPlainTextEdit-软换行、覆盖模式、tab控制.py)
@@ -224,14 +213,16 @@
 
 [05-QPlainTextEdit-光标操作.py](./14-QPlainTextEdit/05-QPlainTextEdit-光标操作.py)
 
-### 15-QKeySequenceEdit
+[06-QPlainTextEdit-信号.py](./14-QPlainTextEdit/06-QPlainTextEdit-信号.py)
 
+[07-QPlainTextEdit-案例-显示行号.py](./14-QPlainTextEdit/07-QPlainTextEdit-案例-显示行号.py)
+
+### 15-QKeySequenceEdit
 [01-QKeySequenceEdit-创建、功能、信号.py](./15-QKeySequenceEdit/01-QKeySequenceEdit-创建、功能、信号.py)
 
 [02-QKeySequence-补充.py](./15-QKeySequenceEdit/02-QKeySequence-补充.py)
 
 ### 16-QAbstractSpinBox
-
 [01-QAbstractSpinBox-创建、模拟子类化、获取与设置控件内容.py](./16-QAbstractSpinBox/01-QAbstractSpinBox-创建、模拟子类化、获取与设置控件内容.py)
 
 [02-QAbstractSpinBox-长按累加加速、只读.py](./16-QAbstractSpinBox/02-QAbstractSpinBox-长按累加加速、只读.py)
@@ -241,25 +232,17 @@
 [04-QAbstractSpinBox-内容验证、信号.py](./16-QAbstractSpinBox/04-QAbstractSpinBox-内容验证、信号.py)
 
 ### 17-QSpinBox
-
 [01-QSpinBox-创建、最大值最小值范围、数值循环.py](./17-QSpinBox/01-QSpinBox-创建、最大值最小值范围、数值循环.py)
 
 ### 18-QDoubleSpinBox
-
 ### 19-QDateTimeEdit
-
 ### 20-QDateEdit
-
 ### 21-QTimeEdit
-
 ### 22-QComboBox
-
 [01-QComboBox-创建、数据操作.py](./22-QComboBox/01-QComboBox-创建、数据操作.py)
 
 ### 23-QFontComboBox
-
 ### 24-QAbstractSlider
-
 [01-QAbstractSlider-创建、数值范围、当前数值、步长.py](./24-QAbstractSlider/01-QAbstractSlider-创建、数值范围、当前数值、步长.py)
 
 [02-QAbstractSlider-是否追踪、滑块位置、倒立外观、操作反转、滑块方向.py](./24-QAbstractSlider/02-QAbstractSlider-是否追踪、滑块位置、倒立外观、操作反转、滑块方向.py)
@@ -267,7 +250,6 @@
 [03-QAbstractSlider-是否按下、信号.py](./24-QAbstractSlider/03-QAbstractSlider-是否按下、信号.py)
 
 ### 25-QSlider
-
 [01-QSlider-刻度控制.py](./25-QSlider/01-QSlider-刻度控制.py)
 
 [02-QSlider-拓展案例.py](./25-QSlider/02-QSlider-拓展案例.py)
@@ -275,19 +257,15 @@
 [03-QSlider-鼠标跳转优化.py](./25-QSlider/03-QSlider-鼠标跳转优化.py)
 
 ### 26-QScrollBar
-
 ### 27-QDial
-
 [01-QDial-功能作用.py](./27-QDial/01-QDial-功能作用.py)
 
 ### 28-QRubberBand
-
 [01-QRubberBand-创建.py](./28-QRubberBand/01-QRubberBand-创建.py)
 
 [02-QRubberBand-综合案例.py](./28-QRubberBand/02-QRubberBand-综合案例.py)
 
 ### 29-QDialog
-
 [01-QDialog-模态与非模态、创建.py](./29-QDialog/01-QDialog-模态与非模态、创建.py)
 
 [02-QDialog-是否显示尺寸调整控件、常用操作槽、设置和获取数值.py](./29-QDialog/02-QDialog-是否显示尺寸调整控件、常用操作槽、设置和获取数值.py)
@@ -295,13 +273,14 @@
 [03-QDialog-信号.py](./29-QDialog/03-QDialog-信号.py)
 
 ### 30-QFontDialog
-
 ### 31-QColorDialog
-
 [01-QColorDialog-创建.py](./31-QColorDialog/01-QColorDialog-创建.py)
 
-### 32-QFileDialog
+[02-QColorDialog-功能作用.py](./31-QColorDialog/02-QColorDialog-功能作用.py)
 
+[03-QColorDialog-静态方法.py](./31-QColorDialog/03-QColorDialog-静态方法.py)
+
+### 32-QFileDialog
 [01-QFileDialog-静态方法-弹出文件操作对话框.py](./32-QFileDialog/01-QFileDialog-静态方法-弹出文件操作对话框.py)
 
 [02-QFileDialog-静态方法-弹出文件夹操作对话框.py](./32-QFileDialog/02-QFileDialog-静态方法-弹出文件夹操作对话框.py)
@@ -313,11 +292,8 @@
 [05-QFileDialog-信号.py](./32-QFileDialog/05-QFileDialog-信号.py)
 
 ### 33-QInputDialog
-
 ### 34-QCanlendarWidget
-
 ### 35-QLabel
-
 [01-QLabel-创建、对齐、间距、缩进.py](./35-QLabel/01-QLabel-创建、对齐、间距、缩进.py)
 
 [02-QLabel-文本格式、伙伴.py](./35-QLabel/02-QLabel-文本格式、伙伴.py)
@@ -333,9 +309,7 @@
 [07-QLabel-信号.py](./35-QLabel/07-QLabel-信号.py)
 
 ### 36-QLCDNumber
-
 ### 37-QProgressBar
-
 [01-QProgressBar-基本、区间范围和当前数值.py](./37-QProgressBar/01-QProgressBar-基本、区间范围和当前数值.py)
 
 [02-QProgressBar-文本格式设置.py](./37-QProgressBar/02-QProgressBar-文本格式设置.py)
@@ -345,13 +319,11 @@
 [04-QProgressBar-信号.py](./37-QProgressBar/04-QProgressBar-信号.py)
 
 ### 38-QErrorMessage
-
 [01-QErrorMessage-创建、功能作用.py](./38-QErrorMessage/01-QErrorMessage-创建、功能作用.py)
 
 [02-QErrorMessage-Debug.py](./38-QErrorMessage/02-QErrorMessage-Debug.py)
 
 ### 39-QProgressDialog
-
 [01-QProgressDialog-创建.py](./39-QProgressDialog/01-QProgressDialog-创建.py)
 
 [02-QProgressDialog-最小等待时间、窗口标题、设置子控件.py](./39-QProgressDialog/02-QProgressDialog-最小等待时间、窗口标题、设置子控件.py)
@@ -359,11 +331,9 @@
 [03-QProgressDialog-数据处理.py](./39-QProgressDialog/03-QProgressDialog-数据处理.py)
 
 ### 40-QMessageBox
-
 [01-QMessageBox-创建.py](./40-QMessageBox/01-QMessageBox-创建.py)
 
 ### 41-Layout
-
 [00-布局管理器－简单使用.py](./41-Layout/00-布局管理器－简单使用.py)
 
 [01-QBoxLayout-创建、方向、插入、删除.py](./41-Layout/01-QBoxLayout-创建、方向、插入、删除.py)
@@ -389,10 +359,8 @@
 [11-QStackedLayout-切换、展示模式、移除控件.py](./41-Layout/11-QStackedLayout-切换、展示模式、移除控件.py)
 
 ### 42-QSS
-
 [01-QSS-简介.py](./42-QSS/01-QSS-简介.py)
 
 ### 43-pyqtSignal
-
 [01-自定义信号.py](./43-pyqtSignal/01-自定义信号.py)
 
