@@ -27,7 +27,17 @@ class Window(QWidget):
             palette.setColor(QPalette.Background, cd.selectedColor())
             self.setPalette(palette)
 
-        cd.open(color_2)  # 可以向open中传入一个槽函数，弹出对话框后自动连接
+        # cd.open(color_2)  # 可以向open中传入一个槽函数，弹出对话框后自动连接
+
+        # -------选项控制----------
+        cd.setOptions(QColorDialog.NoButtons | QColorDialog.ShowAlphaChannel)  # 典型应用场景：实时响应颜色变化
+
+        def color_3():
+            palette = QPalette()
+            palette.setColor(QPalette.Background, cd.currentColor())
+            self.setPalette(palette)
+        cd.currentColorChanged.connect(color_3)
+        cd.show()
 
 
 if __name__ == '__main__':
