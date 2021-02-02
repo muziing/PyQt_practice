@@ -273,12 +273,16 @@
 [03-QDialog-信号.py](./29-QDialog/03-QDialog-信号.py)
 
 ### 30-QFontDialog
+[01-QFontDialog-创建.py](./30-QFontDialog/01-QFontDialog-创建.py)
+
 ### 31-QColorDialog
 [01-QColorDialog-创建.py](./31-QColorDialog/01-QColorDialog-创建.py)
 
 [02-QColorDialog-功能作用.py](./31-QColorDialog/02-QColorDialog-功能作用.py)
 
 [03-QColorDialog-静态方法.py](./31-QColorDialog/03-QColorDialog-静态方法.py)
+
+[04-QColorDialog-信号.py](./31-QColorDialog/04-QColorDialog-信号.py)
 
 ### 32-QFileDialog
 [01-QFileDialog-静态方法-弹出文件操作对话框.py](./32-QFileDialog/01-QFileDialog-静态方法-弹出文件操作对话框.py)
@@ -328,8 +332,6 @@
 
 [02-QProgressDialog-最小等待时间、窗口标题、设置子控件.py](./39-QProgressDialog/02-QProgressDialog-最小等待时间、窗口标题、设置子控件.py)
 
-[03-QProgressDialog-数据处理.py](./39-QProgressDialog/03-QProgressDialog-数据处理.py)
-
 ### 40-QMessageBox
 [01-QMessageBox-创建.py](./40-QMessageBox/01-QMessageBox-创建.py)
 
@@ -364,3 +366,4 @@
 ### 43-pyqtSignal
 [01-自定义信号.py](./43-pyqtSignal/01-自定义信号.py)
 
+[02-重载、多个参数.py](./43-pyqtSignal/02-重载、多个参数.py)
