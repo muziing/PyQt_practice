@@ -364,6 +364,8 @@
 [01-QSS-简介.py](./42-QSS/01-QSS-简介.py)
 
 ### 43-pyqtSignal
-[01-自定义信号.py](./43-pyqtSignal/01-自定义信号.py)
+[01-pyqtSignal-自定义信号.py](./43-pyqtSignal/01-pyqtSignal-自定义信号.py)
 
-[02-重载、多个参数.py](./43-pyqtSignal/02-重载、多个参数.py)
+[02-pyqtSignal-重载、多个参数.py](./43-pyqtSignal/02-pyqtSignal-重载、多个参数.py)
+
+[03-pyqtSignal-装饰器自动连接.py](./43-pyqtSignal/03-pyqtSignal-装饰器自动连接.py)
