@@ -233,6 +233,8 @@
 [01-QComboBox-创建、数据操作.py](./22-QComboBox/01-QComboBox-创建、数据操作.py)
 
 ### 23-QFontComboBox
+[01-QFontComboBox-功能作用.py](./23-QFontComboBox/01-QFontComboBox-功能作用.py)
+
 ### 24-QAbstractSlider
 [01-QAbstractSlider-创建、数值范围、当前数值、步长.py](./24-QAbstractSlider/01-QAbstractSlider-创建、数值范围、当前数值、步长.py)
 
@@ -269,8 +271,6 @@
 [02-QFontDialog-弹出方式、选项控制.py](./30-QFontDialog/02-QFontDialog-弹出方式、选项控制.py)
 
 [03-QFontDialog-静态方法.py](./30-QFontDialog/03-QFontDialog-静态方法.py)
-
-[04-QFontDialog-信号.py](./30-QFontDialog/04-QFontDialog-信号.py)
 
 ### 31-QColorDialog
 [01-QColorDialog-创建.py](./31-QColorDialog/01-QColorDialog-创建.py)
