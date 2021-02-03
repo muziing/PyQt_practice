@@ -7,6 +7,8 @@
 
 基本在每个课程视频后做一次commit
 
+**注意！[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，严禁用于任何商业用途**
+
 ### 01-PyQt基本结构
 [01-PyQt5-初体验.py](./01-PyQt基本结构/01-PyQt5-初体验.py)
 
@@ -274,6 +276,12 @@
 
 ### 30-QFontDialog
 [01-QFontDialog-创建.py](./30-QFontDialog/01-QFontDialog-创建.py)
+
+[02-QFontDialog-弹出方式、选项控制.py](./30-QFontDialog/02-QFontDialog-弹出方式、选项控制.py)
+
+[03-QFontDialog-静态方法.py](./30-QFontDialog/03-QFontDialog-静态方法.py)
+
+[04-QFontDialog-信号.py](./30-QFontDialog/04-QFontDialog-信号.py)
 
 ### 31-QColorDialog
 [01-QColorDialog-创建.py](./31-QColorDialog/01-QColorDialog-创建.py)
