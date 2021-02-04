@@ -30,6 +30,18 @@ class Window(QWidget):
         # ----删除条目-----
         cbb.removeItem(7)
 
+        # ----插入分割线----
+        cbb.insertSeparator(4)
+
+        # ----设置当前项（设置默认项）-------
+        # cbb.setCurrentIndex(1)
+        # cbb.setCurrentText("当前选项")  # 若text不在选项范围中，则无效
+        cbb.setCurrentText("插入1")
+
+        # ----用户可编辑--------
+        cbb.setEditable(True)  # 用户编辑的项可以作为新项加入
+        cbb.setEditText("可编辑的文本")
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
