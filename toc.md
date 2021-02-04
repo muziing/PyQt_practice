@@ -232,6 +232,12 @@
 ### 22-QComboBox
 [01-QComboBox-创建、数据操作.py](./22-QComboBox/01-QComboBox-创建、数据操作.py)
 
+[02-QComboBox-模型操作、视图操作.py](./22-QComboBox/02-QComboBox-模型操作、视图操作.py)
+
+[03-QComboBox-数据获取.py](./22-QComboBox/03-QComboBox-数据获取.py)
+
+[04-QComboBox-数据限制.py](./22-QComboBox/04-QComboBox-数据限制.py)
+
 ### 23-QFontComboBox
 [01-QFontComboBox-功能作用.py](./23-QFontComboBox/01-QFontComboBox-功能作用.py)
 
@@ -250,6 +256,8 @@
 [03-QSlider-鼠标跳转优化.py](./25-QSlider/03-QSlider-鼠标跳转优化.py)
 
 ### 26-QScrollBar
+[01-QScrollBar-功能作用.py](./26-QScrollBar/01-QScrollBar-功能作用.py)
+
 ### 27-QDial
 [01-QDial-功能作用.py](./27-QDial/01-QDial-功能作用.py)
 
@@ -293,6 +301,8 @@
 [05-QFileDialog-信号.py](./32-QFileDialog/05-QFileDialog-信号.py)
 
 ### 33-QInputDialog
+[01-QInputDialog-静态方法.py](./33-QInputDialog/01-QInputDialog-静态方法.py)
+
 ### 34-QCanlendarWidget
 ### 35-QLabel
 [01-QLabel-创建、对齐、间距、缩进.py](./35-QLabel/01-QLabel-创建、对齐、间距、缩进.py)
