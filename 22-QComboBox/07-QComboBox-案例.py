@@ -40,21 +40,21 @@ class Window(QWidget):
         pro_combobox.move(100, 100)
         city_combobox.move(250, 100)
 
-        # 2.展示数据到第一个下拉选择控件当中
-        pro_combobox.addItems(self.city_dic.keys())
-
         # 3.监听省下拉列表里面的当前值发生改变的信号
         pro_combobox.currentIndexChanged[str].connect(self.pro_changed)
-        self.pro_changed(pro_combobox.currentText())
 
         # 4. 监听城市下拉列表里面的当前值发生改变的信号
         city_combobox.currentIndexChanged[int].connect(self.city_changed)
-        self.city_changed(city_combobox.currentIndex())
+
+        # 2.展示数据到第一个下拉选择控件当中
+        pro_combobox.addItems(self.city_dic.keys())
 
     def pro_changed(self, pro_name):
         # 1. 根据省的名称，到字典中获取对应的城市字典
         cities = self.city_dic[pro_name]
+        self.city_combobox.blockSignals(True)  # 暂时阻塞信号连接，防止clear时发送信号导致获得None
         self.city_combobox.clear()
+        self.city_combobox.blockSignals(False)  # 恢复信号连接
         # self.city_combobox.addItems(cities.keys())
         for key, val in cities.items():
             self.city_combobox.addItem(key, val)
