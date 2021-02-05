@@ -27,7 +27,11 @@ class Window(QWidget):
         ttf.setAlignment(Qt.AlignRight)  # 右对齐
         ttf.setCellPadding(6)  # 内边距
         ttf.setCellSpacing(3)  # 外边距
-        tc.insertTable(5, 3, ttf)
+        ttf.setColumnWidthConstraints((QTextLength(QTextLength.PercentageLength, 50),
+                                       QTextLength(QTextLength.PercentageLength, 40),
+                                       QTextLength(QTextLength.PercentageLength, 10)))  # 设置列宽约束，百分比约束
+        table = tc.insertTable(5, 3, ttf)  # 返回QTextTable
+        # table.appendColumns(2)  # 对表格进行追加2列
 
 
 if __name__ == '__main__':
