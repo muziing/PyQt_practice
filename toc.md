@@ -238,6 +238,12 @@
 
 [04-QComboBox-数据限制.py](./22-QComboBox/04-QComboBox-数据限制.py)
 
+[05-QComboBox-功能.py](./22-QComboBox/05-QComboBox-功能.py)
+
+[06-QComboBox-信号.py](./22-QComboBox/06-QComboBox-信号.py)
+
+[07-QComboBox-案例.py](./22-QComboBox/07-QComboBox-案例.py)
+
 ### 23-QFontComboBox
 [01-QFontComboBox-功能作用.py](./23-QFontComboBox/01-QFontComboBox-功能作用.py)
 
@@ -303,7 +309,9 @@
 ### 33-QInputDialog
 [01-QInputDialog-静态方法.py](./33-QInputDialog/01-QInputDialog-静态方法.py)
 
-### 34-QCanlendarWidget
+[02-QInputDialog-创建.py](./33-QInputDialog/02-QInputDialog-创建.py)
+
+### 34-QCalendarWidget
 ### 35-QLabel
 [01-QLabel-创建、对齐、间距、缩进.py](./35-QLabel/01-QLabel-创建、对齐、间距、缩进.py)
 
