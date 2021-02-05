@@ -236,6 +236,12 @@
 ### 17-QSpinBox
 [01-QSpinBox-创建、最大值最小值范围、数值循环.py](./17-QSpinBox/01-QSpinBox-创建、最大值最小值范围、数值循环.py)
 
+[02-QSpinBox-步长设置、前后缀和特殊文本、进制设置.py](./17-QSpinBox/02-QSpinBox-步长设置、前后缀和特殊文本、进制设置.py)
+
+[03-QSpinBox-值的设置和获取、自定义展示格式.py](./17-QSpinBox/03-QSpinBox-值的设置和获取、自定义展示格式.py)
+
+[04-QSpinBox-信号.py](./17-QSpinBox/04-QSpinBox-信号.py)
+
 ### 18-QDoubleSpinBox
 ### 19-QDateTimeEdit
 ### 20-QDateEdit
