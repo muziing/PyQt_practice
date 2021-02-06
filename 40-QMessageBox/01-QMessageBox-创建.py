@@ -1,7 +1,6 @@
 from PyQt5.Qt import *
 import sys
 
-
 """ QMessageBox.StandardButton
 QMessageBox.Ok 使用AcceptRole定义的“确定”按钮
 QMessageBox.Open 使用AcceptRole定义的“打开”按钮
@@ -19,6 +18,15 @@ QMessageBox.YesToAll 使用YesRole定义的“Yes to All” 按钮
 
 """
 
+"""QMessageBox.Icon
+QMessageBox.NoIcon
+QMessageBox.Question
+QMessageBox.Information
+QMessageBox.Warning
+QMessageBox.Critical
+
+"""
+
 
 class Window(QWidget):
     def __init__(self):
@@ -29,18 +37,27 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
-        # mb = QMessageBox(self)
-        mb = QMessageBox(QMessageBox.Critical, '窗口标题', '主标题', QMessageBox.Ok | QMessageBox.Discard, self)
+        mb = QMessageBox(self)
+        # mb = QMessageBox(QMessageBox.Critical, '窗口标题', '主标题', QMessageBox.Ok | QMessageBox.Discard, self)
         # mb.setModal(False)  # 强行设置为非模态
         # mb.setWindowModality(Qt.NonModal)  # 强行设置为非模态
         # mb.show()  # 一定为模态，即使使用show()方法也仍为模态
+
+        mb.setWindowTitle("消息提示")
+        # mb.setIcon(QMessageBox.Information)  # 设置标准图标
+        mb.setIconPixmap(QPixmap('../Icons/python_96px.ico').scaled(40, 40))  # 设置自定义图标
+        mb.setText("<h3>文件内容已经被修改</h3>")  # 设置主标题
+        mb.setInformativeText("是否直接关闭不保存")  # 设置副标题
+        mb.setCheckBox(QCheckBox("下次不再提醒", mb))  # 设置复选框
+        mb.setDetailedText("你修改的内容是……我怎么知道你改了点啥")  # 设置详情（不支持富文本）
+
         mb.open()
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    
+
     window = Window()
     window.show()
-    
+
     sys.exit(app.exec_())
