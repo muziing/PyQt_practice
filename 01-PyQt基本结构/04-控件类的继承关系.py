@@ -9,4 +9,3 @@ def get_sub_classes(class_):
 
 
 get_sub_classes(QAbstractButton)
-
