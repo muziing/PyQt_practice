@@ -198,11 +198,13 @@
 
 [03-QTextEdit-文本内容的设置.py](./13-QTextEdit/03-QTextEdit-文本内容的设置.py)
 
-[04-QTextEdit-文本光标.py](./13-QTextEdit/04-QTextEdit-文本光标.py)
+[04-QTextEdit-文本光标-插入文字、图片、句子.py](./13-QTextEdit/04-QTextEdit-文本光标-插入文字、图片、句子.py)
 
 [05-QTextEdit-文本光标-插入列表.py](./13-QTextEdit/05-QTextEdit-文本光标-插入列表.py)
 
 [06-QTextEdit-文本光标-插入表格.py](./13-QTextEdit/06-QTextEdit-文本光标-插入表格.py)
+
+[07-QTextEdit-文本光标-插入文本块.py](./13-QTextEdit/07-QTextEdit-文本光标-插入文本块.py)
 
 ### 14-QPlainTextEdit
 [01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py](./14-QPlainTextEdit/01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py)
@@ -326,7 +328,9 @@
 ### 33-QInputDialog
 [01-QInputDialog-静态方法.py](./33-QInputDialog/01-QInputDialog-静态方法.py)
 
-[02-QInputDialog-创建.py](./33-QInputDialog/02-QInputDialog-创建.py)
+[02-QInputDialog-创建、功能作用.py](./33-QInputDialog/02-QInputDialog-创建、功能作用.py)
+
+[03-QInputDialog-信号.py](./33-QInputDialog/03-QInputDialog-信号.py)
 
 ### 34-QCalendarWidget
 ### 35-QLabel
