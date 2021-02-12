@@ -245,6 +245,12 @@
 [04-QSpinBox-信号.py](./17-QSpinBox/04-QSpinBox-信号.py)
 
 ### 18-QDoubleSpinBox
+[01-QDoubleSpinBox-创建、数值范围、数值循环、设置步长、前后缀.py](./18-QDoubleSpinBox/01-QDoubleSpinBox-创建、数值范围、数值循环、设置步长、前后缀.py)
+
+[02-QDoubleSpinBox-最小值特殊文本、小数位数、设置与获取数值、自定义展示格式.py](./18-QDoubleSpinBox/02-QDoubleSpinBox-最小值特殊文本、小数位数、设置与获取数值、自定义展示格式.py)
+
+[03-QDoubleSpinBox-信号.py](./18-QDoubleSpinBox/03-QDoubleSpinBox-信号.py)
+
 ### 19-QDateTimeEdit
 ### 20-QDateEdit
 ### 21-QTimeEdit
