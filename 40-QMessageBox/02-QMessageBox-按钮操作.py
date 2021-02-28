@@ -1,7 +1,6 @@
 from PyQt5.Qt import *
 import sys
 
-
 """ QMessageBox.ButtonRole
 QMessageBox.InvalidRole  该按钮无效
 QMessageBox.AcceptRole  单击该按钮将使对话框被接受（例如，确定）
@@ -14,7 +13,6 @@ QMessageBox.NoRole  按钮是一个“否”按钮
 QMessageBox.ApplyRole  该按钮应用当前更改
 QMessageBox.ResetRole  该按钮将对话框的字段重置为默认值
 """
-
 
 """ QMessageBox.StandardButton
 QMessageBox.Ok 使用AcceptRole定义的“确定”按钮
@@ -42,7 +40,7 @@ QMessageBox.Ignore  使用AcceptRole定义的”忽略“按钮
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("QMessageBox=按钮操作")
+        self.setWindowTitle("QMessageBox-按钮操作")
         self.resize(500, 500)
         self.move(400, 250)
         self.setup_ui()
@@ -54,19 +52,33 @@ class Window(QWidget):
         # 添加移除按钮
         # mb.addButton(QPushButton("Yes!Yes!Yes!", mb), QMessageBox.YesRole)
         yes_btn = mb.addButton("Yes!Yes!Yes!", QMessageBox.YesRole)
-        QMessageBox.buttonRole(mb, yes_btn)  # TODO
-        mb.removeButton(yes_btn)  # 移除按钮
+        # mb.removeButton(yes_btn)  # 移除按钮
 
         # 设置标准按钮
-        mb.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+        mb.setStandardButtons(QMessageBox.Apply | QMessageBox.No)
 
         # 默认按钮(默认哪个按钮获取到焦点）
-        mb.setDefaultButton(QMessageBox.Yes)
+        mb.setDefaultButton(QMessageBox.Apply)
 
         # 退出按钮（按下键盘Esc键时激活的按钮）
         mb.setEscapeButton(QMessageBox.No)
 
-        mb.buttonClicked.connect(lambda btn: print(btn))
+        # 按钮信号槽
+        apply_btn = mb.button(QMessageBox.Apply)  # 获取按钮对象
+
+        def test(btn):
+            if btn == yes_btn:
+                print("点击了yes按钮")
+            elif btn == apply_btn:
+                print("点击了apply按钮")
+
+            role = mb.buttonRole(btn)
+            if role == QMessageBox.YesRole:
+                print("点击了Yes按钮")
+            elif role == QMessageBox.NoRole:
+                print("点击了No按钮")
+
+        mb.buttonClicked.connect(test)
 
         mb.open()
 
