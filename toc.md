@@ -195,6 +195,10 @@
 
 [07-QTextEdit-文本光标-插入文本块.py](./13-QTextEdit/07-QTextEdit-文本光标-插入文本块.py)
 
+[08-QTextEdit-文本光标-插入文本框架.py](./13-QTextEdit/08-QTextEdit-文本光标-插入文本框架.py)
+
+[09-QTextEdit-文本光标-格式操作.py](./13-QTextEdit/09-QTextEdit-文本光标-格式操作.py)
+
 ### 14-QPlainTextEdit
 [01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py](./14-QPlainTextEdit/01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py)
 
@@ -365,6 +369,8 @@
 
 ### 40-QMessageBox
 [01-QMessageBox-创建.py](./40-QMessageBox/01-QMessageBox-创建.py)
+
+[02-QMessageBox-按钮操作.py](./40-QMessageBox/02-QMessageBox-按钮操作.py)
 
 ### 41-Layout
 [00-布局管理器－简单使用.py](./41-Layout/00-布局管理器－简单使用.py)
