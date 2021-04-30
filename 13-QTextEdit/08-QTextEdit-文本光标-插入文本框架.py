@@ -16,9 +16,9 @@ class Window(QWidget):
         te.resize(400, 400)
         test_btn = QPushButton("测试按钮", self)
         test_btn.move(410, 140)
-        test_btn.clicked.connect(self.test_btn_cao)
+        test_btn.clicked.connect(self.test_btn_slot)
 
-    def test_btn_cao(self):
+    def test_btn_slot(self):
         self.cursor_insert_frame()
 
     def cursor_insert_frame(self):

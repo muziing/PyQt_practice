@@ -20,7 +20,23 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
-        pass
+        te = QTextEdit(self)
+        self.te = te
+        te.resize(400, 400)
+        test_btn = QPushButton("测试按钮", self)
+        test_btn.move(410, 140)
+        test_btn.clicked.connect(self.test_btn_slot)
+
+    def test_btn_slot(self):
+        tc = self.te.textCursor()  # 创建文本光标
+
+        tcf = QTextCharFormat()
+        tcf.setFontFamily('Microsoft YaHei')
+        tcf.setFontPointSize(30)  # 设置字体大小
+        tcf.setFontOverline(True)  # 设置上划线
+        tcf.setFontUnderline(True)  # 设置下划线
+
+        tc.setBlockCharFormat(tcf)  # 把当前块的格式设置成tcf的样式
 
 
 if __name__ == '__main__':
