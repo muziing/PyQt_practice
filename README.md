@@ -1,13 +1,19 @@
 # PyQt 5 学习笔记
-个人的学习笔记代码，为方便在多设备间同步上传至[gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
+
+## 基本说明 
+个人的学习笔记代码，为方便在多设备间同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
 
 我使用的PyQt版本: 5.15
 
-原课程： 王顺子 撩课-Python-GUI编程-PyQt5
-
-基本在每个课程视频后做一次commit
+原课程： 王顺子 撩课-Python-GUI编程-PyQt5 ，基本在每个课程视频后做一次commit
 
 **注意！[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，严禁用于任何商业用途**
+
+## PyQt相关文档分享
+
+[Qt控件(5.15)官方文档](https://doc.qt.io/qt-5.15/classes.html)
+
+## 文件目录
 
 ### 01-PyQt基本结构
 [01-PyQt5-初体验.py](./01-PyQt基本结构/01-PyQt5-初体验.py)
