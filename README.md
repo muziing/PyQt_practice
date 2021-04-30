@@ -9,9 +9,15 @@
 
 **注意！[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，严禁用于任何商业用途**
 
-## PyQt相关文档分享
+## PyQt相关分享
 
 [Qt控件(5.15)官方文档](https://doc.qt.io/qt-5.15/classes.html)
+
+[PyQt5 Reference Guide](https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html)
+
+[Gitee上的一大批PyQt测试和例子](https://gitee.com/PyQt5/PyQt)
+
+[一组很好看的QSS](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
 
 ## 文件目录
 
