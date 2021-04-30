@@ -22,8 +22,8 @@ label.setStyleSheet("background-color: cyan;")
 
 # label.setCursor(Qt.ForbiddenCursor)  # 进入控件范围内，鼠标变化
 
-pixmap = QPixmap("ABC.png")  # png图片路径
-pixmap = pixmap.scaled(220, 220)  # 重新设置大小
+pixmap = QPixmap("../Icons/python_96px.ico")  # 图片路径
+pixmap = pixmap.scaled(100, 100)  # 重新设置大小
 cursor = QCursor(pixmap, 0, 0)  # 0, 0 为热点位置
 label.setCursor(cursor)
 # label.unsetCursor()  # 恢复鼠标

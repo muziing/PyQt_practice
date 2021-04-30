@@ -11,7 +11,7 @@ class Window(QWidget):
         self.setWindowTitle("鼠标相关操作案例")
         self.setMouseTracking(True)
 
-        pixmap = QPixmap("snowflake.png").scaled(50, 50)
+        pixmap = QPixmap("../Icons/snowflake_128px.ico").scaled(50, 50)
         cursor = QCursor(pixmap)
         self.setCursor(cursor)
 
