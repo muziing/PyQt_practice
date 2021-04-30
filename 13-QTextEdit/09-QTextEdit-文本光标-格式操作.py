@@ -36,7 +36,13 @@ class Window(QWidget):
         tcf.setFontOverline(True)  # 设置上划线
         tcf.setFontUnderline(True)  # 设置下划线
 
-        tc.setBlockCharFormat(tcf)  # 把当前块的格式设置成tcf的样式
+        # tc.setBlockCharFormat(tcf)  # 把当前块的格式设置成tcf的样式
+
+        tbf = QTextBlockFormat()
+        tbf.setAlignment(Qt.AlignCenter)  # 中心对齐
+        # tbf.setIndent(2)  # 缩进
+
+        tc.setBlockFormat(tbf)  # 设置当前块格式
 
 
 if __name__ == '__main__':
