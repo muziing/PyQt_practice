@@ -2,13 +2,9 @@ from PyQt5.Qt import *
 from PyQt5 import QtGui
 import sys
 
-# 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
-# 2.控件的操作
-# 2.1创建控件
 window = QWidget()
-# 2.2设置控件
 
 window.setWindowTitle("QAbstractButton-点击有效区域")
 window.resize(500, 500)
@@ -16,6 +12,7 @@ window.move(400, 250)
 
 
 class Btn(QPushButton):
+    """自定义的按钮类，重写hitButton方法来实现自定义按钮点击有效区域功能"""
     def hitButton(self, point) -> bool:
         # print(point)
         # 案例：仅按钮右半部分为有效点击区域
@@ -39,11 +36,11 @@ class Btn(QPushButton):
             return False
 
     def paintEvent(self, a0: QtGui.QPaintEvent) -> None:
-        super().paintEvent(a0)
+        """重写父类方法，实现在按钮上画一个圆"""
+        super().paintEvent(a0)  # 实现父类方法的全部功能
         painter = QPainter(self)
         painter.setPen(QPen(QColor(0, 240, 240), 6))
-        painter.drawEllipse(self.rect())
-
+        painter.drawEllipse(self.rect())  # 在按钮上绘制一个圆
 
 
 btn = Btn(window)
@@ -52,8 +49,6 @@ btn.resize(200, 200)
 btn.move(100, 100)
 btn.pressed.connect(lambda: print("按钮被点击了"))
 
-# 2.3展示控件
 window.show()
 
-# 3.应用程序的执行， 进入到消息循环
 sys.exit(app.exec_())
