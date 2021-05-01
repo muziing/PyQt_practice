@@ -13,7 +13,7 @@ def make_toc():
             if dir_name[0].isdigit() and dir_name[1].isdigit():  # 本项目的命名规律，文件名前两位为数字的才是需要进行目录的文件夹
                 valid_dir_list.append(dir_name)
         for valid_dir_name in valid_dir_list:
-            lines.append(f'### {valid_dir_name}\n')
+            lines.append(f'### [{valid_dir_name}](./{valid_dir_name})\n')
             os.chdir(f'{abs_addr}/{valid_dir_name}')  # 进入子文件夹
             file_names = os.listdir('./')
             file_names.sort()
