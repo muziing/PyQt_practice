@@ -1,0 +1,3 @@
+QButtonGroup 按钮组
+
+主要用于为QRadioButton单选按钮分组，同一个QButtonGroup内的多个按钮之间具有独占性
