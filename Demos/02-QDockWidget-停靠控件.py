@@ -3,7 +3,7 @@ import sys
 
 """
 停靠控件，可以把小窗拖入并停靠到主窗口上
-原作者: https://blog.csdn.net/qq_40243295
+原帖: https://blog.csdn.net/qq_40243295/article/details/105633221
 """
 
 

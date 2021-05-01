@@ -1,10 +1,9 @@
-# -*- coding:utf-8 -*-
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMessageBox, QSystemTrayIcon, QMenu, qApp, QAction, QDesktopWidget, QWidget
 import sys
 
 
-class SystemTray(object):
+class SystemTray:
     # 程序托盘类
     def __init__(self, w):
         self.app = app
