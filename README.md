@@ -9,15 +9,27 @@
 
 注意[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，请勿用于任何商业用途
 
-## PyQt相关分享
+## PyQt5 相关分享
+
+### Documents 文档教程
 
 [Qt控件(5.15)官方文档](https://doc.qt.io/qt-5.15/classes.html)
 
 [PyQt5 Reference Guide](https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html)
 
+[PyQt5中文教程](https://maicss.gitbook.io/pyqt5-chinese-tutoral/)
+
+[LearnPyQt.com](https://www.mfitzp.com/courses/pyqt/) 
+
+### Demos 例子
+
+[本仓库内的Demos](./Demos/)
+
 [Gitee上的一大批PyQt测试和例子](https://gitee.com/PyQt5/PyQt)
 
-[PyQt5中文教程](https://maicss.gitbook.io/pyqt5-chinese-tutoral/)
+[15 Minute Apps-15个简单易学的PyQt小程序](https://github.com/learnpyqt/15-minute-apps)
+
+### QSS 美化主题
 
 [一组很好看的QSS样式-飞扬青云](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
 
