@@ -1,13 +1,13 @@
 # PyQt 5 学习笔记
 
 ## 基本说明 
-个人的学习笔记代码，为方便在多设备间同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
+个人的学习笔记代码，同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
 
 我使用的PyQt版本: 5.15
 
-原课程： 王顺子 撩课-Python-GUI编程-PyQt5 ，基本在每个课程视频后做一次commit
+原课程： 王顺子 撩课-Python-GUI编程-PyQt5
 
-**注意！[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，严禁用于任何商业用途**
+注意[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，请勿用于任何商业用途
 
 ## PyQt相关分享
 
@@ -17,11 +17,13 @@
 
 [Gitee上的一大批PyQt测试和例子](https://gitee.com/PyQt5/PyQt)
 
-[一组很好看的QSS样式](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
+[PyQt5中文教程](https://maicss.gitbook.io/pyqt5-chinese-tutoral/)
 
-[QSS Editor-实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
+[一组很好看的QSS样式-飞扬青云](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
 
-[又一组QSS样式](https://github.com/GTRONICK/QSS)
+[QSS Editor - 实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
+
+[一组QSS样式-GTRONICK](https://github.com/GTRONICK/QSS)
 
 ## 文件目录
 
