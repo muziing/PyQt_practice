@@ -1,6 +1,7 @@
 from PyQt5.Qt import *
 from PyQt5 import QtGui
 import sys
+
 """鼠标可以在用户区域内实现对整个窗口的拖动。（原先只能拖动标题栏时移动）"""
 
 

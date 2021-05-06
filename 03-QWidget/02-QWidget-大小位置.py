@@ -4,11 +4,9 @@ import sys
 app = QApplication(sys.argv)
 
 window = QWidget()
-
 # window.resize(500, 500)
 window.setFixedSize(500, 500)  # 固定尺寸
 window.move(200, 200)
-
 
 label = QLabel(window)
 label.setText("ABC")
