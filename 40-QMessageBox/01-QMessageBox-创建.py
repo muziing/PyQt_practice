@@ -1,13 +1,13 @@
 from PyQt5.Qt import *
 import sys
 
-""" QMessageBox.Icon
+"""
+QMessageBox.Icon
 QMessageBox.NoIcon
 QMessageBox.Question
 QMessageBox.Information
 QMessageBox.Warning
 QMessageBox.Critical
-
 """
 
 

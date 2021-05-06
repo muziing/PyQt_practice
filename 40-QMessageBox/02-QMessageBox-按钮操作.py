@@ -1,7 +1,8 @@
 from PyQt5.Qt import *
 import sys
 
-""" QMessageBox.ButtonRole
+"""
+QMessageBox.ButtonRole
 QMessageBox.InvalidRole  该按钮无效
 QMessageBox.AcceptRole  单击该按钮将使对话框被接受（例如，确定）
 QMessageBox.RejectRole  单击该按钮会导致拒绝对话框（例如取消）
@@ -33,7 +34,6 @@ QMessageBox.NoToAll  使用NoRole定义的“No to All”按钮
 QMessageBox.Abort  使用RejectRole定义的”中止“按钮
 QMessageBox.Retry  使用AcceptRole定义的”重试“按钮
 QMessageBox.Ignore  使用AcceptRole定义的”忽略“按钮
-
 """
 
 

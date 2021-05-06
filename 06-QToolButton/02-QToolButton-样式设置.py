@@ -10,14 +10,9 @@ Qt.ToolButtonTextBesideIcon  文本显示在图标旁边  int -> 2
 Qt.ToolButtonTextUnderIcon  文本显示在图标下方  int -> 3
 Qt.ToolButtonFollowStyle  遵循风格  int -> 4
 """
-# 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
-# 2.控件的操作
-# 2.1创建控件
 window = QWidget()
-# 2.2设置控件
-
 window.setWindowTitle("QToolButton样式设置")
 window.resize(500, 500)
 window.move(400, 250)
@@ -35,7 +30,5 @@ tb.setToolButtonStyle(Qt.ToolButtonFollowStyle)  # 遵循风格
 
 print(tb.toolButtonStyle())
 
-# 2.3展示控件
 window.show()
-# 3.应用程序的执行， 进入到消息循环
 sys.exit(app.exec_())
