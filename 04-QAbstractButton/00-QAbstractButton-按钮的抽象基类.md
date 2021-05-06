@@ -33,21 +33,29 @@
 | setCheckable(bool)           | None   | 设置按钮是否可被选中，默认为False            |             |
 | setChecked(bool)             | None   | 设置按钮是否已经被选中（保持按下）           |            |
 | setDown(bool)                | None   | 设置按钮按下 | 设置为True也不会触发pressed()或clicked()信号 |
-|                              |        |                                              |                                              |
-|                              |        |                                              |                                              |
-|                              |        |                                              |                                              |
-
-
+| setIcon(QIcon &*icon*) | None | 为按钮设置图标 |                                              |
+| setShortcut(QkeySequence &*key*) | None | 为按钮设置快捷键 |                                              |
+| setText(str &*text*) | None | 为按钮设置文字 |                                              |
 
 ## 信号
 
 | 信号                        | 说明                                                 |
 | --------------------------- | ---------------------------------------------------- |
-| checked(bool *checked=False*) | 按钮被单击（按下并释放）                             |
+| checked(bool *checked*=False) | 按钮被单击（按下并释放）                             |
 | pressed()                   | 按钮被按下                                           |
 | released()                  | 按钮被释放                                           |
-| toggle()                    | 按钮状态切换（仅限checkable button，下同）           |
+| toggle()                    | 按钮选中状态切换（仅限checkable button，下同）         |
 | toggled(bool *checked*)     | 按钮状态切换，返回一个bool类型的变量表示切换后的状态 |
+
+## 槽函数
+
+| 槽函数                         | 说明                                  | 备注                             |
+| ------------------------------ | ------------------------------------- | -------------------------------- |
+| animateClick(int *msec* = 100) | 执行单击动画                          | 所有与单击有关的信号都会适当发送 |
+| click()                        | 执行一次单击                          | 所有与单击有关的信号都会适当发送 |
+| toggle()                       | 切换checkable按钮的状态(切换选中状态) |                                  |
+
+
 
 ## AutoExclusive 自动排他性
 
