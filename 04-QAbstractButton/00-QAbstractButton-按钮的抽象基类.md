@@ -10,7 +10,7 @@
 
 ## Qt官方文档
 
-[Qt官方文档-QAbstractButton](https://doc.qt.io/qt-5.15/qabstractbutton.html)
+[Qt 5.15 官方文档-QAbstractButton](https://doc.qt.io/qt-5.15/qabstractbutton.html)
 
 ## 常用属性
 
@@ -48,6 +48,10 @@
 | released()                  | 按钮被释放                                           |
 | toggle()                    | 按钮状态切换（仅限checkable button，下同）           |
 | toggled(bool *checked*)     | 按钮状态切换，返回一个bool类型的变量表示切换后的状态 |
+
+## AutoExclusive 自动排他性
+
+详见[QRadioButton](../07-QRadioButton/00-QRadioButton-单选按钮.md)
 
 ## AutoRepeat 自动重复
 
