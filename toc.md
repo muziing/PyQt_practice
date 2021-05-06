@@ -145,7 +145,7 @@
 [03-QButtonGroup-信号.py](./08-QButtonGroup/03-QButtonGroup-信号.py)
 
 ### [09-QCheckBox](./09-QCheckBox)
-[00-QCheckButton-多选按钮.md](./09-QCheckBox/00-QCheckButton-多选按钮.md)
+[00-QCheckButton-多选按钮.md](09-QCheckBox/00-QCheckButton-复选框.md)
 
 [01-QCheckBox-功能使用.py](./09-QCheckBox/01-QCheckBox-功能使用.py)
 
