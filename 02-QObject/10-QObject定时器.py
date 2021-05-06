@@ -22,7 +22,6 @@ window.move(400, 250)
 obj = MyObject()
 timer_id = obj.startTimer(1000)
 
-
 # obj.killTimer(timer_id)
 
 

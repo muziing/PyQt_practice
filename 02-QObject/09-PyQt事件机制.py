@@ -4,6 +4,7 @@ from PyQt5.Qt import *
 
 class APP(QApplication):
     """重写了QApplication类，捕捉并显示事件"""
+
     def notify(self, receiver, evt):
         if receiver.inherits("QPushButton") and evt.type() == QEvent.MouseButtonPress:
             print(receiver, evt)

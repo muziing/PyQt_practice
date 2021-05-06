@@ -10,6 +10,7 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
+        # 注释或取消注释即可测试下面的各种方法。使用中文函数名仅为阅读方便，是不好的做法，切勿在自己的代码中出现非ASCII函数名！
         # self.QObject继承结构测试()
         # self.QObject对象名称和属性的操作()
         # self.QObject案例测试()
@@ -34,17 +35,16 @@ class Window(QWidget):
         print(obj.dynamicPropertyNames())  # 获取一个对象中所有通过setProperty()设置的属性名称
 
     def QObject案例测试(self):
-
         with open("QObject.qss", "r") as f:
             qApp.setStyleSheet(f.read())  # QSS样式表
 
         label = QLabel(self)
-        label.setText("社会我顺哥")
+        label.setText("muzing")
         label.setObjectName("notice")  # 根据QSS中设置的规则，只有ObjectName为notice的QLabel才会改变样式
 
         label2 = QLabel(self)
         label2.move(0, 60)
-        label2.setText("人狠话不多")
+        label2.setText("https://github.com/muziing")
         label2.setObjectName("notice")
         label2.setProperty("notice_level", "normal")
 
@@ -92,7 +92,7 @@ class Window(QWidget):
         obj2.setParent(obj1)
         # 父控件被删除时子控件自动被删除
         # 监听obj2对象被释放
-        obj2.destroyed.connect(lambda :print("obj2对象被释放了"))
+        obj2.destroyed.connect(lambda: print("obj2对象被释放了"))
         del self.obj1
 
 
