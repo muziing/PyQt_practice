@@ -3,9 +3,9 @@
 ## 基本说明 
 个人的学习笔记代码，同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
 
-我使用的PyQt版本: 5.15
+PyQt版本: 5.15
 
-原课程： 王顺子 撩课-Python-GUI编程-PyQt5
+参考视频课程： 王顺子 撩课-Python-GUI编程-PyQt5
 
 注意[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，请勿用于任何商业用途
 
@@ -17,15 +17,21 @@
 
 [PyQt5 Reference Guide](https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html)
 
+[Qt官方文档中文翻译版](https://github.com/QtDocumentCN/QtDocumentCN)
+
 [PyQt5中文教程](https://maicss.gitbook.io/pyqt5-chinese-tutoral/)
 
-[LearnPyQt.com](https://www.mfitzp.com/courses/pyqt/) 
+[LearnPyQt.com](https://www.mfitzp.com/courses/pyqt/)
+
+[pyqt.site](https://pyqt.site/)
 
 ### Demos 例子
 
 [本仓库内的Demos](./Demos/)
 
-[Gitee上的一大批PyQt测试和例子](https://gitee.com/PyQt5/PyQt)
+[一大批PyQt测试和例子(Gitee)](https://gitee.com/PyQt5/PyQt)
+
+[一大批PyQt测试和例子(GitHub)](https://github.com/PyQt5/PyQt)
 
 [15 Minute Apps-15个简单易学的PyQt小程序](https://github.com/learnpyqt/15-minute-apps)
 
