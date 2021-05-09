@@ -197,6 +197,8 @@
 [01-QAbstractScrollArea.py](./12-QAbstractScrollArea/01-QAbstractScrollArea.py)
 
 ### [13-QTextEdit](./13-QTextEdit)
+[00-QTextEdit-文本编辑器.md](./13-QTextEdit/00-QTextEdit-文本编辑器.md)
+
 [01-QTextEdit-创建.py](./13-QTextEdit/01-QTextEdit-创建.py)
 
 [02-QTextEdit-占位文本的设置.py](./13-QTextEdit/02-QTextEdit-占位文本的设置.py)
@@ -216,6 +218,8 @@
 [09-QTextEdit-文本光标-格式操作.py](./13-QTextEdit/09-QTextEdit-文本光标-格式操作.py)
 
 ### [14-QPlainTextEdit](./14-QPlainTextEdit)
+[00-QPlainTextEdit-纯文本编辑器.md](./14-QPlainTextEdit/00-QPlainTextEdit-纯文本编辑器.md)
+
 [01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py](./14-QPlainTextEdit/01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py)
 
 [02-QPlainTextEdit-软换行、覆盖模式、tab控制.py](./14-QPlainTextEdit/02-QPlainTextEdit-软换行、覆盖模式、tab控制.py)
@@ -231,6 +235,8 @@
 [07-QPlainTextEdit-案例-显示行号.py](./14-QPlainTextEdit/07-QPlainTextEdit-案例-显示行号.py)
 
 ### [15-QKeySequenceEdit](./15-QKeySequenceEdit)
+[00-QKeySequenceEdit-快捷键编辑器.md](./15-QKeySequenceEdit/00-QKeySequenceEdit-快捷键编辑器.md)
+
 [01-QKeySequenceEdit-创建、功能、信号.py](./15-QKeySequenceEdit/01-QKeySequenceEdit-创建、功能、信号.py)
 
 [02-QKeySequence-补充.py](./15-QKeySequenceEdit/02-QKeySequence-补充.py)
@@ -263,6 +269,10 @@
 ### [19-QDateTimeEdit](./19-QDateTimeEdit)
 [00-QDateTimeEdit-日期时间编辑器.md](./19-QDateTimeEdit/00-QDateTimeEdit-日期时间编辑器.md)
 
+[01-QDateTime、QDate、QTime.py](./19-QDateTimeEdit/01-QDateTime、QDate、QTime.py)
+
+[02-QDateTimeEdit-创建.py](./19-QDateTimeEdit/02-QDateTimeEdit-创建.py)
+
 ### [20-QDateEdit](./20-QDateEdit)
 [00-QDateEdit-日期编辑器.md](./20-QDateEdit/00-QDateEdit-日期编辑器.md)
 
@@ -270,7 +280,7 @@
 [00-QTimeEdit-时间编辑器.md](./21-QTimeEdit/00-QTimeEdit-时间编辑器.md)
 
 ### [22-QComboBox](./22-QComboBox)
-[00-QComboBox-组合下拉框.md](./22-QComboBox/00-QComboBox-组合下拉框.md)
+[00-QComboBox-下拉列表框.md](./22-QComboBox/00-QComboBox-下拉列表框.md)
 
 [01-QComboBox-创建、数据操作.py](./22-QComboBox/01-QComboBox-创建、数据操作.py)
 
@@ -381,6 +391,8 @@
 [00-QLCDNumber-LCD数字显示器.md](./36-QLCDNumber/00-QLCDNumber-LCD数字显示器.md)
 
 ### [37-QProgressBar](./37-QProgressBar)
+[00-QProgressBar-进度条控件.md](./37-QProgressBar/00-QProgressBar-进度条控件.md)
+
 [01-QProgressBar-基本、区间范围和当前数值.py](./37-QProgressBar/01-QProgressBar-基本、区间范围和当前数值.py)
 
 [02-QProgressBar-文本格式设置.py](./37-QProgressBar/02-QProgressBar-文本格式设置.py)
