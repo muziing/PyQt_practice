@@ -1,5 +1,7 @@
 # QRadioButton
 
+继承自[QAbstractButton](../04-QAbstractButton/00-QAbstractButton-按钮的抽象基类.md)
+
 > The QRadioButton widget provides a radio button with a text label. 
 
 带有一个文字标签（QLabel)的单选按钮。一组单选按钮中只能选择一个。
@@ -11,11 +13,6 @@
 [Qt 5.15 官方文档-QRadioButton](https://doc.qt.io/qt-5.15/qradiobutton.html)
 
 ## 信号
-
-| 信号                                                         | 说明                                            |
-| ------------------------------------------------------------ | ----------------------------------------------- |
-| 同[QAbstractButton](../04-QAbstractButton/00-QAbstractButton-按钮的抽象基类.md) | 由继承关系，包含了父类QAbstractButton的所有信号 |
-
 
 ## Exclusive 排他性
 
