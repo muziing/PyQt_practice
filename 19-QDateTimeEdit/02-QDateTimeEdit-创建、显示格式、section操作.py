@@ -17,8 +17,11 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
+        btn = QPushButton("测试按钮", self)
+        btn.move(100, 200)
+
         # ----------创建-----------
-        # dte = QDateTimeEdit(self)  # 使用默认日期时间显示
+        # dte = QDateTimeEdit(self)  # 当不传入日期时间时，显示默认日期时间
         dte = QDateTimeEdit(QDateTime.currentDateTime(), self)  # 显示当前日期时间
         # dte = QDateTimeEdit(QDate.currentDate(), self)  # 当前日期，并把section初始化为只有日期
         # dte = QDateTimeEdit(QTime.currentTime(), self)  # 当前时间，并把section初始化为只有时间
@@ -27,10 +30,16 @@ class Window(QWidget):
         # --------显示格式------------
         dte.setDisplayFormat("yyyy.MM.dd hh:mm:ss.zzz")
         # dte.setDisplayFormat("yy")  # 当年份只取两位时，默认对应21世纪，比如2021年就显示21
-        print(dte.displayFormat())  # 返回显示日期时间的格式字符串
+        print("display format:", dte.displayFormat())  # 返回显示日期时间的格式字符串
 
         # --------section操作--------
-        print(dte.sectionCount())  # 获取section数
+
+        def test_slot():
+            """测试按钮的槽函数"""
+            print("current section index:", dte.currentSectionIndex())  # 返回当前选中的section索引
+
+        btn.clicked.connect(test_slot)
+        print("section count:", dte.sectionCount())  # 获取section数
 
 
 if __name__ == '__main__':

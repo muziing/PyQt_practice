@@ -23,6 +23,8 @@ dt = QDateTime(QDateTime)
 ### 显示格式
 [QDateTime.toString](https://doc.qt.io/qt-5.15/qdatetime.html#toString)
 
+以 2001年5月21日14:13:09.120为例：
+
 | Format        | Result        |
 | ------------- | ------------- |
 | dd.MM.yyyy    | 21.05.2001    |
