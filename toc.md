@@ -271,7 +271,7 @@
 
 [01-QDateTime、QDate、QTime.py](./19-QDateTimeEdit/01-QDateTime、QDate、QTime.py)
 
-[02-QDateTimeEdit-创建.py](./19-QDateTimeEdit/02-QDateTimeEdit-创建.py)
+[02-QDateTimeEdit-创建、显示格式、section操作.py](./19-QDateTimeEdit/02-QDateTimeEdit-创建、显示格式、section操作.py)
 
 ### [20-QDateEdit](./20-QDateEdit)
 [00-QDateEdit-日期编辑器.md](./20-QDateEdit/00-QDateEdit-日期编辑器.md)

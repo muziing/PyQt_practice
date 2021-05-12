@@ -8,6 +8,8 @@
 
 [Qt 5.15 官方文档-QTime](https://doc.qt.io/qt-5.15/qtime.html)
 
+[Qt 5.15 官方文档-QDateTimeEdit](https://doc.qt.io/qt-5.15/qdatetimeedit.html)
+
 
 
 ## QDateTime
@@ -18,3 +20,28 @@
 dt = QDateTime(QDateTime)
 ```
 
+### 显示格式
+[QDateTime.toString](https://doc.qt.io/qt-5.15/qdatetime.html#toString)
+
+| Format        | Result        |
+| ------------- | ------------- |
+| dd.MM.yyyy    | 21.05.2001    |
+| ddd MMMM d yy | Tue May 21 01 |
+| hh:mm:ss.zzz  | 14:13:09.120  |
+| hh:mm:ss.z    | 14:13:09.12   |
+| h:m :s ap | 2:13 :9 pm    |
+
+更详细的日期时间格式化字符可以参考：
+
+[QDate.toString](https://doc.qt.io/qt-5.15/qdate.html#toString-1)
+
+[QTime.toString](https://doc.qt.io/qt-5.15/qtime.html#toString)
+
+
+
+## QDateTimeEdit
+
+继承自[QAbstractSpinBox](../16-QAbstractSpinBox)
+
+### DisplayFormat 显示格式
+参考 QDateTime
