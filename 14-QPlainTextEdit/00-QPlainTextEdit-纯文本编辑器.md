@@ -1,5 +1,7 @@
 # QPlainTextEdit
 
+继承自[QAbstractScrollArea](../12-QAbstractScrollArea/00-QAbstractScrollArea-滚动区域的低级抽象.md)
+
 编辑和显示纯文本的控件
 
 适用于段落和字符：

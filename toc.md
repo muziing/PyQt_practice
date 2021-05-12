@@ -189,11 +189,15 @@
 [17-QLineEdit-信号.py](./10-QLineEdit/17-QLineEdit-信号.py)
 
 ### [11-QFrame](./11-QFrame)
+[00-QFrame-框架控件的基类.md](./11-QFrame/00-QFrame-框架控件的基类.md)
+
 [01-QFrame-创建.py](./11-QFrame/01-QFrame-创建.py)
 
 [02-QFrame-功能作用.py](./11-QFrame/02-QFrame-功能作用.py)
 
 ### [12-QAbstractScrollArea](./12-QAbstractScrollArea)
+[00-QAbstractScrollArea-滚动区域的低级抽象.md](./12-QAbstractScrollArea/00-QAbstractScrollArea-滚动区域的低级抽象.md)
+
 [01-QAbstractScrollArea.py](./12-QAbstractScrollArea/01-QAbstractScrollArea.py)
 
 ### [13-QTextEdit](./13-QTextEdit)
