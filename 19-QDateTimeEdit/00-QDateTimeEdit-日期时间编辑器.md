@@ -43,7 +43,7 @@ dt = QDateTime(QDateTime)
 
 ## QDateTimeEdit
 
-继承自[QAbstractSpinBox](../16-QAbstractSpinBox)
+继承自[QAbstractSpinBox](../16-QAbstractSpinBox/00-QAbstractSpinBox-数字设定框的抽象基类.md)
 
 ### DisplayFormat 显示格式
 参考 QDateTime
