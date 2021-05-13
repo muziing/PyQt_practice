@@ -8,6 +8,16 @@
 
 [Qt 5.15官方文档-QWidget](https://doc.qt.io/qt-5.15/qwidget.html)
 
+
+
+## 模态窗口
+
+https://doc.qt.io/qt-5.15/qwidget.html#windowModality-prop
+
+模态窗口可以阻塞用户对其他窗口的输入
+
+更多内容可参考[QDialog](../29-QDialog/00-QDialog-对话框窗口基类.md)
+
 ## 槽函数
 
 ## 信号
