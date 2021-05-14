@@ -383,6 +383,8 @@
 [05-QFileDialog-信号.py](./32-QFileDialog/05-QFileDialog-信号.py)
 
 ### [33-QInputDialog](./33-QInputDialog)
+[00-QInputDialog-输入对话框.md](./33-QInputDialog/00-QInputDialog-输入对话框.md)
+
 [01-QInputDialog-静态方法.py](./33-QInputDialog/01-QInputDialog-静态方法.py)
 
 [02-QInputDialog-创建、功能作用.py](./33-QInputDialog/02-QInputDialog-创建、功能作用.py)
@@ -393,6 +395,8 @@
 [00-QCalendarWidget-日历控件.md](./34-QCalendarWidget/00-QCalendarWidget-日历控件.md)
 
 ### [35-QLabel](./35-QLabel)
+[00-QLabel-标签控件.md](./35-QLabel/00-QLabel-标签控件.md)
+
 [01-QLabel-创建、对齐、间距、缩进.py](./35-QLabel/01-QLabel-创建、对齐、间距、缩进.py)
 
 [02-QLabel-文本格式、伙伴.py](./35-QLabel/02-QLabel-文本格式、伙伴.py)
@@ -408,7 +412,7 @@
 [07-QLabel-信号.py](./35-QLabel/07-QLabel-信号.py)
 
 ### [36-QLCDNumber](./36-QLCDNumber)
-[00-QLCDNumber-LCD数字显示器.md](./36-QLCDNumber/00-QLCDNumber-LCD数字显示器.md)
+[00-QLCDNumber-液晶数字显示器.md](./36-QLCDNumber/00-QLCDNumber-液晶数字显示器.md)
 
 ### [37-QProgressBar](./37-QProgressBar)
 [00-QProgressBar-进度条控件.md](./37-QProgressBar/00-QProgressBar-进度条控件.md)
@@ -479,3 +483,4 @@
 
 [03-pyqtSignal-装饰器自动连接.py](./43-pyqtSignal/03-pyqtSignal-装饰器自动连接.py)
 
+共43个目录，221个文件.

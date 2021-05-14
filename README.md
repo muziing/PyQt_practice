@@ -11,7 +11,7 @@ PyQt版本: 5.15
 
 ## PyQt5 相关分享
 
-### Documents 文档教程
+### Documents 文档
 
 [Qt控件(5.15)官方文档](https://doc.qt.io/qt-5.15/classes.html)
 
@@ -19,9 +19,13 @@ PyQt版本: 5.15
 
 [Qt官方文档中文翻译版](https://github.com/QtDocumentCN/QtDocumentCN)
 
-[PyQt5中文教程](https://maicss.gitbook.io/pyqt5-chinese-tutoral/)
+### Courses 教程
+
+[学点编程吧-PyQt5图形界面编程](https://www.xdbcb8.com/archives/1550.html)
 
 [LearnPyQt.com](https://www.mfitzp.com/courses/pyqt/)
+
+[PyQt5中文教程](https://maicss.gitbook.io/pyqt5-chinese-tutoral/)
 
 [pyqt.site](https://pyqt.site/)
 
@@ -430,6 +434,8 @@ PyQt版本: 5.15
 [05-QFileDialog-信号.py](./32-QFileDialog/05-QFileDialog-信号.py)
 
 ### [33-QInputDialog](./33-QInputDialog)
+[00-QInputDialog-输入对话框.md](./33-QInputDialog/00-QInputDialog-输入对话框.md)
+
 [01-QInputDialog-静态方法.py](./33-QInputDialog/01-QInputDialog-静态方法.py)
 
 [02-QInputDialog-创建、功能作用.py](./33-QInputDialog/02-QInputDialog-创建、功能作用.py)
@@ -440,6 +446,8 @@ PyQt版本: 5.15
 [00-QCalendarWidget-日历控件.md](./34-QCalendarWidget/00-QCalendarWidget-日历控件.md)
 
 ### [35-QLabel](./35-QLabel)
+[00-QLabel-标签控件.md](./35-QLabel/00-QLabel-标签控件.md)
+
 [01-QLabel-创建、对齐、间距、缩进.py](./35-QLabel/01-QLabel-创建、对齐、间距、缩进.py)
 
 [02-QLabel-文本格式、伙伴.py](./35-QLabel/02-QLabel-文本格式、伙伴.py)
@@ -455,7 +463,7 @@ PyQt版本: 5.15
 [07-QLabel-信号.py](./35-QLabel/07-QLabel-信号.py)
 
 ### [36-QLCDNumber](./36-QLCDNumber)
-[00-QLCDNumber-LCD数字显示器.md](./36-QLCDNumber/00-QLCDNumber-LCD数字显示器.md)
+[00-QLCDNumber-液晶数字显示器.md](./36-QLCDNumber/00-QLCDNumber-液晶数字显示器.md)
 
 ### [37-QProgressBar](./37-QProgressBar)
 [00-QProgressBar-进度条控件.md](./37-QProgressBar/00-QProgressBar-进度条控件.md)
@@ -526,3 +534,4 @@ PyQt版本: 5.15
 
 [03-pyqtSignal-装饰器自动连接.py](./43-pyqtSignal/03-pyqtSignal-装饰器自动连接.py)
 
+共43个目录，221个文件.

@@ -44,6 +44,7 @@ def write_toc(tree_dict: dict, toc_file='./toc.md'):
         for file_name in tree_dict[dir_name]:
             write_lines.append(f'[{file_name}](./{dir_name}/{file_name})\n\n')
             file_counter += 1
+    write_lines += f"共{len(tree_dict.keys())}个目录，{file_counter}个文件."
     with open(toc_file, 'wt', encoding='UTF-8') as f:
         f.writelines(write_lines)
     print(f"TOC生成成功，共{len(tree_dict.keys())}个目录，{file_counter}个文件.")
