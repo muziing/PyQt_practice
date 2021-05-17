@@ -312,6 +312,8 @@
 [01-QFontComboBox-功能作用.py](./23-QFontComboBox/01-QFontComboBox-功能作用.py)
 
 ### [24-QAbstractSlider](./24-QAbstractSlider)
+[00-QAbstractSlider-滑块控件抽象基类.md](./24-QAbstractSlider/00-QAbstractSlider-滑块控件抽象基类.md)
+
 [01-QAbstractSlider-创建、数值范围、当前数值、步长.py](./24-QAbstractSlider/01-QAbstractSlider-创建、数值范围、当前数值、步长.py)
 
 [02-QAbstractSlider-是否追踪、滑块位置、倒立外观、操作反转、滑块方向.py](./24-QAbstractSlider/02-QAbstractSlider-是否追踪、滑块位置、倒立外观、操作反转、滑块方向.py)
@@ -319,6 +321,8 @@
 [03-QAbstractSlider-是否按下、信号.py](./24-QAbstractSlider/03-QAbstractSlider-是否按下、信号.py)
 
 ### [25-QSlider](./25-QSlider)
+[00-QSlider-滑块控件.md](./25-QSlider/00-QSlider-滑块控件.md)
+
 [01-QSlider-刻度控制.py](./25-QSlider/01-QSlider-刻度控制.py)
 
 [02-QSlider-拓展案例.py](./25-QSlider/02-QSlider-拓展案例.py)
@@ -326,6 +330,8 @@
 [03-QSlider-鼠标跳转优化.py](./25-QSlider/03-QSlider-鼠标跳转优化.py)
 
 ### [26-QScrollBar](./26-QScrollBar)
+[00-QScrollBar-滚动条.md](./26-QScrollBar/00-QScrollBar-滚动条.md)
+
 [01-QScrollBar-功能作用.py](./26-QScrollBar/01-QScrollBar-功能作用.py)
 
 ### [27-QDial](./27-QDial)
@@ -483,4 +489,4 @@
 
 [03-pyqtSignal-装饰器自动连接.py](./43-pyqtSignal/03-pyqtSignal-装饰器自动连接.py)
 
-共43个目录，221个文件.
+共43个目录，224个文件.
