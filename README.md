@@ -41,6 +41,8 @@ PyQt版本: 5.15
 
 ### QSS 美化主题
 
+[Qt 官方QSS例子](https://doc.qt.io/qt-5/stylesheet-examples.html)
+
 [一组很好看的QSS样式-飞扬青云](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
 
 [QSS Editor - 实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
@@ -540,4 +542,10 @@ PyQt版本: 5.15
 
 [03-pyqtSignal-装饰器自动连接.py](./43-pyqtSignal/03-pyqtSignal-装饰器自动连接.py)
 
-共43个目录，224个文件.
+### [44-QMainWindow](./44-QMainWindow)
+[00-QMainWindow-主窗口控件.md](./44-QMainWindow/00-QMainWindow-主窗口控件.md)
+
+### [45-QDockWidget](./45-QDockWidget)
+[00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
+
+共45个目录，226个文件.
