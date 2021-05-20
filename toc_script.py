@@ -1,6 +1,8 @@
 import os
 from pprint import pprint
 
+# TODO 改写成oop；改用 pathlib 替代 os.path
+
 
 def tree(working_dir="./") -> dict:
     """
@@ -32,6 +34,28 @@ def tree(working_dir="./") -> dict:
     return tree_result
 
 
+def cloc_script(working_dir='./') -> str:
+    """
+    使用cloc统计项目代码行数
+    """
+    ignored_dir = str()
+    with open('.gitignore', 'r', encoding='UTF-8') as f:
+        for dir_name in f.readlines():
+            dir_name = dir_name.replace('/', '')
+            dir_name = dir_name.replace('\n', ',')
+            ignored_dir += dir_name
+
+    # 调用cloc，并排除gitignore中的目录，需要提前将cloc添加到系统环境变量
+    cmd = f'cloc --exclude-dir {ignored_dir} {working_dir}'
+
+    with os.popen(cmd) as p:
+        cmd_result = p.read()
+
+    # TODO 增强鲁棒性，增加对cloc调用失败的异常处理
+    # 根据cloc返回结果，连续两个换行符后面的内容是需要的信息
+    return cmd_result.split('\n\n', 1)[1]
+
+
 def write_toc(tree_dict: dict, toc_file='./toc.md'):
     """
     把目录和文件名写入toc.md文件
@@ -48,8 +72,10 @@ def write_toc(tree_dict: dict, toc_file='./toc.md'):
     with open(toc_file, 'wt', encoding='UTF-8') as f:
         f.writelines(write_lines)
     print(f"TOC生成成功，共{len(tree_dict.keys())}个目录，{file_counter}个文件.")
+    # TODO 将cloc代码行数统计结果也写入toc文档尾部
 
 
 if __name__ == '__main__':
     # pprint(tree())
+    # print(cloc_script())
     write_toc(tree())
