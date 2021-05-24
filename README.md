@@ -1,7 +1,11 @@
-# PyQt 5 学习笔记
+# PyQt 5 笔记代码
 
 ## 基本说明 
-个人的学习笔记代码，同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
+PyQt5笔记代码，同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
+
+每个.py文件都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
+
+目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交PR或者联系我）
 
 PyQt版本: 5.15
 
@@ -49,7 +53,7 @@ PyQt版本: 5.15
 
 [一组QSS样式-GTRONICK](https://github.com/GTRONICK/QSS)
 
-## 文件目录
+## 仓库文件目录
 
 ### [01-PyQt基本结构](./01-PyQt基本结构)
 [01-PyQt5-初体验.py](./01-PyQt基本结构/01-PyQt5-初体验.py)
@@ -545,7 +549,9 @@ PyQt版本: 5.15
 ### [44-QMainWindow](./44-QMainWindow)
 [00-QMainWindow-主窗口控件.md](./44-QMainWindow/00-QMainWindow-主窗口控件.md)
 
+[01-QMainWindow-创建.py](./44-QMainWindow/01-QMainWindow-创建.py)
+
 ### [45-QDockWidget](./45-QDockWidget)
 [00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
-共45个目录，226个文件.
+共45个目录，227个文件.
