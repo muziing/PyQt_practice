@@ -50,11 +50,12 @@ class TocMaker:
                 ignored_dir += dir_name
 
         # 调用cloc，并排除gitignore中的目录，需要提前将cloc添加到系统环境变量
-        cmd = f'cloc --exclude-dir {ignored_dir} {self.working_dir.name}'
+        cmd = f'cloc --exclude-dir {ignored_dir} {str(self.working_dir)}'
 
         with popen(cmd) as p:
             cmd_result = p.read()
-            if p.close() != 0:
+            # 如果cmd执行正常退出则p.close()返回None，失败则返回状态码
+            if p.close():
                 print("cloc调用失败，请检查")
             else:
                 # 根据cloc返回结果，连续两个换行符后面的内容是需要的信息
