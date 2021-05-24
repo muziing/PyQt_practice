@@ -1,4 +1,4 @@
-import os
+from os import popen
 from pathlib import Path
 
 
@@ -21,7 +21,7 @@ class TocMaker:
         file_name_list = list()
 
         # 列出工作目录下所有项目并验证有效性：只有以2位数字开头的文件夹才是需要的
-        valid_dir_list = [x for x in self.working_dir.iterdir() if x.is_dir() and str(x)[0:2].isdigit()]
+        valid_dir_list = [x for x in self.working_dir.iterdir() if x.is_dir() and x.name[0:2].isdigit()]
         valid_dir_list.sort()  # 按照名称排序
 
         # 验证有效性
@@ -50,15 +50,16 @@ class TocMaker:
                 ignored_dir += dir_name
 
         # 调用cloc，并排除gitignore中的目录，需要提前将cloc添加到系统环境变量
-        cmd = f'cloc --exclude-dir {ignored_dir} {str(self.working_dir)}'
+        cmd = f'cloc --exclude-dir {ignored_dir} {self.working_dir.name}'
 
-        with os.popen(cmd) as p:
+        with popen(cmd) as p:
             cmd_result = p.read()
-
-        # TODO 增强鲁棒性，增加对cloc调用失败的异常处理
-        # 根据cloc返回结果，连续两个换行符后面的内容是需要的信息
-        self.cloc_result = cmd_result.split('\n\n', 1)[1]
-        print(self.cloc_result)
+            if p.close() != 0:
+                print("cloc调用失败，请检查")
+            else:
+                # 根据cloc返回结果，连续两个换行符后面的内容是需要的信息
+                self.cloc_result = cmd_result.split('\n\n', 1)[1]
+                print(self.cloc_result)
 
     def write_into_md(self, toc_file='./toc.md'):
         """
@@ -72,7 +73,7 @@ class TocMaker:
             for dir_name in self.tree_dict:
                 write_lines.append(f'### [{dir_name.name}](./{dir_name.name})\n')
                 for file_name in self.tree_dict[dir_name]:
-                    write_lines.append(f'[{file_name.name}](./{str(file_name)})\n\n')
+                    write_lines.append(f'[{file_name.name}](./{file_name.as_posix()})\n\n')
                     file_counter += 1
             counter_info = f"共{len(self.tree_dict)}个目录，{file_counter}个文件."  # 计数器
             write_lines += counter_info
