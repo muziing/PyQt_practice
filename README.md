@@ -555,3 +555,13 @@ PyQt版本: 5.15
 [00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
 共45个目录，227个文件.
+
+-------
+
+| Language | files | blank | comment | code |
+| -------- | ----- | ----- | ------- | ---- |
+| Python   | 192   | 1981  | 1436    | 4850 |
+| Markdown | 36    | 805   | 0       | 1012 |
+| **SUM**  | 228   | 2786  | 1436    | 5862 |
+
+代码行数统计工具: github.com/AlDanial/cloc v1.90

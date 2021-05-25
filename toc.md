@@ -492,7 +492,13 @@
 ### [44-QMainWindow](./44-QMainWindow)
 [00-QMainWindow-主窗口控件.md](./44-QMainWindow/00-QMainWindow-主窗口控件.md)
 
+[01-QMainWindow-创建.py](./44-QMainWindow/01-QMainWindow-创建.py)
+
+[02-QMainWindow-QMenuBar-菜单栏.py](./44-QMainWindow/02-QMainWindow-QMenuBar-菜单栏.py)
+
+[03-QMainWindow-QToolBar-工具栏.py](./44-QMainWindow/03-QMainWindow-QToolBar-工具栏.py)
+
 ### [45-QDockWidget](./45-QDockWidget)
 [00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
-共45个目录，226个文件.
+共45个目录，229个文件.
