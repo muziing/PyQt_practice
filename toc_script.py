@@ -2,6 +2,16 @@ from os import popen
 from pathlib import Path
 
 
+def dir_is_valid(dir_p) -> bool:
+    """验证有效性：只有以2位数字开头的文件夹才是需要的"""
+    return dir_p.name[0:2].isdigit()
+
+
+def file_is_valid(file_p) -> bool:
+    """验证有效性：根据本项目命名规律，所有.py或.md文件才是需要目录的"""
+    return file_p.suffix in ('.py', '.md')
+
+
 class TocMaker:
     """
     生成项目toc目录、统计代码行数并写入markdown文件
@@ -21,17 +31,17 @@ class TocMaker:
         file_name_list = list()
 
         # 列出工作目录下所有项目并验证有效性：只有以2位数字开头的文件夹才是需要的
-        valid_dir_list = [x for x in self.working_dir.iterdir() if x.is_dir() and x.name[0:2].isdigit()]
+        valid_dir_list = [x for x in self.working_dir.iterdir() if x.is_dir() and dir_is_valid(x)]
         valid_dir_list.sort()  # 按照名称排序
 
         # 验证有效性
         for valid_dir in valid_dir_list:
-            file_names = list(valid_dir.iterdir())
-            file_names.sort()
-            for file_name in file_names:
+            iterated_files = list(valid_dir.iterdir())
+            iterated_files.sort()
+            for file in iterated_files:
                 # 根据本项目命名规律，所有.py或.md文件才是需要目录的
-                if str(file_name).endswith('.py') or str(file_name).endswith('.md'):
-                    file_name_list.append(file_name)
+                if file_is_valid(file):
+                    file_name_list.append(file)
             tree_result.update({valid_dir: file_name_list})
             file_name_list = list()  # 重新置空
 
