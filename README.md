@@ -551,17 +551,33 @@ PyQt版本: 5.15
 
 [01-QMainWindow-创建.py](./44-QMainWindow/01-QMainWindow-创建.py)
 
+[02-QMainWindow-QMenuBar-菜单栏.py](./44-QMainWindow/02-QMainWindow-QMenuBar-菜单栏.py)
+
+[03-QMainWindow-QToolBar-工具栏.py](./44-QMainWindow/03-QMainWindow-QToolBar-工具栏.py)
+
 ### [45-QDockWidget](./45-QDockWidget)
 [00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
-共45个目录，227个文件.
+### [46-QAbstractItemView](./46-QAbstractItemView)
+[00-QAbstractItemView-项目视图的抽象基类.md](./46-QAbstractItemView/00-QAbstractItemView-项目视图的抽象基类.md)
+
+### [47-QListView](./47-QListView)
+[00-QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md)
+
+### [48-QTableView](./48-QTableView)
+[00-QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
+
+### [49-QTreeView](./49-QTreeView)
+[00-QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
+
+共49个目录，233个文件.
 
 -------
 
 | Language | files | blank | comment | code |
 | -------- | ----- | ----- | ------- | ---- |
-| Python   | 192   | 1981  | 1436    | 4850 |
-| Markdown | 36    | 805   | 0       | 1012 |
-| **SUM**  | 228   | 2786  | 1436    | 5862 |
+| Python   | 192   | 1996  | 1437    | 4850 |
+| Markdown | 41    | 837   | 0       | 1092 |
+| **SUM**  | 234   | 2833  | 1437    | 5977 |
 
 代码行数统计工具: github.com/AlDanial/cloc v1.90
