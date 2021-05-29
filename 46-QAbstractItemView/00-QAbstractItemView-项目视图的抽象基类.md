@@ -22,7 +22,7 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 | setTabKeyNavigation(bool *enable*)                           | 是否支持tab键和(shift+tab)的导航 |                                       |
 | setSelectionBehavior(QAbstractItemView.SelectionBehavior *behavior*) | 选择模式                         | 选中项；选中行；选中列                |
 | setVerticalScrollMode(QAbstractItemView.ScrollMode *mode*)   | 垂直滚动模式                     | 一次滚动一个项目/一个像素             |
-|                                                              |                                  |                                       |
+| setDragDropMode(QAbstractItemView.DragDropMode *behavior*)   | 设置拖放模式                     |                                       |
 |                                                              |                                  |                                       |
 |                                                              |                                  |                                       |
 |                                                              |                                  |                                       |
@@ -46,4 +46,14 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 | ---------------------------- | ---------------------- |
 | ScrollPerItem                | 一次滚动一个项目的内容 |
 | ScrollPerPixel               | 一次滚动一个像素的内容 |
+
+### DragDropMode 拖拽模式
+
+| QAbstractItemView.DragDropMode | 值   | 描述                                         |
+| ------------------------------ | ---- | -------------------------------------------- |
+| NoDragDrop                     | 0    | 不支持拖拽放置                               |
+| DragOnly                       | 1    | 该视图支持拖拽自己的项目                     |
+| DropOnly                       | 2    | 接受丢弃                                     |
+| DragDrop                       | 3    | 支持拖放                                     |
+| InternalMove                   | 4    | 该视图只接受来自其自身的移动（不是复制）操作 |
 
