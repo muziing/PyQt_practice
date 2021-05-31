@@ -1,17 +1,19 @@
-# PyQt 5 笔记代码
+# PyQt 5 代码笔记
 
-## 基本说明 
-PyQt5笔记代码，同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
+***用代码学PyQt!***
 
-每个.py文件都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
+## 基本说明
+- 每个.py文件都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
+- 希望解决小伙伴们 “一读文档就会，一写代码就废”，读完文档还是不知道每个控件如何设置的问题。在自己的机器上实实际际运行一下，仔细观察一下每个属性值的改变会怎样影响控件的外观行为，可能比静态抽象晦涩的文档教程更有效。
+- 目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交PR或者 [联系我](https://muzing.top/about/) ）
+- 同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
 
-目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交PR或者联系我）
 
-PyQt版本: 5.15
+> 注意：[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，请勿用于任何商业用途
+> 
+> 注意：根据PyQt5中 [License](https://www.riverbankcomputing.com/static/Docs/PyQt5/introduction.html#license) 的说明，商业应用开发需要购买许可证。
 
-参考视频课程： 王顺子 撩课-Python-GUI编程-PyQt5
-
-注意[Icons](./Icons)目录下的所有图标仅供个人练习软件开发之用，请勿用于任何商业用途
+> 参考视频课程： 王顺子 撩课-Python-GUI编程-PyQt5
 
 ## PyQt5 相关分享
 
@@ -564,20 +566,22 @@ PyQt版本: 5.15
 ### [47-QListView](./47-QListView)
 [00-QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md)
 
+[01-QListView-创建.py](./47-QListView/01-QListView-创建.py)
+
 ### [48-QTableView](./48-QTableView)
 [00-QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
 
 ### [49-QTreeView](./49-QTreeView)
 [00-QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
 
-共49个目录，233个文件.
+共49个目录，234个文件.
 
 -------
 
 | Language | files | blank | comment | code |
 | -------- | ----- | ----- | ------- | ---- |
-| Python   | 192   | 1996  | 1437    | 4850 |
-| Markdown | 41    | 837   | 0       | 1092 |
-| **SUM**  | 234   | 2833  | 1437    | 5977 |
+| Python   | 194   | 2004  | 1438    | 4909 |
+| Markdown | 41    | 881   | 0       | 1173 |
+| **SUM**  | 235   | 2885  | 1438    | 6082 |
 
 代码行数统计工具: github.com/AlDanial/cloc v1.90
