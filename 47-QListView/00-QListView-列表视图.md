@@ -20,16 +20,18 @@ QListView 列表视图表示存储在模型 model 中的项，可以是一个简
 
 
 
-| 方法                                       | 说明                                   | 备注 |
-| ------------------------------------------ | -------------------------------------- | ---- |
-| setFlow(QListView.Flow *flow*)             | 设置显示项目的方向，从左到右or从上到下 |      |
-| setLayoutMode(QListView.LayoutMode *mode*) | 设置布局模式                           |      |
-|                                            |                                        |      |
-|                                            |                                        |      |
-|                                            |                                        |      |
-|                                            |                                        |      |
-|                                            |                                        |      |
-|                                            |                                        |      |
+| 方法                                       | 说明                                   | 备注                                              |
+| ------------------------------------------ | -------------------------------------- | ------------------------------------------------- |
+| setFlow(QListView.Flow *flow*)             | 设置显示项目的方向，从左到右or从上到下 |                                                   |
+| setLayoutMode(QListView.LayoutMode *mode*) | 设置布局模式                           |                                                   |
+| setViewMode(QListView.ViewMode *mode*)     | 设置视图模式                           |                                                   |
+| setBatchSize(int *batchSize*)              | 设置每批中的项目数量                   | 默认值100；仅在LayoutMode为Batched时才有效        |
+| setWrapping(bool *enable*)                 | 是否启动自动换行                       |                                                   |
+| setItemAlignment(Qt.Alignment *alignment*) | 设置每一项在单元格内的对齐方式         | 只有在ListMode为TopToBottom且wrapping打开时才有效 |
+|                                            |                                        |                                                   |
+|                                            |                                        |                                                   |
+|                                            |                                        |                                                   |
+|                                            |                                        |                                                   |
 
 
 
@@ -38,5 +40,25 @@ QListView 列表视图表示存储在模型 model 中的项，可以是一个简
 | QListView.Flow        | 值   | 描述                     |
 | --------------------- | ---- | ------------------------ |
 | QListView.LeftToRight | 0    | 项目在视图中从左至右排列 |
-| QListView.TopToButtom | 1    | 项目在视图中从上至下排列 |
+| QListView.TopToBottom | 1    | 项目在视图中从上至下排列 |
+
+
+
+### LayoutMode 布局模式
+
+| QListView.LayoutMode | 值   | 描述                                        |
+| -------------------- | ---- | ------------------------------------------- |
+| QListView.SinglePass | 0    | 一次性列出所有项目                          |
+| QListView.Batched    | 1    | 分批列出，每批列出的项目个数由batchSize设置 |
+
+
+
+### ViewMode 视图模式
+
+相当于一次性设置了flow, size, movement三个属性
+
+| QListView.ViewMode | 值   | 描述                                             |
+| ------------------ | ---- | ------------------------------------------------ |
+| QListView.ListMode | 0    | flow: TopToButtom, size: Small, movement: Static |
+| QListView.IconMode | 1    | flow: LeftToRight, size: Large, movement: Free   |
 
