@@ -18,20 +18,20 @@ QListView 列表视图表示存储在模型 model 中的项，可以是一个简
 
 ## 常用方法
 
+设置方法
 
-
-| 方法                                       | 说明                                   | 备注                                              |
-| ------------------------------------------ | -------------------------------------- | ------------------------------------------------- |
-| setFlow(QListView.Flow *flow*)             | 设置显示项目的方向，从左到右or从上到下 |                                                   |
-| setLayoutMode(QListView.LayoutMode *mode*) | 设置布局模式                           |                                                   |
-| setViewMode(QListView.ViewMode *mode*)     | 设置视图模式                           |                                                   |
-| setBatchSize(int *batchSize*)              | 设置每批中的项目数量                   | 默认值100；仅在LayoutMode为Batched时才有效        |
-| setWrapping(bool *enable*)                 | 是否启动自动换行                       |                                                   |
-| setItemAlignment(Qt.Alignment *alignment*) | 设置每一项在单元格内的对齐方式         | 只有在ListMode为TopToBottom且wrapping打开时才有效 |
-|                                            |                                        |                                                   |
-|                                            |                                        |                                                   |
-|                                            |                                        |                                                   |
-|                                            |                                        |                                                   |
+| 方法                                       | 说明                                             | 备注                                              |
+| ------------------------------------------ | ------------------------------------------------ | ------------------------------------------------- |
+| setFlow(QListView.Flow *flow*)             | 设置显示项目的方向，从左到右or从上到下           | 见下方Flow表格                                    |
+| setLayoutMode(QListView.LayoutMode *mode*) | 设置布局模式                                     | 见下方LayoutMode表格                              |
+| setViewMode(QListView.ViewMode *mode*)     | 设置视图模式                                     | 见下方ViewMode表格                                |
+| setBatchSize(int *batchSize*)              | 设置每批中的项目数量                             | 默认值100；仅在LayoutMode为Batched时才有效        |
+| setWrapping(bool *enable*)                 | 是否启动自动换行                                 |                                                   |
+| setItemAlignment(Qt.Alignment *alignment*) | 设置每一项在单元格内的对齐方式                   | 只有在ListMode为TopToBottom且wrapping打开时才有效 |
+| setResizeMode(QListView.ResizeMode *mode*) | 设置Resize模式，即视图大小改变时项目是否重新布局 | 默认为Fixed；见下方ResizeMode表格                 |
+| setMovement(QListView.Movement *movement*) | 设置项目可以自由移动/捕获到网格/不能移动         | 见下方Movement表格                                |
+|                                            |                                                  |                                                   |
+|                                            |                                                  |                                                   |
 
 
 
@@ -61,4 +61,23 @@ QListView 列表视图表示存储在模型 model 中的项，可以是一个简
 | ------------------ | ---- | ------------------------------------------------ |
 | QListView.ListMode | 0    | flow: TopToButtom, size: Small, movement: Static |
 | QListView.IconMode | 1    | flow: LeftToRight, size: Large, movement: Free   |
+
+
+
+### ResizeMode 大小调整模式
+
+| QListView.ResizeMode | 值   | 描述                               |
+| -------------------- | ---- | ---------------------------------- |
+| QListView.Fixed      | 0    | 项目只会在视图第一次显示时进行布局 |
+| QListView.Adjust     | 1    | 每次视图大小改变时，项目都重新布局 |
+
+
+
+### Movement 移动
+
+| QListView.Movement | 值   | 描述                                          |
+| ------------------ | ---- | --------------------------------------------- |
+| QListView.Static   | 0    | 用户不能移动项目                              |
+| QListView.Free     | 1    | 用户可以自由移动项目                          |
+| QListView.Snap     | 2    | 项目在移动时对齐到指定的网格；见setGridSize() |
 

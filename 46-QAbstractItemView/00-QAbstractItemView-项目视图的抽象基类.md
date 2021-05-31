@@ -10,23 +10,27 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 [Qt 5.15-官方文档-QAbstractItemView](https://doc.qt.io/qt-5.15/qabstractitemview.html)
 
-## 模型视图
+## model/View 模型视图
 
 在Qt中使用**model/View**结构来管理数据与视图的关系，**model**负责数据的存取，数据的交互通过**delegate**来实现
 
+分享一篇我找到的博客：[PyQt(Python+Qt)入门学习：Model/View架构详解](https://blog.csdn.net/LaoYuanPython/article/details/104064757) （利益无关）
+
 ## 常用方法
+
+设置方法
 
 | 方法                                                         | 描述                             | 说明                                  |
 | ------------------------------------------------------------ | -------------------------------- | ------------------------------------- |
 | setModel(QAbstractItemModel, **model*)                       | 为视图设置模型以供展示           | 设置新的model之后，旧的不会被自动删除 |
 | setTabKeyNavigation(bool *enable*)                           | 是否支持tab键和(shift+tab)的导航 |                                       |
-| setSelectionBehavior(QAbstractItemView.SelectionBehavior *behavior*) | 选择模式                         | 选中项；选中行；选中列                |
-| setVerticalScrollMode(QAbstractItemView.ScrollMode *mode*)   | 垂直滚动模式                     | 一次滚动一个项目/一个像素             |
-| setDragDropMode(QAbstractItemView.DragDropMode *behavior*)   | 设置拖放模式                     |                                       |
+| setSelectionBehavior(QAbstractItemView.SelectionBehavior *behavior*) | 选择模式                         | 见下方SelectionBehavior表格           |
+| setVerticalScrollMode(QAbstractItemView.ScrollMode *mode*)   | 垂直滚动模式                     | 见下方ScrollMode表格                  |
+| setDragDropMode(QAbstractItemView.DragDropMode *behavior*)   | 设置拖放模式                     | 见下方DragDropMode表格                |
 |                                                              |                                  |                                       |
 |                                                              |                                  |                                       |
 |                                                              |                                  |                                       |
-|                                                              |                                  |                                       |
+| setTextElideMode(Qt.TextElideMode *mode*)                    | 省略号在文本中出现的位置         | 默认值为右侧                          |
 |                                                              |                                  |                                       |
 |                                                              |                                  |                                       |
 
@@ -56,4 +60,16 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 | DropOnly                       | 2    | 接受丢弃                                     |
 | DragDrop                       | 3    | 支持拖放                                     |
 | InternalMove                   | 4    | 该视图只接受来自其自身的移动（不是复制）操作 |
+
+
+
+## 常用 Model
+
+### [QStringListModel](https://doc.qt.io/qt-5.15/qstringlistmodel.html)
+
+### [QStandardItemModel](https://doc.qt.io/qt-5.15/qstandarditemmodel.html)
+
+### [QFileSystemModel](https://doc.qt.io/qt-5.15/qfilesystemmodel.html)
+
+
 
