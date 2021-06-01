@@ -22,25 +22,59 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 - View 视图从模型Model中根据一定条件（如行号、列号等）获取模型索引，模型索引是一个指向数据项的引用。通过模型Model的模型索引，视图View可以从数据源检索数据项。
 - Delegate 代理在标准视图中展现数据项，编辑项时，代理Delegate直接使用模型索引与模型Model通信。
 
-## 常用方法
+## 属性设置方法
 
-设置方法
+### 滚动控制类属性
 
-| 方法                                                         | 描述                             | 说明                                  |
-| ------------------------------------------------------------ | -------------------------------- | ------------------------------------- |
-| setModel(QAbstractItemModel, **model*)                       | 为视图设置模型以供展示           | 设置新的model之后，旧的不会被自动删除 |
-| setTabKeyNavigation(bool *enable*)                           | 是否支持tab键和(shift+tab)的导航 |                                       |
-| setSelectionBehavior(QAbstractItemView.SelectionBehavior *behavior*) | 选择模式                         | 见下方SelectionBehavior表格           |
-| setVerticalScrollMode(QAbstractItemView.ScrollMode *mode*)   | 垂直滚动模式                     | 见下方ScrollMode表格                  |
-| setDragDropMode(QAbstractItemView.DragDropMode *behavior*)   | 设置拖放模式                     | 见下方DragDropMode表格                |
-|                                                              |                                  |                                       |
-|                                                              |                                  |                                       |
-|                                                              |                                  |                                       |
-| setTextElideMode(Qt.TextElideMode *mode*)                    | 省略号在文本中出现的位置         | 默认值为右侧                          |
-|                                                              |                                  |                                       |
-|                                                              |                                  |                                       |
+| 方法                                                         | 描述                                                         | 说明                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------- |
+| setAutoScroll(bool *enable*)                                 | 设置是否开启自动滚动：如果用户在视口边缘的 16 像素内拖动，QAbstractItemView 会自动滚动视图的内容、果当前项发生变化，则视图将自动滚动以确保当前项完全可见 | 默认为True           |
+| setAutoScrollMargin(int *margin*)                            | 设置自动滚动触发的范围，单位是像素                           | 默认值为16           |
+| setVerticalScrollMode(QAbstractItemView.ScrollMode *mode*)   | 垂直滚动模式                                                 | 见下方ScrollMode表格 |
+| setHorizontalScrollMode(QAbstractItemView.ScrollMode *mode*) | 水平滚动模式                                                 | 见下方ScrollMode表格 |
 
-### SelectionBehavior 选择模式
+#### *ScrollMode 滚动模式*
+
+| QAbstractItemView.ScrollMode | 描述                   |
+| ---------------------------- | ---------------------- |
+| ScrollPerItem                | 一次滚动一个项目的内容 |
+| ScrollPerPixel               | 一次滚动一个像素的内容 |
+
+
+
+--------
+
+### 拖拽类属性
+
+| 方法                                                       | 描述                                                         | 说明                   |
+| ---------------------------------------------------------- | ------------------------------------------------------------ | ---------------------- |
+| setDragEnabled(bool *enable*)                              | 此属性保存视图是否支持拖放它自己的项目                       |                        |
+| setDragDropMode(QAbstractItemView.DragDropMode *behavior*) | 设置拖放模式                                                 | 见下方DragDropMode表格 |
+| setDefaultDropAction(Qt.DropAction *dropAction*)           |                                                              |                        |
+| setDragDropOverwriteMode(bool *overwrite*)                 |                                                              |                        |
+| setShowDropIndicator(bool *enable*)                        | 用于控制在拖拽过程中显示当前拖拽到的位置，当释放时则在当前拖拽位置覆盖或插入 |                        |
+
+#### *DragDropMode 拖拽模式*
+
+| QAbstractItemView.DragDropMode | 值   | 描述                                         |
+| ------------------------------ | ---- | -------------------------------------------- |
+| NoDragDrop                     | 0    | 不支持拖拽放置                               |
+| DragOnly                       | 1    | 该视图支持拖拽自己的项目                     |
+| DropOnly                       | 2    | 接受丢弃                                     |
+| DragDrop                       | 3    | 支持拖放                                     |
+| InternalMove                   | 4    | 该视图只接受来自其自身的移动（不是复制）操作 |
+
+-----
+
+### 选择类属性
+
+| 方法                                                         | 说明     | 备注                        |
+| ------------------------------------------------------------ | -------- | --------------------------- |
+| selectionMode                                                |          |                             |
+| setSelectionBehavior(QAbstractItemView.SelectionBehavior *behavior*) | 选择模式 | 见下方SelectionBehavior表格 |
+
+
+#### *SelectionBehavior 选择模式*
 
 | QAbstractItemView.SelectionBehavior | 值   | 描述         |
 | ----------------------------------- | ---- | ------------ |
@@ -50,22 +84,17 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 
 
-### ScrollMode 滚动模式
+-----------
 
-| QAbstractItemView.ScrollMode | 描述                   |
-| ---------------------------- | ---------------------- |
-| ScrollPerItem                | 一次滚动一个项目的内容 |
-| ScrollPerPixel               | 一次滚动一个像素的内容 |
+### 编辑及数据呈现控制属性
 
-### DragDropMode 拖拽模式
+| 方法                                      | 说明                             | 备注         |
+| ----------------------------------------- | -------------------------------- | ------------ |
+| editTriggers                              |                                  |              |
+| setTabKeyNavigation(bool *enable*)        | 是否支持tab键和(shift+tab)的导航 |              |
+| setTextElideMode(Qt.TextElideMode *mode*) | 省略号在文本中出现的位置         | 默认值为右侧 |
+| setIconSize(QSize &*size*)                | 设置图标尺寸                     |              |
 
-| QAbstractItemView.DragDropMode | 值   | 描述                                         |
-| ------------------------------ | ---- | -------------------------------------------- |
-| NoDragDrop                     | 0    | 不支持拖拽放置                               |
-| DragOnly                       | 1    | 该视图支持拖拽自己的项目                     |
-| DropOnly                       | 2    | 接受丢弃                                     |
-| DragDrop                       | 3    | 支持拖放                                     |
-| InternalMove                   | 4    | 该视图只接受来自其自身的移动（不是复制）操作 |
 
 
 
