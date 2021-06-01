@@ -16,6 +16,12 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 分享一篇我找到的博客：[PyQt(Python+Qt)入门学习：Model/View架构详解](https://blog.csdn.net/LaoYuanPython/article/details/104064757) （利益无关）
 
+![Model/View架构模型](https://oss.muzing.top/image/2020011610050834.png)
+
+- Model 模型与数据源通信，为体系结构中的其他组件提供数据接口
+- View 视图从模型Model中根据一定条件（如行号、列号等）获取模型索引，模型索引是一个指向数据项的引用。通过模型Model的模型索引，视图View可以从数据源检索数据项。
+- Delegate 代理在标准视图中展现数据项，编辑项时，代理Delegate直接使用模型索引与模型Model通信。
+
 ## 常用方法
 
 设置方法
@@ -63,13 +69,47 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 
 
+## Public Slots 槽函数
+
+| 槽函数                                | 说明                                         | 备注                                                         |
+| ------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| clearSelection()                      | 取消选择所有选定项                           | 当前索引不改变                                               |
+| edit(QModelIndex &*index*)            | 开始编辑与给定索引对应的项(如果它是可编辑的) | 注意此函数不会改变当前索引，用户可能会发现键盘导航异常。请在调用此函数前调用setCurrentIndex() |
+| reset()                               | 重置视图内部状态                             | 已经做出的修改将不会被保存。如想在重置时commit修改，请重新实现此方法：先commit修改，然后调用超类 |
+| scrollToBottom()                      | 滚动到视图底部                               |                                                              |
+| scrollToTop()                         | 滚动到视图顶部                               |                                                              |
+| selectAll()                           | 选择视图内的全部项目                         |                                                              |
+| setCurrentIndex(QModelIndex &*index*) | 将当前项设置为*index*处的项目                | 除非当前选择模式为NoSelection，否则项目也会同时被选中        |
+| setRootIndex(QModelIndex &*index*)    | 设置给定的*index*为根项目                    |                                                              |
+| update(QModelIndex &*index*)          | 更新给定*index*所占用的区域                  |                                                              |
+
+
+
+## Signals 信号
+
+| 信号                                  | 说明                       | 备注                           |
+| ------------------------------------- | -------------------------- | ------------------------------ |
+| activated(QModelIndex &*index*)       |                            |                                |
+| clicked(QModelIndex &*index*)         |                            |                                |
+| doubleClicked(QModelIndex &*index*)   |                            |                                |
+| entered(QModelIndex &*index*)         |                            |                                |
+| iconSizeChanged(QModelIndex &*index*) |                            |                                |
+| pressed(QModelIndex &*index*)         |                            |                                |
+| viewportEntered()                     | 当鼠标光标进入时发送此信号 | 需要开启鼠标跟踪才能使用此功能 |
+
+
+
 ## 常用 Model
 
 ### [QStringListModel](https://doc.qt.io/qt-5.15/qstringlistmodel.html)
 
+用于存储str字符串项的简单列表
+
 ### [QStandardItemModel](https://doc.qt.io/qt-5.15/qstandarditemmodel.html)
+
+管理更复杂的项树结构，每个项都可以包含任意数据
 
 ### [QFileSystemModel](https://doc.qt.io/qt-5.15/qfilesystemmodel.html)
 
-
+提供有关本地文件系统中的文件和目录的信息
 
