@@ -87,15 +87,15 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 ## Signals 信号
 
-| 信号                                  | 说明                       | 备注                           |
-| ------------------------------------- | -------------------------- | ------------------------------ |
-| activated(QModelIndex &*index*)       |                            |                                |
-| clicked(QModelIndex &*index*)         |                            |                                |
-| doubleClicked(QModelIndex &*index*)   |                            |                                |
-| entered(QModelIndex &*index*)         |                            |                                |
-| iconSizeChanged(QModelIndex &*index*) |                            |                                |
-| pressed(QModelIndex &*index*)         |                            |                                |
-| viewportEntered()                     | 当鼠标光标进入时发送此信号 | 需要开启鼠标跟踪才能使用此功能 |
+| 信号                                  | 说明                                                     | 备注                           |
+| ------------------------------------- | -------------------------------------------------------- | ------------------------------ |
+| activated(QModelIndex &*index*)       |                                                          |                                |
+| clicked(QModelIndex &*index*)         | 当鼠标左键单击时发送此信号，点击的项目的索引作为参数传出 | 只有索引有效时才发送           |
+| doubleClicked(QModelIndex &*index*)   | 鼠标双击时发送此信号，点击的项目的索引作为参数传出       | 只有索引有效时才发送           |
+| entered(QModelIndex &*index*)         | 当鼠标光标进入项目时发送此信号，项目索引作为参数传出     | 需要开启鼠标跟踪才能使用       |
+| iconSizeChanged(QModelIndex &*index*) | 项目图标尺寸改变时传出此信号                             |                                |
+| pressed(QModelIndex &*index*)         | 鼠标按键按下时发送此信号，项目索引作为参数传出           | 索引有效时才发送               |
+| viewportEntered()                     | 当鼠标光标进入时发送此信号                               | 需要开启鼠标跟踪才能使用此功能 |
 
 
 
