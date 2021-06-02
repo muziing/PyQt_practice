@@ -24,17 +24,63 @@ QMainWindow有自己的布局，可以添加 [QToolBar](https://doc.qt.io/qt-5.1
 
 把*menuBar*设置为主窗口的菜单栏
 
-注意:QMainWindow获取菜单栏指针的所有权，并在适当的时候删除它。
+注意:QMainWindow获取菜单栏指针的所有权，并在适当的时候删除它
+
+
+
+> setMenuWidget(QWidget **menuBar*)
+
+注意:QMainWindow获取菜单栏指针的所有权，并在适当的时候删除它
 
 
 
 ### Toolbars 工具栏
 
-
-
 > setIconSize(QSize &*iconSize*)
 
 设置工具栏图标尺寸。默认的工具栏图标尺寸由 GUI Style确定。注意设置的图标尺寸只能小于原始图片尺寸（只能缩小不能放大显示）
+
+
+
+> setToolButtonStyle(Qt.ToolButtonStyle *toolButtonStyle*)
+
+设置工具栏按钮风格。默认值为 Qt.ToolButtonIconOnly。若想跟随系统设置，只需设置为 Qt.ToolButtonFollowStyle
+
+
+
+> addToolBar(Qt.ToolBarArea *area*, QToolBar **toolbar*)
+>
+> addToolBar(QToolBar **toolbar*)
+>
+> addToolBar(str &*title*)
+
+添加一个工具栏
+
+
+
+> addToolBarBreak(Qt.ToolBarArea *area*=Qt.TopToolBarArea)
+>
+> insertToolBarBreak(QToolBar **before*)
+
+添加/插入分割线
+
+
+
+> removeToolBar(QToolBar **toolbar*)
+
+从主窗口布局中移除工具栏并隐藏它，注意*toolbar*并没有被删除
+
+
+
+> removeToolBarBreak(QToolBar **before*)
+
+移除 *before* 前面的分割线
+
+
+
+> toolBarBreak(QToolBar **toolbar*) -> bool
+
+返回在 *toolbar* 前面是否有工具栏分割线
 
 
 
@@ -46,11 +92,33 @@ QMainWindow有自己的布局，可以添加 [QToolBar](https://doc.qt.io/qt-5.1
 
 ### StatusBar 状态栏
 
+> setStatusBar(QStatusBar **statusbar*)
+
+将*statusbar*设置为主窗口的状态栏
 
 
-### 其他
 
-> setTabShape(QTabWidget.TabShape *tabShape*)
+> statusBar() -> QStatusBar
+
+返回主窗口的状态栏
+
+
+
+### Central Widget 中央控件
+
+> setCentralWidget(QWidget **widget*)
+
+将给定的 *widget* 设置为主窗口的中央控件
+
+注意:QMainWindow获取 *widget* 指针的所有权，并在适当的时候删除它
+
+
+
+> takeCentralWidget()
+
+从主窗口中移除中央控件
+
+被移除的控件所有权转移到此函数的调用方
 
 
 
