@@ -557,6 +557,8 @@
 
 [03-QMainWindow-QToolBar-工具栏.py](./44-QMainWindow/03-QMainWindow-QToolBar-工具栏.py)
 
+[04-QMainWindow-QStatusBar-状态栏.py](./44-QMainWindow/04-QMainWindow-QStatusBar-状态栏.py)
+
 ### [45-QDockWidget](./45-QDockWidget)
 [00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
@@ -574,14 +576,14 @@
 ### [49-QTreeView](./49-QTreeView)
 [00-QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
 
-共49个目录，234个文件.
+共49个目录，235个文件.
 
 -------
 
 | Language | files | blank | comment | code |
 | -------- | ----- | ----- | ------- | ---- |
 | Python   | 194   | 2004  | 1438    | 4909 |
-| Markdown | 41    | 881   | 0       | 1173 |
-| **SUM**  | 235   | 2885  | 1438    | 6082 |
+| Markdown | 41    | 1048   | 0       | 1342 |
+| **SUM**  | 235   | 3052  | 1438    | 6251 |
 
 代码行数统计工具: github.com/AlDanial/cloc v1.90

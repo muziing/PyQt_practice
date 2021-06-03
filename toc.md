@@ -498,6 +498,8 @@
 
 [03-QMainWindow-QToolBar-工具栏.py](./44-QMainWindow/03-QMainWindow-QToolBar-工具栏.py)
 
+[04-QMainWindow-QStatusBar-状态栏.py](./44-QMainWindow/04-QMainWindow-QStatusBar-状态栏.py)
+
 ### [45-QDockWidget](./45-QDockWidget)
 [00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
@@ -507,10 +509,12 @@
 ### [47-QListView](./47-QListView)
 [00-QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md)
 
+[01-QListView-创建.py](./47-QListView/01-QListView-创建.py)
+
 ### [48-QTableView](./48-QTableView)
 [00-QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
 
 ### [49-QTreeView](./49-QTreeView)
 [00-QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
 
-共49个目录，233个文件.
+共49个目录，235个文件.
