@@ -1,11 +1,10 @@
 # QLineEdit
 
-单行文本编辑器。只能输入一行内容无法换行。
+单行文本编辑器。只能输入一行内容，无法换行。
 
 ## Qt官方文档
 
-[Qt 5.15 官方文档-QLineEdit ](https://doc.qt.io/qt-5.15/qlineedit.html)
-
+[Qt 5.15 官方文档-QLineEdit](https://doc.qt.io/qt-5.15/qlineedit.html)
 
 
 ## 属性设置与获取方法
@@ -18,17 +17,49 @@
 
 Alignment 对齐方式
 
+[查看代码](./14-QLineEdit-对齐方式.py)
+
 默认垂直居中靠左对齐
 
+### 输入类
 
+> setInputMask(str &*inputmask*)
+
+掩码验证器
+
+[查看代码](./10-QLineEdit-验证器-掩码.py)
+
+见下面的详细说明
+
+
+
+> setmaxLength(*int*)
+>
+> maxLength() -> int
+
+最大长度
+
+[查看代码](./08-QLineEdit-长度和只读限制.py)
 
 ### 字符显示类
+
+> setPlaceholderText(str *&*)
+>
+> placeholderText() -> str
+
+PlaceholderText 占位文本
+
+[查看代码](./05-QLineEdit-占位文本设置、清空按钮.py)
+
+
 
 > setEchoMode(QLineEdit.EchoMode)
 >
 > displayText() -> str
 
 EchoMode 显示模式
+
+[查看代码](./03-QLineEdit-文本输出模式.py)
 
 对于获取用户密码等场景，我们需要让line edit不显示实际输入的字符，而是显示*之类的密码掩码，这时候就需要设置 Echomode。也可以通过 displayText() 方法获取显示的文本
 
@@ -47,13 +78,29 @@ EchoMode 显示模式
 
 > setClearButtonEnabled(bool *enable*)
 
-ClearButtonEnabled 清除按钮启用
+ClearButtonEnabled 清空按钮
+
+[查看代码](./05-QLineEdit-占位文本设置、清空按钮.py)
+
+在编辑器内部最末尾位置添加一个清空按钮，只有在编辑器非空时才显示
 
 
 
 > setDragEnabled(bool *b*)
 
-默认禁用拖拽；设置是否启用拖拽
+是否启用拖拽
+
+[查看代码](./15-QLineEdit-编辑功能.py)
+
+默认禁用拖拽
+
+
+
+> setCompleter(QCompleter **c*)
+
+自动补全，见下面的详细说明
+
+[查看代码](./07-QLineEdit-自动补全.py)
 
 
 
@@ -74,7 +121,52 @@ ClearButtonEnabled 清除按钮启用
 
 设置当前光标位置，默认值为0
 
+
+
+## QCompleter 自动补全
+
+[查看代码](./07-QLineEdit-自动补全.py)
+
+可以创建一个QCompleter 填充器对象，来帮我们完成自动补全功能
+
+## InputMask 掩码
+
+详细见[Qt文档-QLineEdit-InputMask](https://doc.qt.io/qt-5.15/qlineedit.html#inputMask-prop)
+
+
+
+| 掩码字符 | 含义                              |
+| -------- | --------------------------------- |
+| A        | 必须为字母，如A-Z, a-z            |
+| a        | 允许字母，非必须                  |
+| N        | 必须为字母或数字，如A-Z, a-z, 0-9 |
+| n        | 允许字母或数字，非必须            |
+| X        | 允许任何字符，且必须              |
+| x        | 允许任何字符，非必须              |
+| 9        | 必须数字，即0-9                   |
+| 0        | 允许数字0-9，非必需               |
+| D        | 必须非零数字，即1-9               |
+| d        | 允许非零数字1-9，非必需           |
+| #        | 允许数字或加减号，非必须          |
+| H        | 必须十六进制字符，即A-F, a-f, 0-9 |
+| h        | 允许十六进制字符，非必需          |
+| B        | 必须是二进制字符，即0-1           |
+| b        | 允许二进制字符，非必须            |
+
+| 元字符  | 含义                                                  |
+| ------- | ----------------------------------------------------- |
+| >       | 后面的字母字符全大写                                  |
+| <       | 后面的字母字符全小写                                  |
+| !       | 关闭大小写转换                                        |
+| ;c      | 中止输入掩码并将 *blank* 字符设置为 c                 |
+| [ ] { } | 保留                                                  |
+| \       | 使用\对上面列出的特殊字符进行转义，以将它们用作分隔符 |
+
+
+
 ## Public Slots 槽函数
+
+[查看代码](./15-QLineEdit-编辑功能.py)
 
 | 槽函数      | 说明                         | 备注                                                         |
 | ----------- | ---------------------------- | ------------------------------------------------------------ |
@@ -90,6 +182,8 @@ ClearButtonEnabled 清除按钮启用
 
 
 ## Signals 信号
+
+[查看代码](./17-QLineEdit-信号.py)
 
 | 信号                                              | 说明                                     | 备注                                                         |
 | ------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
