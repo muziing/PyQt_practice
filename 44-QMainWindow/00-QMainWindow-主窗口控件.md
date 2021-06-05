@@ -27,7 +27,7 @@ QMainWindow有自己的布局，可以添加
 
 [查看代码](./02-QMainWindow-QMenuBar-菜单栏.py)
 
-> setMenuBar(QMenuBar **menuBar*)
+> QMainWindow.setMenuBar(QMenuBar **menuBar*)
 
 把*menuBar*设置为主窗口的菜单栏
 
@@ -35,9 +35,58 @@ QMainWindow有自己的布局，可以添加
 
 
 
-> setMenuWidget(QWidget **menuBar*)
+> QMainWindow.setMenuWidget(QWidget **menuBar*)
 
 注意:QMainWindow获取菜单栏指针的所有权，并在适当的时候删除它
+
+--------
+
+以下内容为 [QMenuBar](https://doc.qt.io/qt-5.15/qmenubar.html) 的属性方法
+
+> QMenuBar.addAction(str &*text*)
+>
+> QMenuBar.addAction(str &*text*, QObject **receiver*, str *member*)
+>
+> QMenuBar.addAction(str &*text*, Functor *functor*)
+
+菜单栏添加 Action
+
+
+
+> QMenuBar.addMenu(QMenu **menu*)
+>
+> QMenuBar.addMenu(str &*title*)
+>
+> QMenuBar.addMenu(QIcon &*icon*, str &*title*)
+>
+> QMenuBar.insertMenu(QAction * *before*, QMenu **menu*)
+
+菜单栏添加菜单
+
+
+
+> QMenuBar.addSeparator()
+>
+> QMenuBar.insertSeparator(QAction **before*)
+
+菜单栏添加分割线
+
+
+
+> setNativeMenuBar(bool *nativeMenuBar*)
+>
+> isNativeMenuBar() -> bool
+
+对于macOS、Ubuntu等操作系统，通过这个方法可以指定使用操作系统提供的菜单栏，对于不支持的平台则该方法无效
+
+
+
+**QMenuBar Signal 信号**
+
+| 信号                         | 说明                                                         | 备注                                                 |
+| ---------------------------- | ------------------------------------------------------------ | ---------------------------------------------------- |
+| hovered(QAction **action*)   | 当一个菜单栏的action被高亮时发送此信号，*action* 作为参数传出 | 经常被用来更新状态栏信息                             |
+| triggered(QAction **action*) | 鼠标单击触发菜单栏中的action时发送此信号，*action* 作为参数传出 | 在需要将多个项目连接到同一个槽的时候，适合使用此信号 |
 
 
 
@@ -112,6 +161,24 @@ QMainWindow有自己的布局，可以添加
 > statusBar() -> QStatusBar
 
 返回主窗口的状态栏
+
+-------------
+
+以下为 [QStatusBar](https://doc.qt.io/qt-5.15/qstatusbar.html) 的方法属性
+
+>setSizeGripEnabled(*bool*)
+>
+>isSizeGripEnabled() -> bool
+
+状态栏右下角的 SizeGrip 是否启用，默认启用
+
+
+
+> currentMessage()
+>
+> clearMessage()
+>
+> showMessage(str &*message*, int *timeout* = 0)
 
 
 
