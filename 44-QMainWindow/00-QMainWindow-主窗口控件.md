@@ -2,10 +2,15 @@
 
 Qt 主程序窗口框架，用于构建用户窗口界面。
 
-QMainWindow有自己的布局，可以添加 [QToolBar](https://doc.qt.io/qt-5.15/qtoolbar.html) 工具栏、[QDockWidget](https://doc.qt.io/qt-5.15/qdockwidget.html) 浮动控件、 [QMenuBar](https://doc.qt.io/qt-5.15/qmenubar.html) 菜单栏、
-[QStatusBar](https://doc.qt.io/qt-5.15/qstatusbar.html) 状态栏，以及中心控件
+QMainWindow有自己的布局，可以添加 
+- [QToolBar](https://doc.qt.io/qt-5.15/qtoolbar.html) 工具栏
+- [QDockWidget](https://doc.qt.io/qt-5.15/qdockwidget.html) 浮动停靠控件
+-  [QMenuBar](https://doc.qt.io/qt-5.15/qmenubar.html) 菜单栏
+- [QStatusBar](https://doc.qt.io/qt-5.15/qstatusbar.html) 状态栏
+- Central Widget 中心控件
 
 ![QMainWindowLayout](https://oss.muzing.top/image/QMainWindowLayout.png)
+
 
 
 ## Qt 官方文档
@@ -19,6 +24,8 @@ QMainWindow有自己的布局，可以添加 [QToolBar](https://doc.qt.io/qt-5.1
 
 
 ### Menu Bar 菜单栏
+
+[查看代码](./02-QMainWindow-QMenuBar-菜单栏.py)
 
 > setMenuBar(QMenuBar **menuBar*)
 
@@ -35,6 +42,8 @@ QMainWindow有自己的布局，可以添加 [QToolBar](https://doc.qt.io/qt-5.1
 
 
 ### Toolbars 工具栏
+
+[查看代码](./03-QMainWindow-QToolBar-工具栏.py)
 
 > setIconSize(QSize &*iconSize*)
 
@@ -84,13 +93,15 @@ QMainWindow有自己的布局，可以添加 [QToolBar](https://doc.qt.io/qt-5.1
 
 
 
-### Dock Widgets 停靠控件
+### Dock Widgets 浮动停靠控件
 
 将在[QDockWidget](../45-QDockWidget/00-QDockWidget-浮动停靠控件.md)中详细说明
 
 
 
 ### StatusBar 状态栏
+
+[查看代码](./04-QMainWindow-QStatusBar-状态栏.py)
 
 > setStatusBar(QStatusBar **statusbar*)
 
