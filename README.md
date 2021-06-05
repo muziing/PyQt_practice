@@ -349,7 +349,7 @@
 [00-QTimeEdit-时间编辑器.md](./21-QTimeEdit/00-QTimeEdit-时间编辑器.md)
 
 ### [22-QComboBox](./22-QComboBox)
-[00-QComboBox-下拉列表框.md](./22-QComboBox/00-QComboBox-下拉列表框.md)
+[00-QComboBox-组合下拉框.md](./22-QComboBox/00-QComboBox-组合下拉框.md)
 
 [01-QComboBox-创建、数据操作.py](./22-QComboBox/01-QComboBox-创建、数据操作.py)
 
