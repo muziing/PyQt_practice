@@ -568,7 +568,9 @@
 ### [47-QListView](./47-QListView)
 [00-QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md)
 
-[01-QListView-创建.py](./47-QListView/01-QListView-创建.py)
+[01-QListView-创建、方向、布局模式.py](./47-QListView/01-QListView-创建、方向、布局模式.py)
+
+[02-QListView-自动换行、布局间距、对齐、单词自动换行.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词自动换行.py)
 
 ### [48-QTableView](./48-QTableView)
 [00-QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
@@ -576,14 +578,14 @@
 ### [49-QTreeView](./49-QTreeView)
 [00-QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
 
-共49个目录，235个文件.
+共49个目录，236个文件.
 
 -------
 
 | Language | files | blank | comment | code |
 | -------- | ----- | ----- | ------- | ---- |
-| Python   | 194   | 2004  | 1438    | 4909 |
-| Markdown | 41    | 1048   | 0       | 1342 |
-| **SUM**  | 235   | 3052  | 1438    | 6251 |
+| Python   | 195   | 2021  | 1446    | 4945 |
+| Markdown | 41    | 1179   | 0      | 1504 |
+| **SUM**  | 236   | 3200  | 1446    | 6449 |
 
 代码行数统计工具: github.com/AlDanial/cloc v1.90

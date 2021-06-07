@@ -509,7 +509,9 @@
 ### [47-QListView](./47-QListView)
 [00-QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md)
 
-[01-QListView-创建.py](./47-QListView/01-QListView-创建.py)
+[01-QListView-创建、方向、布局模式.py](./47-QListView/01-QListView-创建、方向、布局模式.py)
+
+[02-QListView-自动换行、布局间距、对齐、单词自动换行.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词自动换行.py)
 
 ### [48-QTableView](./48-QTableView)
 [00-QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
@@ -517,4 +519,4 @@
 ### [49-QTreeView](./49-QTreeView)
 [00-QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
 
-共49个目录，235个文件.
+共49个目录，236个文件.
