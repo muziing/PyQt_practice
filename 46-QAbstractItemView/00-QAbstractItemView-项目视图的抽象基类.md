@@ -14,7 +14,7 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 在Qt中使用**model/View**结构来管理数据与视图的关系，**model**负责数据的存取，数据的交互通过**delegate**来实现
 
-分享一篇我找到的博客：[PyQt(Python+Qt)入门学习：Model/View架构详解](https://blog.csdn.net/LaoYuanPython/article/details/104064757) （利益无关）
+更多内容可以参考我的博客[《PyQt中的 Model/View 结构》](https://muzing.top/posts/5ff61cbd/)
 
 ![Model/View架构模型](https://oss.muzing.top/image/2020011610050834.png)
 
@@ -46,13 +46,13 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 ### 拖拽类属性
 
-| 方法                                                       | 描述                                                         | 说明                   |
-| ---------------------------------------------------------- | ------------------------------------------------------------ | ---------------------- |
-| setDragEnabled(bool *enable*)                              | 此属性保存视图是否支持拖放它自己的项目                       |                        |
-| setDragDropMode(QAbstractItemView.DragDropMode *behavior*) | 设置拖放模式                                                 | 见下方DragDropMode表格 |
-| setDefaultDropAction(Qt.DropAction *dropAction*)           |                                                              |                        |
-| setDragDropOverwriteMode(bool *overwrite*)                 |                                                              |                        |
-| setShowDropIndicator(bool *enable*)                        | 用于控制在拖拽过程中显示当前拖拽到的位置，当释放时则在当前拖拽位置覆盖或插入 |                        |
+| 方法                                                       | 描述                                                         | 说明                                                         |
+| ---------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| setDragEnabled(bool *enable*)                              | 此属性保存视图是否支持拖放它自己的项目                       |                                                              |
+| setDragDropMode(QAbstractItemView.DragDropMode *behavior*) | 设置拖放模式                                                 | 见下方DragDropMode表格                                       |
+| setDefaultDropAction(Qt.DropAction *dropAction*)           | 设置默认拖拽动作                                             | 如果未设置该属性，则当所支持的动作支持CopyAction时，删除动作为CopyAction |
+| setDragDropOverwriteMode(bool *overwrite*)                 | 控制拖拽是否覆盖写                                           | 如果其值为true，则所选数据将在删除时覆盖现有项数据，而移动数据将清除该项。如果其值为false，则在删除数据时，所选数据将作为新项插入。当数据被移动时，项也会被移除。 |
+| setShowDropIndicator(bool *enable*)                        | 用于控制在拖拽过程中显示当前拖拽到的位置，当释放时则在当前拖拽位置覆盖或插入 |                                                              |
 
 #### *DragDropMode 拖拽模式*
 
@@ -70,17 +70,28 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 | 方法                                                         | 说明     | 备注                        |
 | ------------------------------------------------------------ | -------- | --------------------------- |
-| selectionMode                                                |          |                             |
-| setSelectionBehavior(QAbstractItemView.SelectionBehavior *behavior*) | 选择模式 | 见下方SelectionBehavior表格 |
+| setSelectionMode(QAbstractItemView.SelectionMode *mode*)     | 选择模式 | 见下方SelectionMode表格     |
+| setSelectionBehavior(QAbstractItemView.SelectionBehavior *behavior*) | 选择行为 | 见下方SelectionBehavior表格 |
+
+#### *SelectionMode 选择模式*
+
+| QAbstractItemView.SelectionMode       | 值   | 描述                                                         |
+| ------------------------------------- | ---- | ------------------------------------------------------------ |
+|                   NoSelection         | 0    | 项目不能被选中                                               |
+|                   SingleSelection     | 1    | 当用户选择一个项目时，任何已经选中的项目将取消选中；用户可以通过按住 Ctrl 键同时选择项目以取消选择 |
+|                   MultiSelection      | 2    | 当用户以通常的方式选择一个项目时，该项目的选择状态被切换且其他项目保持不变；可以通过在多个项目上拖动鼠标来多选 |
+|                   ExtendedSelection   | 3    | 当用户以通常的方式选择一个项目时，选择将被清除并选择新项目。但是，如果用户在单击一个项目时按下Ctrl键，则被单击的项目将被切换，而所有其他项目将保持不变。如果用户在单击项目时按下Shift键，当前项目和已单击项目之间的所有项目将被选中或取消选中，这取决于已单击项目的状态。可以通过在多个项目上拖动鼠标选择。 |
+|                   ContiguousSelection | 4    | 当用户以通常的方式选择一个项目时，选择将被清除并选择新项目。但是，如果用户在单击项目时按下Shift键，当前项目和已单击项目之间的所有项目将被选中或取消选中，这取决于已单击项目的状态。 |
 
 
-#### *SelectionBehavior 选择模式*
+
+#### *SelectionBehavior 选择行为*
 
 | QAbstractItemView.SelectionBehavior | 值   | 描述         |
 | ----------------------------------- | ---- | ------------ |
-| QAbstractItemView.SelectItems       | 0    | 选中单个项目 |
-| QAbstractItemView.SelectRows        | 1    | 选中行       |
-| QAbstractItemView.SelectColumns     | 2    | 选中列       |
+|              SelectItems            | 0    | 选中单个项目 |
+|              SelectRows             | 1    | 选中行       |
+|              SelectColumns          | 2    | 选中列       |
 
 
 
@@ -88,12 +99,24 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 ### 编辑及数据呈现控制属性
 
-| 方法                                      | 说明                             | 备注         |
-| ----------------------------------------- | -------------------------------- | ------------ |
-| editTriggers                              |                                  |              |
-| setTabKeyNavigation(bool *enable*)        | 是否支持tab键和(shift+tab)的导航 |              |
-| setTextElideMode(Qt.TextElideMode *mode*) | 省略号在文本中出现的位置         | 默认值为右侧 |
-| setIconSize(QSize &*size*)                | 设置图标尺寸                     |              |
+| 方法                                                       | 说明                                             | 备注                                                   |
+| ---------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
+| setEditTriggers(QAbstractItemView.EditTriggers *triggers*) | 设置编辑触发器（控制何种情况下可以开始编辑项目） | 使用 OR 操作符组合多个触发条件；见下方EditTriggers表格 |
+| setTabKeyNavigation(bool *enable*)                         | 是否支持tab键和(shift+tab)的导航                 |                                                        |
+| setTextElideMode(Qt.TextElideMode *mode*)                  | 省略号在文本中出现的位置                         | 默认值为右侧                                           |
+| setIconSize(QSize &*size*)                                 | 设置图标尺寸                                     |                                                        |
+
+#### *EditTriggers 编辑触发器*
+
+| QAbstractItemView.EditTriggers    | 值   | 描述                                       |
+| --------------------------------- | ---- | ------------------------------------------ |
+|                   NoEditTriggers  | 0    | 没有编辑可能                               |
+|                   CurrentChanged  | 1    | 当当前项目改变时开始编辑                   |
+|                   DoubleClicked   | 2    | 当一个项目被鼠标双击时开始编辑             |
+|                   SelectedClicked | 4    | 当一个已经被选中的项目被鼠标单击时开始编辑 |
+|                   EditKeyPressed  | 8    | 当平台编辑键被在项目上按下时开始编辑       |
+|                   AnyKeyPressed   | 16   | 当任何键在项目上按下时开始编辑             |
+|                   AllEditTriggers | 31   | 上述所有动作都将开始编辑                   |
 
 
 
@@ -116,29 +139,13 @@ QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，
 
 ## Signals 信号
 
-| 信号                                  | 说明                                                     | 备注                           |
-| ------------------------------------- | -------------------------------------------------------- | ------------------------------ |
-| activated(QModelIndex &*index*)       |                                                          |                                |
-| clicked(QModelIndex &*index*)         | 当鼠标左键单击时发送此信号，点击的项目的索引作为参数传出 | 只有索引有效时才发送           |
-| doubleClicked(QModelIndex &*index*)   | 鼠标双击时发送此信号，点击的项目的索引作为参数传出       | 只有索引有效时才发送           |
-| entered(QModelIndex &*index*)         | 当鼠标光标进入项目时发送此信号，项目索引作为参数传出     | 需要开启鼠标跟踪才能使用       |
-| iconSizeChanged(QModelIndex &*index*) | 项目图标尺寸改变时传出此信号                             |                                |
-| pressed(QModelIndex &*index*)         | 鼠标按键按下时发送此信号，项目索引作为参数传出           | 索引有效时才发送               |
-| viewportEntered()                     | 当鼠标光标进入时发送此信号                               | 需要开启鼠标跟踪才能使用此功能 |
-
-
-
-## 常用 Model
-
-### [QStringListModel](https://doc.qt.io/qt-5.15/qstringlistmodel.html)
-
-用于存储str字符串项的简单列表
-
-### [QStandardItemModel](https://doc.qt.io/qt-5.15/qstandarditemmodel.html)
-
-管理更复杂的项树结构，每个项都可以包含任意数据
-
-### [QFileSystemModel](https://doc.qt.io/qt-5.15/qfilesystemmodel.html)
-
-提供有关本地文件系统中的文件和目录的信息
+| 信号                                  | 说明                                                     | 备注                                               |
+| ------------------------------------- | -------------------------------------------------------- | -------------------------------------------------- |
+| activated(QModelIndex &*index*)       | 当用户激活项目时发送此信号，传出项目索引                 | 如何“激活”取决于平台，如鼠标单击/双击项目、Enter键 |
+| clicked(QModelIndex &*index*)         | 当鼠标左键单击时发送此信号，点击的项目的索引作为参数传出 | 只有索引有效时才发送                               |
+| doubleClicked(QModelIndex &*index*)   | 鼠标双击时发送此信号，点击的项目的索引作为参数传出       | 只有索引有效时才发送                               |
+| entered(QModelIndex &*index*)         | 当鼠标光标进入项目时发送此信号，项目索引作为参数传出     | 需要开启鼠标跟踪才能使用                           |
+| iconSizeChanged(QModelIndex &*index*) | 项目图标尺寸改变时传出此信号                             |                                                    |
+| pressed(QModelIndex &*index*)         | 鼠标按键按下时发送此信号，项目索引作为参数传出           | 索引有效时才发送                                   |
+| viewportEntered()                     | 当鼠标光标进入时发送此信号                               | 需要开启鼠标跟踪才能使用此功能                     |
 
