@@ -26,18 +26,20 @@
 
 ## 常用方法
 
-| 方法                         | 返回值 | 说明                                         | 备注                                       |
-| ---------------------------- | ------ | -------------------------------------------- | -------------------------------------------- |
-| setAutoExclusive(bool) | None | 是否启用自动排他性                 | 排他性详见[QRadioButton](../07-QRadioButton/00-QRadioButton-单选按钮.md) |
-| setAutoRepeat(bool) | None | 设置是否开启自动重复 | 自动重复见文档后面部分 |
-| setCheckable(bool)           | None   | 设置按钮是否可被选中，默认为False            |             |
-| setChecked(bool)             | None   | 设置按钮是否已经被选中（保持按下）           |            |
-| setDown(bool)                | None   | 设置按钮按下 | 设置为True也不会触发pressed()或clicked()信号 |
-| setIcon(QIcon &*icon*) | None | 为按钮设置图标 |                                              |
-| setShortcut(QkeySequence &*key*) | None | 为按钮设置快捷键 |                                              |
-| setText(str &*text*) | None | 为按钮设置文字 |                                              |
+| 方法                         | 说明                                         | 备注                                       |
+| ---------------------------- | -------------------------------------------- | -------------------------------------------- |
+| setAutoExclusive(bool) | 是否启用自动排他性                 | 排他性详见[QRadioButton](../07-QRadioButton/00-QRadioButton-单选按钮.md) |
+| setAutoRepeat(bool) | 设置是否开启自动重复 | 自动重复见文档后面部分 |
+| setCheckable(bool)           | 设置按钮是否可被选中，默认为False            |             |
+| setChecked(bool)             | 设置按钮是否已经被选中（保持按下）           |            |
+| setDown(bool)                | 设置按钮按下 | 设置为True也不会触发pressed()或clicked()信号 |
+| setIcon(QIcon &*icon*) | 为按钮设置图标 |                                              |
+| setShortcut(QKeySequence &*key*) | 为按钮设置快捷键 |                                              |
+| setText(str &*text*) | 为按钮设置文字 |                                              |
 
-## 信号
+## Signals 信号
+
+[查看代码](./07-QAbstractButton-可用信号.py)
 
 | 信号                        | 说明                                                 |
 | --------------------------- | ---------------------------------------------------- |
@@ -47,7 +49,7 @@
 | toggle()                    | 按钮选中状态切换（仅限checkable button，下同）         |
 | toggled(bool *checked*)     | 按钮状态切换，返回一个bool类型的变量表示切换后的状态 |
 
-## 槽函数
+## Public Slots 槽函数
 
 | 槽函数                         | 说明                                  | 备注                             |
 | ------------------------------ | ------------------------------------- | -------------------------------- |
@@ -58,6 +60,8 @@
 
 
 ## AutoExclusive 自动排他性
+
+[查看代码](./04-)
 
 详见[QRadioButton](../07-QRadioButton/00-QRadioButton-单选按钮.md)
 
