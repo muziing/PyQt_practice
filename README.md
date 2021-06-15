@@ -49,6 +49,8 @@
 
 [Qt 官方QSS例子](https://doc.qt.io/qt-5/stylesheet-examples.html)
 
+[Qt-Material-PyQt5样式表](https://github.com/UN-GCPDS/qt-material)
+
 [一组很好看的QSS样式-飞扬青云](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
 
 [QSS Editor - 实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
