@@ -2,9 +2,11 @@
 
 ***用代码学PyQt!***
 
+![PyQt Version](https://img.shields.io/badge/PyQt-5.15-blue) ![Github stars](https://img.shields.io/github/stars/muziing/PyQt_practice.svg) ![GitHub forks](https://img.shields.io/github/forks/muziing/PyQt_practice.svg)
+
 ## 基本说明
 - 每个.py文件都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
-- 希望解决小伙伴们 “一读文档就会，一写代码就废”，读完文档还是不知道每个控件如何设置的问题。在自己的机器上实实际际运行一下，仔细观察一下每个属性值的改变会怎样影响控件的外观行为，可能比静态抽象晦涩的文档教程更有效。
+- 在自己的机器上实实际际运行一下，仔细观察一下每个属性值的改变会怎样影响控件的外观行为，可能比静态的文档教程更有效。
 - 目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交PR或者 [联系我](https://muzing.top/about/) ）
 - 同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
 
@@ -47,15 +49,17 @@
 
 ### QSS 美化主题
 
-[Qt 官方QSS例子](https://doc.qt.io/qt-5/stylesheet-examples.html)
+[Qt5-官方 stylesheet-examples](https://doc.qt.io/qt-5/stylesheet-examples.html)
 
-[Qt-Material-PyQt5样式表](https://github.com/UN-GCPDS/qt-material)
+[Qt-Material-PyQt5](https://github.com/UN-GCPDS/qt-material)
 
-[一组很好看的QSS样式-飞扬青云](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
+[QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet)
 
-[QSS Editor - 实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
+[一组QSS样式-飞扬青云](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
 
-[一组QSS样式-GTRONICK](https://github.com/GTRONICK/QSS)
+[GTRONICK-QSS](https://github.com/GTRONICK/QSS)
+
+[QSS Editor-实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
 
 ## 仓库文件目录
 
