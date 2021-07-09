@@ -5,8 +5,9 @@
 ![PyQt Version](https://img.shields.io/badge/PyQt-5.15-blue) ![Github stars](https://img.shields.io/github/stars/muziing/PyQt_practice.svg) ![GitHub forks](https://img.shields.io/github/forks/muziing/PyQt_practice.svg)
 
 ## 基本说明
+
 - 每个.py文件都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
-- 在自己的机器上实实际际运行一下，仔细观察一下每个属性值的改变会怎样影响控件的外观行为，可能比静态的文档教程更有效。
+- 在自己的机器上实际运行一下，仔细观察一下每个属性值的改变会怎样影响控件的外观行为，可能比静态的文档教程更有效。
 - 目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交PR或者 [联系我](https://muzing.top/about/) ）
 - 同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
 
@@ -59,11 +60,14 @@
 
 [GTRONICK-QSS](https://github.com/GTRONICK/QSS)
 
+[QssStylesheetEditor-可以实时预览的QSS编辑器](https://github.com/hustlei/QssStylesheetEditor)
+
 [QSS Editor-实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
 
 ## 仓库文件目录
 
 ### [01-PyQt基本结构](./01-PyQt基本结构)
+
 [01-PyQt5-初体验.py](./01-PyQt基本结构/01-PyQt5-初体验.py)
 
 [02-PyQt5程序基本结构分析.py](./01-PyQt基本结构/02-PyQt5程序基本结构分析.py)
@@ -73,6 +77,7 @@
 [04-控件类的继承关系.py](./01-PyQt基本结构/04-控件类的继承关系.py)
 
 ### [02-QObject](./02-QObject)
+
 [01-QObject.py](./02-QObject/01-QObject.py)
 
 [02-QObject_2.py](./02-QObject/02-QObject_2.py)
@@ -96,6 +101,7 @@
 [11-QObject定时器-案例.py](./02-QObject/11-QObject定时器-案例.py)
 
 ### [03-QWidget](./03-QWidget)
+
 [00-QWidget-用户界面的基类.md](./03-QWidget/00-QWidget-用户界面的基类.md)
 
 [01-QWidget-简介.py](./03-QWidget/01-QWidget-简介.py)
@@ -147,6 +153,7 @@
 [24-QWidget-焦点控制.py](./03-QWidget/24-QWidget-焦点控制.py)
 
 ### [04-QAbstractButton](./04-QAbstractButton)
+
 [00-QAbstractButton-按钮的抽象基类.md](./04-QAbstractButton/00-QAbstractButton-按钮的抽象基类.md)
 
 [01-QAbstractButton-简单介绍.py](./04-QAbstractButton/01-QAbstractButton-简单介绍.py)
@@ -164,6 +171,7 @@
 [07-QAbstractButton-可用信号.py](./04-QAbstractButton/07-QAbstractButton-可用信号.py)
 
 ### [05-QPushButton](./05-QPushButton)
+
 [00-QPushButton-普通按钮.md](./05-QPushButton/00-QPushButton-普通按钮.md)
 
 [01-QPushButton-构造函数.py](./05-QPushButton/01-QPushButton-构造函数.py)
@@ -179,6 +187,7 @@
 [06-QCommandLinkButton.py](./05-QPushButton/06-QCommandLinkButton.py)
 
 ### [06-QToolButton](./06-QToolButton)
+
 [00-QToolButton-工具栏按钮.md](./06-QToolButton/00-QToolButton-工具栏按钮.md)
 
 [01-QToolButton-创建与基本显示.py](./06-QToolButton/01-QToolButton-创建与基本显示.py)
@@ -194,6 +203,7 @@
 [06-QToolButton-可用信号.py](./06-QToolButton/06-QToolButton-可用信号.py)
 
 ### [07-QRadioButton](./07-QRadioButton)
+
 [00-QRadioButton-单选按钮.md](./07-QRadioButton/00-QRadioButton-单选按钮.md)
 
 [01-QRadioButton-创建和基本设置、信号.py](./07-QRadioButton/01-QRadioButton-创建和基本设置、信号.py)
@@ -201,6 +211,7 @@
 [02-QRadioButton-多组互斥问题.py](./07-QRadioButton/02-QRadioButton-多组互斥问题.py)
 
 ### [08-QButtonGroup](./08-QButtonGroup)
+
 [00-QButtonGroup-按钮组.md](./08-QButtonGroup/00-QButtonGroup-按钮组.md)
 
 [01-QButtonGroup-创建与使用.py](./08-QButtonGroup/01-QButtonGroup-创建与使用.py)
@@ -210,6 +221,7 @@
 [03-QButtonGroup-信号.py](./08-QButtonGroup/03-QButtonGroup-信号.py)
 
 ### [09-QCheckBox](./09-QCheckBox)
+
 [00-QCheckButton-复选框.md](./09-QCheckBox/00-QCheckButton-复选框.md)
 
 [01-QCheckBox-功能使用.py](./09-QCheckBox/01-QCheckBox-功能使用.py)
@@ -217,6 +229,7 @@
 [02-QCheckBox-信号.py](./09-QCheckBox/02-QCheckBox-信号.py)
 
 ### [10-QLineEdit](./10-QLineEdit)
+
 [00-QLineEdit-单行文本编辑器.md](./10-QLineEdit/00-QLineEdit-单行文本编辑器.md)
 
 [01-QLineEdit-创建、插入与获取内容.py](./10-QLineEdit/01-QLineEdit-创建、插入与获取内容.py)
@@ -254,6 +267,7 @@
 [17-QLineEdit-信号.py](./10-QLineEdit/17-QLineEdit-信号.py)
 
 ### [11-QFrame](./11-QFrame)
+
 [00-QFrame-框架控件的基类.md](./11-QFrame/00-QFrame-框架控件的基类.md)
 
 [01-QFrame-创建.py](./11-QFrame/01-QFrame-创建.py)
@@ -261,11 +275,13 @@
 [02-QFrame-功能作用.py](./11-QFrame/02-QFrame-功能作用.py)
 
 ### [12-QAbstractScrollArea](./12-QAbstractScrollArea)
+
 [00-QAbstractScrollArea-滚动区域的低级抽象.md](./12-QAbstractScrollArea/00-QAbstractScrollArea-滚动区域的低级抽象.md)
 
 [01-QAbstractScrollArea.py](./12-QAbstractScrollArea/01-QAbstractScrollArea.py)
 
 ### [13-QTextEdit](./13-QTextEdit)
+
 [00-QTextEdit-文本编辑器.md](./13-QTextEdit/00-QTextEdit-文本编辑器.md)
 
 [01-QTextEdit-创建.py](./13-QTextEdit/01-QTextEdit-创建.py)
@@ -287,6 +303,7 @@
 [09-QTextEdit-文本光标-格式操作.py](./13-QTextEdit/09-QTextEdit-文本光标-格式操作.py)
 
 ### [14-QPlainTextEdit](./14-QPlainTextEdit)
+
 [00-QPlainTextEdit-纯文本编辑器.md](./14-QPlainTextEdit/00-QPlainTextEdit-纯文本编辑器.md)
 
 [01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py](./14-QPlainTextEdit/01-QPlainTextEdit-创建、占位提示文本、只读、字符格式.py)
@@ -304,6 +321,7 @@
 [07-QPlainTextEdit-案例-显示行号.py](./14-QPlainTextEdit/07-QPlainTextEdit-案例-显示行号.py)
 
 ### [15-QKeySequenceEdit](./15-QKeySequenceEdit)
+
 [00-QKeySequenceEdit-快捷键编辑器.md](./15-QKeySequenceEdit/00-QKeySequenceEdit-快捷键编辑器.md)
 
 [01-QKeySequenceEdit-创建、功能、信号.py](./15-QKeySequenceEdit/01-QKeySequenceEdit-创建、功能、信号.py)
@@ -311,6 +329,7 @@
 [02-QKeySequence-补充.py](./15-QKeySequenceEdit/02-QKeySequence-补充.py)
 
 ### [16-QAbstractSpinBox](./16-QAbstractSpinBox)
+
 [00-QAbstractSpinBox-数字设定框的抽象基类.md](./16-QAbstractSpinBox/00-QAbstractSpinBox-数字设定框的抽象基类.md)
 
 [01-QAbstractSpinBox-创建、模拟子类化、获取与设置控件内容.py](./16-QAbstractSpinBox/01-QAbstractSpinBox-创建、模拟子类化、获取与设置控件内容.py)
@@ -322,6 +341,7 @@
 [04-QAbstractSpinBox-内容验证、信号.py](./16-QAbstractSpinBox/04-QAbstractSpinBox-内容验证、信号.py)
 
 ### [17-QSpinBox](./17-QSpinBox)
+
 [00-QSpinBox-数字设定框.md](./17-QSpinBox/00-QSpinBox-数字设定框.md)
 
 [01-QSpinBox-创建、最大值最小值范围、数值循环.py](./17-QSpinBox/01-QSpinBox-创建、最大值最小值范围、数值循环.py)
@@ -333,6 +353,7 @@
 [04-QSpinBox-信号.py](./17-QSpinBox/04-QSpinBox-信号.py)
 
 ### [18-QDoubleSpinBox](./18-QDoubleSpinBox)
+
 [00-QDoubleSpinBox-浮点数设定框.md](./18-QDoubleSpinBox/00-QDoubleSpinBox-浮点数设定框.md)
 
 [01-QDoubleSpinBox-创建、数值范围、数值循环、设置步长、前后缀.py](./18-QDoubleSpinBox/01-QDoubleSpinBox-创建、数值范围、数值循环、设置步长、前后缀.py)
@@ -342,6 +363,7 @@
 [03-QDoubleSpinBox-信号.py](./18-QDoubleSpinBox/03-QDoubleSpinBox-信号.py)
 
 ### [19-QDateTimeEdit](./19-QDateTimeEdit)
+
 [00-QDateTimeEdit-日期时间编辑器.md](./19-QDateTimeEdit/00-QDateTimeEdit-日期时间编辑器.md)
 
 [01-QDateTime、QDate、QTime.py](./19-QDateTimeEdit/01-QDateTime、QDate、QTime.py)
@@ -349,12 +371,15 @@
 [02-QDateTimeEdit-创建、显示格式、section操作.py](./19-QDateTimeEdit/02-QDateTimeEdit-创建、显示格式、section操作.py)
 
 ### [20-QDateEdit](./20-QDateEdit)
+
 [00-QDateEdit-日期编辑器.md](./20-QDateEdit/00-QDateEdit-日期编辑器.md)
 
 ### [21-QTimeEdit](./21-QTimeEdit)
+
 [00-QTimeEdit-时间编辑器.md](./21-QTimeEdit/00-QTimeEdit-时间编辑器.md)
 
 ### [22-QComboBox](./22-QComboBox)
+
 [00-QComboBox-组合下拉框.md](./22-QComboBox/00-QComboBox-组合下拉框.md)
 
 [01-QComboBox-创建、数据操作.py](./22-QComboBox/01-QComboBox-创建、数据操作.py)
@@ -372,11 +397,13 @@
 [07-QComboBox-案例.py](./22-QComboBox/07-QComboBox-案例.py)
 
 ### [23-QFontComboBox](./23-QFontComboBox)
+
 [00-QFontComboBox-字体下拉框.md](./23-QFontComboBox/00-QFontComboBox-字体下拉框.md)
 
 [01-QFontComboBox-功能作用.py](./23-QFontComboBox/01-QFontComboBox-功能作用.py)
 
 ### [24-QAbstractSlider](./24-QAbstractSlider)
+
 [00-QAbstractSlider-滑块控件抽象基类.md](./24-QAbstractSlider/00-QAbstractSlider-滑块控件抽象基类.md)
 
 [01-QAbstractSlider-创建、数值范围、当前数值、步长.py](./24-QAbstractSlider/01-QAbstractSlider-创建、数值范围、当前数值、步长.py)
@@ -386,6 +413,7 @@
 [03-QAbstractSlider-是否按下、信号.py](./24-QAbstractSlider/03-QAbstractSlider-是否按下、信号.py)
 
 ### [25-QSlider](./25-QSlider)
+
 [00-QSlider-滑块控件.md](./25-QSlider/00-QSlider-滑块控件.md)
 
 [01-QSlider-刻度控制.py](./25-QSlider/01-QSlider-刻度控制.py)
@@ -395,16 +423,19 @@
 [03-QSlider-鼠标跳转优化.py](./25-QSlider/03-QSlider-鼠标跳转优化.py)
 
 ### [26-QScrollBar](./26-QScrollBar)
+
 [00-QScrollBar-滚动条.md](./26-QScrollBar/00-QScrollBar-滚动条.md)
 
 [01-QScrollBar-功能作用.py](./26-QScrollBar/01-QScrollBar-功能作用.py)
 
 ### [27-QDial](./27-QDial)
+
 [00-QDial-转盘控件.md](./27-QDial/00-QDial-转盘控件.md)
 
 [01-QDial-功能作用.py](./27-QDial/01-QDial-功能作用.py)
 
 ### [28-QRubberBand](./28-QRubberBand)
+
 [00-QRubberBand-选择框线.md](./28-QRubberBand/00-QRubberBand-选择框线.md)
 
 [01-QRubberBand-创建.py](./28-QRubberBand/01-QRubberBand-创建.py)
@@ -412,6 +443,7 @@
 [02-QRubberBand-综合案例.py](./28-QRubberBand/02-QRubberBand-综合案例.py)
 
 ### [29-QDialog](./29-QDialog)
+
 [00-QDialog-对话框窗口基类.md](./29-QDialog/00-QDialog-对话框窗口基类.md)
 
 [01-QDialog-模态与非模态、创建.py](./29-QDialog/01-QDialog-模态与非模态、创建.py)
@@ -421,6 +453,7 @@
 [03-QDialog-信号.py](./29-QDialog/03-QDialog-信号.py)
 
 ### [30-QFontDialog](./30-QFontDialog)
+
 [00-QFontDialog-字体选择对话框.md](./30-QFontDialog/00-QFontDialog-字体选择对话框.md)
 
 [01-QFontDialog-创建.py](./30-QFontDialog/01-QFontDialog-创建.py)
@@ -430,6 +463,7 @@
 [03-QFontDialog-静态方法.py](./30-QFontDialog/03-QFontDialog-静态方法.py)
 
 ### [31-QColorDialog](./31-QColorDialog)
+
 [00-QColorDialog-颜色选择对话框.md](./31-QColorDialog/00-QColorDialog-颜色选择对话框.md)
 
 [01-QColorDialog-创建.py](./31-QColorDialog/01-QColorDialog-创建.py)
@@ -441,6 +475,7 @@
 [04-QColorDialog-信号.py](./31-QColorDialog/04-QColorDialog-信号.py)
 
 ### [32-QFileDialog](./32-QFileDialog)
+
 [00-QFileDialog-文件选择对话框.md](./32-QFileDialog/00-QFileDialog-文件选择对话框.md)
 
 [01-QFileDialog-静态方法-弹出文件操作对话框.py](./32-QFileDialog/01-QFileDialog-静态方法-弹出文件操作对话框.py)
@@ -454,6 +489,7 @@
 [05-QFileDialog-信号.py](./32-QFileDialog/05-QFileDialog-信号.py)
 
 ### [33-QInputDialog](./33-QInputDialog)
+
 [00-QInputDialog-输入对话框.md](./33-QInputDialog/00-QInputDialog-输入对话框.md)
 
 [01-QInputDialog-静态方法.py](./33-QInputDialog/01-QInputDialog-静态方法.py)
@@ -463,9 +499,11 @@
 [03-QInputDialog-信号.py](./33-QInputDialog/03-QInputDialog-信号.py)
 
 ### [34-QCalendarWidget](./34-QCalendarWidget)
+
 [00-QCalendarWidget-日历控件.md](./34-QCalendarWidget/00-QCalendarWidget-日历控件.md)
 
 ### [35-QLabel](./35-QLabel)
+
 [00-QLabel-标签控件.md](./35-QLabel/00-QLabel-标签控件.md)
 
 [01-QLabel-创建、对齐、间距、缩进.py](./35-QLabel/01-QLabel-创建、对齐、间距、缩进.py)
@@ -483,9 +521,11 @@
 [07-QLabel-信号.py](./35-QLabel/07-QLabel-信号.py)
 
 ### [36-QLCDNumber](./36-QLCDNumber)
+
 [00-QLCDNumber-液晶数字显示器.md](./36-QLCDNumber/00-QLCDNumber-液晶数字显示器.md)
 
 ### [37-QProgressBar](./37-QProgressBar)
+
 [00-QProgressBar-进度条控件.md](./37-QProgressBar/00-QProgressBar-进度条控件.md)
 
 [01-QProgressBar-基本、区间范围和当前数值.py](./37-QProgressBar/01-QProgressBar-基本、区间范围和当前数值.py)
@@ -497,6 +537,7 @@
 [04-QProgressBar-信号.py](./37-QProgressBar/04-QProgressBar-信号.py)
 
 ### [38-QErrorMessage](./38-QErrorMessage)
+
 [00-QErrorMessage-错误消息对话框.md](./38-QErrorMessage/00-QErrorMessage-错误消息对话框.md)
 
 [01-QErrorMessage-创建、功能作用.py](./38-QErrorMessage/01-QErrorMessage-创建、功能作用.py)
@@ -504,6 +545,7 @@
 [02-QErrorMessage-Debug.py](./38-QErrorMessage/02-QErrorMessage-Debug.py)
 
 ### [39-QProgressDialog](./39-QProgressDialog)
+
 [00-QProgressDialog-进度条对话框.md](./39-QProgressDialog/00-QProgressDialog-进度条对话框.md)
 
 [01-QProgressDialog-创建.py](./39-QProgressDialog/01-QProgressDialog-创建.py)
@@ -511,6 +553,7 @@
 [02-QProgressDialog-最小等待时间、窗口标题、设置子控件.py](./39-QProgressDialog/02-QProgressDialog-最小等待时间、窗口标题、设置子控件.py)
 
 ### [40-QMessageBox](./40-QMessageBox)
+
 [00-QMessageBox-消息提示框.md](./40-QMessageBox/00-QMessageBox-消息提示框.md)
 
 [01-QMessageBox-创建.py](./40-QMessageBox/01-QMessageBox-创建.py)
@@ -518,6 +561,7 @@
 [02-QMessageBox-按钮操作.py](./40-QMessageBox/02-QMessageBox-按钮操作.py)
 
 ### [41-Layout](./41-Layout)
+
 [00-Layout-布局管理器.md](./41-Layout/00-Layout-布局管理器.md)
 
 [00-Layout-简单使用.py](./41-Layout/00-Layout-简单使用.py)
@@ -545,9 +589,11 @@
 [11-QStackedLayout-切换、展示模式、移除控件.py](./41-Layout/11-QStackedLayout-切换、展示模式、移除控件.py)
 
 ### [42-QSS](./42-QSS)
+
 [01-QSS-简介.py](./42-QSS/01-QSS-简介.py)
 
 ### [43-pyqtSignal](./43-pyqtSignal)
+
 [01-pyqtSignal-自定义信号.py](./43-pyqtSignal/01-pyqtSignal-自定义信号.py)
 
 [02-pyqtSignal-重载、多个参数.py](./43-pyqtSignal/02-pyqtSignal-重载、多个参数.py)
@@ -555,6 +601,7 @@
 [03-pyqtSignal-装饰器自动连接.py](./43-pyqtSignal/03-pyqtSignal-装饰器自动连接.py)
 
 ### [44-QMainWindow](./44-QMainWindow)
+
 [00-QMainWindow-主窗口控件.md](./44-QMainWindow/00-QMainWindow-主窗口控件.md)
 
 [01-QMainWindow-创建.py](./44-QMainWindow/01-QMainWindow-创建.py)
@@ -566,12 +613,15 @@
 [04-QMainWindow-QStatusBar-状态栏.py](./44-QMainWindow/04-QMainWindow-QStatusBar-状态栏.py)
 
 ### [45-QDockWidget](./45-QDockWidget)
+
 [00-QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
 ### [46-QAbstractItemView](./46-QAbstractItemView)
+
 [00-QAbstractItemView-项目视图的抽象基类.md](./46-QAbstractItemView/00-QAbstractItemView-项目视图的抽象基类.md)
 
 ### [47-QListView](./47-QListView)
+
 [00-QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md)
 
 [01-QListView-创建、方向、布局模式.py](./47-QListView/01-QListView-创建、方向、布局模式.py)
@@ -579,10 +629,16 @@
 [02-QListView-自动换行、布局间距、对齐、单词自动换行.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词自动换行.py)
 
 ### [48-QTableView](./48-QTableView)
+
 [00-QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
 
 ### [49-QTreeView](./49-QTreeView)
+
 [00-QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
+
+### [50-QTabWidget](./50-QTabWidget)
+
+[00-QTabWidget-标签页控件.md](./50-QTabWidget/00-QTabWidget-标签页控件.md)
 
 共49个目录，236个文件.
 
