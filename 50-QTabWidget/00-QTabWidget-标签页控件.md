@@ -8,21 +8,35 @@
 
 [Qt 5.15 官方文档-QTabWidget](https://doc.qt.io/qt-5.15/qtabwidget.html)
 
+## 使用方法
+
+> The normal way to use QTabWidget is to do the following:
+>
+> 1. Create a QTabWidget.
+> 2. Create a [QWidget](https://doc.qt.io/qt-5.15/qwidget.html) for each of the pages in the tab dialog, but do not specify parent widgets for them.
+> 3. Insert child widgets into the page widget, using layouts to position them as normal.
+> 4. Call [addTab](https://doc.qt.io/qt-5.15/qtabwidget.html#addTab)() or [insertTab](https://doc.qt.io/qt-5.15/qtabwidget.html#insertTab)() to put the page widgets into the tab widget, giving each tab a suitable label with an optional keyboard shortcut.
+
+1. 创建一个QTabWidget
+2. 创建每个标签页的页面控件，但是不要为它们设置父控件
+3. 像普通控件那样把子控件插入到页面控件中，使用布局管理器以定位
+4. 调用 addTab() 或 insertTab() 方法把页面控件添加到标签页控件中，为每个标签页一个合适的label标签和键盘快捷键
+
 ## 常用方法
 
-设置方法
+### 设置方法
 
-| 方法                                             | 说明                            | 备注 |
-| ------------------------------------------------ | ------------------------------- | ---- |
-|                                                  |                                 |      |
-|                                                  |                                 |      |
-| setCurrentIndex(int *index*)                     |                                 |      |
-| setTabsClosable(bool *closeable*)                |                                 |      |
-| setElideMode(Qt.TextElideMode *mode*)            |                                 |      |
-| setMovable(bool *movable*)                       |                                 |      |
-| setTabBarAutoHide(bool *enabled*)                |                                 |      |
-| setTabPosition(QTabWidget.TabPosition *position*) | 见下方QTabWidget.TabPostion表格 |      |
-| setTabShape(QTabWidget.TabShape*s*)              | 见下方QTabWidget.TabShape表格   |      |
+| 方法                                              | 说明                            | 备注 |
+| ------------------------------------------------- | ------------------------------- | ---- |
+| setTabText(int *index*, str &*label*)             |                                 |      |
+| setTabIcon(int *index*, QIcon &*icon*)            |                                 |      |
+| setCurrentIndex(int *index*)                      |                                 |      |
+| setTabsClosable(bool *closeable*)                 |                                 |      |
+| setElideMode(Qt.TextElideMode *mode*)             |                                 |      |
+| setMovable(bool *movable*)                        |                                 |      |
+| setTabBarAutoHide(bool *enabled*)                 |                                 |      |
+| setTabPosition(QTabWidget.TabPosition *position*) | 见下方QTabWidget.TabPosition表格 |      |
+| setTabShape(QTabWidget.TabShape*s*)               | 见下方QTabWidget.TabShape表格   |      |
 
 
 
@@ -38,7 +52,31 @@
 | QTabWidget.TabShape | 值   | 描述                 |
 | ------------------- | ---- | -------------------- |
 | Rounded             | 0    | 标签为圆角（默认值） |
-| Triangular          | 1    | 标签为直角           |
+| Triangular          | 1    | 标签为三角形（梯形）       |
+
+### 获取方法
+
+| 方法                         | 说明                  | 备注               |
+| ---------------------------- | --------------------- | ------------------ |
+| count() -> int               |                       |                    |
+| indexOf(QWidget **w*) -> int | 返回*w*页面当前的索引 | 如果未找到则返回-1 |
+|                              |                       |                    |
+|                              |                       |                    |
+|                              |                       |                    |
+
+
+
+### 页操作
+
+| 方法                                                  | 说明 | 备注                                                 |
+| ----------------------------------------------------- | ---- | ---------------------------------------------------- |
+| addTab(QWidget **page*, str &*label*)                 |      |                                                      |
+| addTab(QWidget **page*, QIcon &*icon*, str &*label*)  |      |                                                      |
+| insertTab(int *index*, QWidget **page*, set &*label*) |      |                                                      |
+| insertTab()                                           |      |                                                      |
+| removeTab(int *index*)                                |      |                                                      |
+| setTabEnabled(int *index*, bool *enable*)             |      | 即使设置了不可用，该标签页依然可见，只是用户无法选中 |
+| clear()                                               |      |                                                      |
 
 
 
