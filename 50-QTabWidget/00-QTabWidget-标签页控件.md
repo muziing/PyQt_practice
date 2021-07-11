@@ -42,41 +42,39 @@
 
 | QTabWidget.TabPosition | 值   | 描述             |
 | --------------------- | ---- | ---------------- |
-| North                 | 0    | 标签在页上方绘制 |
-| South                 | 1    | 标签在页下方绘制 |
-| West                  | 2    | 标签在页左侧绘制 |
-| East                  | 3    | 标签在页右侧绘制 |
+| North                 | 0    | 页签在页上方绘制 |
+| South                 | 1    | 页签在页下方绘制 |
+| West                  | 2    | 页签在页左侧绘制 |
+| East                  | 3    | 页签在页右侧绘制 |
 
 
 
 | QTabWidget.TabShape | 值   | 描述                 |
 | ------------------- | ---- | -------------------- |
-| Rounded             | 0    | 标签为圆角（默认值） |
-| Triangular          | 1    | 标签为三角形（梯形）       |
+| Rounded             | 0    | 页签为圆角（默认值） |
+| Triangular          | 1    | 页签为三角形（梯形）      |
 
 ### 获取方法
 
 | 方法                         | 说明                  | 备注               |
 | ---------------------------- | --------------------- | ------------------ |
-| count() -> int               |                       |                    |
+| count() -> int               | 返回标签页的数量      |                    |
 | indexOf(QWidget **w*) -> int | 返回*w*页面当前的索引 | 如果未找到则返回-1 |
-|                              |                       |                    |
-|                              |                       |                    |
-|                              |                       |                    |
+| currentIndex() -> int        | 返回当前页面的索引             |                    |
 
 
 
 ### 页操作
 
-| 方法                                                  | 说明 | 备注                                                 |
-| ----------------------------------------------------- | ---- | ---------------------------------------------------- |
-| addTab(QWidget **page*, str &*label*)                 |      |                                                      |
-| addTab(QWidget **page*, QIcon &*icon*, str &*label*)  |      |                                                      |
-| insertTab(int *index*, QWidget **page*, set &*label*) |      |                                                      |
-| insertTab()                                           |      |                                                      |
-| removeTab(int *index*)                                |      |                                                      |
-| setTabEnabled(int *index*, bool *enable*)             |      | 即使设置了不可用，该标签页依然可见，只是用户无法选中 |
-| clear()                                               |      |                                                      |
+| 方法                                                    | 说明                                              | 备注                                                 |
+| ------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------- |
+| addTab(QWidget **page*, str &*label*)                   | 添加一个标签页                                    |                                                      |
+| addTab(QWidget **page*, QIcon &*icon*, str &*label*)    | 添加一个标签页                                    |                                                      |
+| insertTab(int *index*, QWidget **page*, set &*label*)   | 插入一个标签页                                    |                                                      |
+| insertTab(QWidget **page*, QIcon &*icon*, str &*label*) | 插入一个标签页                                    |                                                      |
+| removeTab(int *index*)                                  | 移除*index*位置的标签页                           |                                                      |
+| setTabEnabled(int *index*, bool *enable*)               | 设置标签是否可用                                  | 即使设置了不可用，该标签页依然可见，只是用户无法选中 |
+| clear()                                                 | 移除所有标签页，等同于调用removeTab()直到清空为止 | 并没有删除它们                                       |
 
 
 
