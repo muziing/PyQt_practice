@@ -9,21 +9,25 @@ class Window(QWidget):
         self.resize(500, 500)
         self.page_1 = QWidget()  # 创建页面时不需要指定父控件
         self.page_2 = QPlainTextEdit()
+        self.tab_widget = QTabWidget(self)  # 在主窗口上创建一个QTabWidget控件
         self.setup_page_1()
         self.setup_page_2()
         self.setup_tab_widget()
 
     def setup_page_1(self):
+        """布局第一个页面的方法"""
         # 在每个页面中，只需像在其他QWidget内一样设置按钮标签等各种子控件即可
         lb_1 = QLabel("这是第一个标签页", self.page_1)
         lb_1.move(100, 100)
 
     def setup_page_2(self):
+        """布局第二个页面的方法"""
         # 页面也可以是QWidget的各种子类，比如这里是一个QPlainWidget
         self.page_2.setPlainText("这是第二个标签页")
 
     def setup_tab_widget(self):
-        tw = QTabWidget(self)  # 在主窗口上创建一个QTabWidget控件
+        """布局tab widget的方法"""
+        tw = self.tab_widget
         tw.move(50, 50)
         tw.resize(400, 400)
         tw.addTab(self.page_1, "Tab1")  # 把页添加到QTabWidget中
