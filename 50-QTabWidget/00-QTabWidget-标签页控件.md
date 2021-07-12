@@ -28,15 +28,17 @@
 
 | 方法                                              | 说明                            | 备注 |
 | ------------------------------------------------- | ------------------------------- | ---- |
-| setTabText(int *index*, str &*label*)             |                                 |      |
-| setTabIcon(int *index*, QIcon &*icon*)            |                                 |      |
-| setCurrentIndex(int *index*)                      |                                 |      |
-| setTabsClosable(bool *closeable*)                 |                                 |      |
-| setElideMode(Qt.TextElideMode *mode*)             |                                 |      |
-| setMovable(bool *movable*)                        |                                 |      |
-| setTabBarAutoHide(bool *enabled*)                 |                                 |      |
+| setTabText(int *index*, str &*label*)             | 为指定索引位置的标签设置文本 |      |
+| setTabIcon(int *index*, QIcon &*icon*)            | 为指定索引位置的标签设置图标 |      |
+| setTabsClosable(bool *closeable*)                 | 设置是否自动为每个标签页添加关闭按钮 | 只是外观上添加关闭按钮，需要连接信号与槽才能真正实现关闭功能 |
+| setUsesScrollButtons(bool *useButtons*) | 控制当选项卡栏有多个选项卡无足够空间显示时是否使用按钮滚动选项卡 |  |
+| setElideMode(Qt.TextElideMode *mode*)             | 设置在页签中省略文本的方式 |      |
+| setIconSize(QSize &*size*) | 设置页签中图标（最大）尺寸；默认为样式相关的 | 如果实际使用的图标尺寸小于此属性，则不会放大 |
+| setMovable(bool *movable*)                        | 设置用户是否可以在页签区域内移动标签页 | 默认为False |
+| setTabBarAutoHide(bool *enabled*)                 | 设置为True后，当标签页数量少于两个时自动隐藏页签 | 默认为False |
 | setTabPosition(QTabWidget.TabPosition *position*) | 见下方QTabWidget.TabPosition表格 |      |
 | setTabShape(QTabWidget.TabShape*s*)               | 见下方QTabWidget.TabShape表格   |      |
+| setDocumentMode(bool *set*) | 此属性设置为True时，不会呈现选项卡部件框架，即选项卡页面和其后的窗口等页面无框架区分看起来是一个整体。此模式对于页面需要显示文档类型的情况非常有用，因为节省了选项卡部件框架占用的部分空间。 | |
 
 
 
