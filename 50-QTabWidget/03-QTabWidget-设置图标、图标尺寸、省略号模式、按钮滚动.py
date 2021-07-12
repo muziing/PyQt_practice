@@ -1,6 +1,11 @@
 from PyQt5.Qt import *
 import sys
 
+"""
+本节涉及到的几个方法都和窗口尺寸是否能完整容纳所有内容有关
+在运行代码实验效果时注意拖动缩放窗口，观察不同设置下省略模式的不同表现
+"""
+
 
 class Window(QTabWidget):
     def __init__(self):
@@ -37,6 +42,11 @@ class Window(QTabWidget):
         # 当空间狭小，不足以显示页签内全部文本时，会按照设置的ElideMode使用省略号隐藏过长的文本
         # 可以通过缩放窗口体验
         self.setElideMode(Qt.ElideLeft)  # 省略号出现在左侧
+
+        # -------按钮滚动标签页--------
+        # 控制当选项卡栏有多个选项卡无足够空间显示时是否使用按钮滚动选项卡
+        # 默认为True，当空间不足以显示全部页签时，添加一个滚动按钮以滚动显示被隐藏的页签
+        self.setUsesScrollButtons(False)
 
 
 if __name__ == '__main__':
