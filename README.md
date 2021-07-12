@@ -642,24 +642,22 @@
 
 2. [QTabWidget-创建、父控件关系、标签位置、标签形状](./50-QTabWidget/01-QTabWidget-创建、父控件关系、标签位置、标签形状.py)
 
-3. [QTabWidget-可移动、可关闭、文档模式](./50-QTabWidget/02-QTabWidget-可移动、可关闭、文档模式.py)
+3. [QTabWidget-可移动、可关闭、自动隐藏页签、文档模式](./50-QTabWidget/02-QTabWidget-可移动、可关闭、自动隐藏页签、文档模式.py)
 
-4. [QTabWidget-设置图标、图标尺寸、省略号模式](./50-QTabWidget/03-QTabWidget-设置图标、图标尺寸、省略号模式.py)
-
-5. [QTabWidget-自动隐藏页签、按钮滚动标签页](./50-QTabWidget/04-QTabWidget-自动隐藏页签、按钮滚动标签页.py)
+4. [QTabWidget-设置图标、图标尺寸、省略号模式、按钮滚动](./50-QTabWidget/03-QTabWidget-设置图标、图标尺寸、省略号模式、按钮滚动.py)
 
 ### [51-QStackedWidget](./51-QStackedWidget)
 
 1. [QStackedWidget-堆载窗口控件](./51-QStackedWidget/00-QStackedWidget-堆载窗口控件.md)
 
-共51个目录，242个文件.
+共51个目录，241个文件.
 
 -------
 
 | Language | files | blank | comment | code |
 | -------- | ----- | ----- | ------- | ---- |
-| Python   | 199   | 2058  | 1467    | 5070 |
-| Markdown | 44    | 1410  | 0       | 1744 |
-| **SUM**  | 243   | 3468  | 1467    | 6814 |
+| Python   | 198   | 2055  | 1482    | 5049 |
+| Markdown | 44    | 1414  | 0       | 1748 |
+| **SUM**  | 242   | 3469  | 1482    | 6797 |
 
 代码行数统计工具: github.com/AlDanial/cloc v1.90
