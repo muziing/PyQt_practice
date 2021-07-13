@@ -1,4 +1,4 @@
-# PyQt 5 代码笔记
+# PyQt5 代码笔记
 
 ***用代码学 PyQt5 !***
 
@@ -17,15 +17,15 @@
 
 ## 使用方法
 
-1. star本仓库
-2. 克隆本仓库到本地；或下载zip并解压
+1. Star本仓库
+2. 克隆本仓库到本地，或下载zip并解压
 3. 在命令行执行 `pip install -r requirements.txt` 安装依赖（其实只有一个PyQt-5.15)
 4. 进入你感兴趣的控件对应的文件夹，运行任何一个.py文件观察效果
 5. 对于绝大多数目录，第一个文件都是一个markdown文档，相当于Qt官方文档的中文翻译简单整理版
 
 
 
-以 [47-QListView](./47-QListView) 目录下的[02-QListView-自动换行、布局间距、对齐、单词省略.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词省略.py) 为例：
+以 [47-QListView](./47-QListView) 目录下的 [02-QListView-自动换行、布局间距、对齐、单词省略.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词省略.py) 为例：
 
 ```python
 # 02-QListView-自动换行、布局间距、对齐、单词省略.py
@@ -101,59 +101,13 @@ if __name__ == '__main__':
 
 ## PyQt5 相关分享
 
-### Documents 文档
-
-- [Qt控件(5.15)官方文档](https://doc.qt.io/qt-5.15/classes.html)
-
-- [PyQt5 Reference Guide](https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html)
-
-- [Qt官方文档中文翻译版](https://github.com/QtDocumentCN/QtDocumentCN)
-
-### Courses 教程
-
-- [学点编程吧-PyQt5图形界面编程](https://www.xdbcb8.com/archives/1550.html)
-
-- [LearnPyQt.com](https://www.mfitzp.com/courses/pyqt/)
-
-- [PyQt5中文教程](https://maicss.gitbook.io/pyqt5-chinese-tutoral/)
-
-- [pyqt.site](https://pyqt.site/)
-
-### Demos 例子
-
-- [本仓库内的Demos](./Demos)
-
-- [一大批PyQt测试和例子(Gitee)](https://gitee.com/PyQt5/PyQt)
-
-- [一大批PyQt测试和例子(GitHub)](https://github.com/PyQt5/PyQt)
-
-- [15 Minute Apps-15个简单易学的PyQt小程序](https://github.com/learnpyqt/15-minute-apps)
-
-### QSS 美化主题
-
-- [Qt5-官方 stylesheet-examples](https://doc.qt.io/qt-5/stylesheet-examples.html)
-
-- [Qt-Material-PyQt5](https://github.com/UN-GCPDS/qt-material)
-
-- [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet)
-
-- [一组QSS样式-飞扬青云](https://github.com/feiyangqingyun/QWidgetDemo/tree/master/styledemo/other)
-
-- [GTRONICK-QSS](https://github.com/GTRONICK/QSS)
-
-- [QssStylesheetEditor-可以实时预览的QSS编辑器](https://github.com/hustlei/QssStylesheetEditor)
-
-- [QSS Editor-实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
-
-### 其他
-
-- [PyQt5-stubs](https://pypi.org/project/PyQt5-stubs/): PyQt5框架存根，在Pycharm等中可以便于代码类型检查
+[我搜集到的一些PyQt5相关文档、教程、Demo、QSS美化等](share.md)
 
 
 
 ## [仓库文件目录](toc.md)
 
-### [01-PyQt基本结构](./01-PyQt基本结构)
+### 01 [PyQt基本结构](./01-PyQt基本结构)
 
 0. [PyQt5-初体验.py](./01-PyQt基本结构/01-PyQt5-初体验.py)
 
@@ -163,7 +117,7 @@ if __name__ == '__main__':
 
 3. [控件类的继承关系.py](./01-PyQt基本结构/04-控件类的继承关系.py)
 
-### [02-QObject](./02-QObject)
+### 02 [QObject](./02-QObject)
 
 0. [QObject.py](./02-QObject/01-QObject.py)
 
@@ -187,7 +141,7 @@ if __name__ == '__main__':
 
 10. [QObject定时器-案例.py](./02-QObject/11-QObject定时器-案例.py)
 
-### [03-QWidget](./03-QWidget)
+### 03 [QWidget](./03-QWidget)
 
 0. [QWidget-用户界面的基类.md](./03-QWidget/00-QWidget-用户界面的基类.md)
 
@@ -239,7 +193,7 @@ if __name__ == '__main__':
 
 24. [QWidget-焦点控制.py](./03-QWidget/24-QWidget-焦点控制.py)
 
-### [04-QAbstractButton](./04-QAbstractButton)
+### 04 [QAbstractButton](./04-QAbstractButton)
 
 0. [QAbstractButton-按钮的抽象基类.md](./04-QAbstractButton/00-QAbstractButton-按钮的抽象基类.md)
 
@@ -257,7 +211,7 @@ if __name__ == '__main__':
 
 7. [QAbstractButton-可用信号.py](./04-QAbstractButton/07-QAbstractButton-可用信号.py)
 
-### [05-QPushButton](./05-QPushButton)
+### 05 [QPushButton](./05-QPushButton)
 
 0. [QPushButton-普通按钮.md](./05-QPushButton/00-QPushButton-普通按钮.md)
 
@@ -273,7 +227,7 @@ if __name__ == '__main__':
 
 6. [QCommandLinkButton.py](./05-QPushButton/06-QCommandLinkButton.py)
 
-### [06-QToolButton](./06-QToolButton)
+### 06 [QToolButton](./06-QToolButton)
 
 0. [QToolButton-工具栏按钮.md](./06-QToolButton/00-QToolButton-工具栏按钮.md)
 
@@ -289,7 +243,7 @@ if __name__ == '__main__':
 
 6. [QToolButton-可用信号.py](./06-QToolButton/06-QToolButton-可用信号.py)
 
-### [07-QRadioButton](./07-QRadioButton)
+### 07 [QRadioButton](./07-QRadioButton)
 
 0. [QRadioButton-单选按钮.md](./07-QRadioButton/00-QRadioButton-单选按钮.md)
 
@@ -297,7 +251,7 @@ if __name__ == '__main__':
 
 2. [QRadioButton-多组互斥问题.py](./07-QRadioButton/02-QRadioButton-多组互斥问题.py)
 
-### [08-QButtonGroup](./08-QButtonGroup)
+### 08 [QButtonGroup](./08-QButtonGroup)
 
 0. [QButtonGroup-按钮组.md](./08-QButtonGroup/00-QButtonGroup-按钮组.md)
 
@@ -307,7 +261,7 @@ if __name__ == '__main__':
 
 3. [QButtonGroup-信号.py](./08-QButtonGroup/03-QButtonGroup-信号.py)
 
-### [09-QCheckBox](./09-QCheckBox)
+### 09 [QCheckBox](./09-QCheckBox)
 
 0. [QCheckButton-复选框.md](./09-QCheckBox/00-QCheckButton-复选框.md)
 
@@ -315,7 +269,7 @@ if __name__ == '__main__':
 
 2. [QCheckBox-信号.py](./09-QCheckBox/02-QCheckBox-信号.py)
 
-### [10-QLineEdit](./10-QLineEdit)
+### 10 [QLineEdit](./10-QLineEdit)
 
 0. [QLineEdit-单行文本编辑器.md](./10-QLineEdit/00-QLineEdit-单行文本编辑器.md)
 
@@ -353,7 +307,7 @@ if __name__ == '__main__':
 
 17. [QLineEdit-信号.py](./10-QLineEdit/17-QLineEdit-信号.py)
 
-### [11-QFrame](./11-QFrame)
+### 11 [QFrame](./11-QFrame)
 
 0. [QFrame-框架控件的基类.md](./11-QFrame/00-QFrame-框架控件的基类.md)
 
@@ -361,13 +315,13 @@ if __name__ == '__main__':
 
 2. [QFrame-功能作用.py](./11-QFrame/02-QFrame-功能作用.py)
 
-### [12-QAbstractScrollArea](./12-QAbstractScrollArea)
+### 12 [QAbstractScrollArea](./12-QAbstractScrollArea)
 
 0. [QAbstractScrollArea-滚动区域的低级抽象.md](./12-QAbstractScrollArea/00-QAbstractScrollArea-滚动区域的低级抽象.md)
 
 1. [QAbstractScrollArea.py](./12-QAbstractScrollArea/01-QAbstractScrollArea.py)
 
-### [13-QTextEdit](./13-QTextEdit)
+### 13 [QTextEdit](./13-QTextEdit)
 
 0. [QTextEdit-文本编辑器.md](./13-QTextEdit/00-QTextEdit-文本编辑器.md)
 
@@ -389,7 +343,7 @@ if __name__ == '__main__':
 
 9. [QTextEdit-文本光标-格式操作.py](./13-QTextEdit/09-QTextEdit-文本光标-格式操作.py)
 
-### [14-QPlainTextEdit](./14-QPlainTextEdit)
+### 14 [QPlainTextEdit](./14-QPlainTextEdit)
 
 0. [QPlainTextEdit-纯文本编辑器.md](./14-QPlainTextEdit/00-QPlainTextEdit-纯文本编辑器.md)
 
@@ -407,7 +361,7 @@ if __name__ == '__main__':
 
 7. [QPlainTextEdit-案例-显示行号.py](./14-QPlainTextEdit/07-QPlainTextEdit-案例-显示行号.py)
 
-### [15-QKeySequenceEdit](./15-QKeySequenceEdit)
+### 15 [QKeySequenceEdit](./15-QKeySequenceEdit)
 
 0. [QKeySequenceEdit-快捷键编辑器.md](./15-QKeySequenceEdit/00-QKeySequenceEdit-快捷键编辑器.md)
 
@@ -415,7 +369,7 @@ if __name__ == '__main__':
 
 2. [QKeySequence-补充.py](./15-QKeySequenceEdit/02-QKeySequence-补充.py)
 
-### [16-QAbstractSpinBox](./16-QAbstractSpinBox)
+### 16 [QAbstractSpinBox](./16-QAbstractSpinBox)
 
 0. [QAbstractSpinBox-数字设定框的抽象基类.md](./16-QAbstractSpinBox/00-QAbstractSpinBox-数字设定框的抽象基类.md)
 
@@ -427,7 +381,7 @@ if __name__ == '__main__':
 
 4. [QAbstractSpinBox-内容验证、信号.py](./16-QAbstractSpinBox/04-QAbstractSpinBox-内容验证、信号.py)
 
-### [17-QSpinBox](./17-QSpinBox)
+### 17 [QSpinBox](./17-QSpinBox)
 
 0. [QSpinBox-数字设定框.md](./17-QSpinBox/00-QSpinBox-数字设定框.md)
 
@@ -439,7 +393,7 @@ if __name__ == '__main__':
 
 4. [QSpinBox-信号.py](./17-QSpinBox/04-QSpinBox-信号.py)
 
-### [18-QDoubleSpinBox](./18-QDoubleSpinBox)
+### 18 [QDoubleSpinBox](./18-QDoubleSpinBox)
 
 0. [QDoubleSpinBox-浮点数设定框.md](./18-QDoubleSpinBox/00-QDoubleSpinBox-浮点数设定框.md)
 
@@ -449,7 +403,7 @@ if __name__ == '__main__':
 
 3. [QDoubleSpinBox-信号.py](./18-QDoubleSpinBox/03-QDoubleSpinBox-信号.py)
 
-### [19-QDateTimeEdit](./19-QDateTimeEdit)
+### 19 [QDateTimeEdit](./19-QDateTimeEdit)
 
 0. [QDateTimeEdit-日期时间编辑器.md](./19-QDateTimeEdit/00-QDateTimeEdit-日期时间编辑器.md)
 
@@ -457,15 +411,15 @@ if __name__ == '__main__':
 
 2. [QDateTimeEdit-创建、显示格式、section操作.py](./19-QDateTimeEdit/02-QDateTimeEdit-创建、显示格式、section操作.py)
 
-### [20-QDateEdit](./20-QDateEdit)
+### 20 [QDateEdit](./20-QDateEdit)
 
 0. [QDateEdit-日期编辑器.md](./20-QDateEdit/00-QDateEdit-日期编辑器.md)
 
-### [21-QTimeEdit](./21-QTimeEdit)
+### 21 [QTimeEdit](./21-QTimeEdit)
 
 0. [QTimeEdit-时间编辑器.md](./21-QTimeEdit/00-QTimeEdit-时间编辑器.md)
 
-### [22-QComboBox](./22-QComboBox)
+### 22 [QComboBox](./22-QComboBox)
 
 0. [QComboBox-组合下拉框.md](./22-QComboBox/00-QComboBox-组合下拉框.md)
 
@@ -483,13 +437,13 @@ if __name__ == '__main__':
 
 7. [QComboBox-案例.py](./22-QComboBox/07-QComboBox-案例.py)
 
-### [23-QFontComboBox](./23-QFontComboBox)
+### 23 [QFontComboBox](./23-QFontComboBox)
 
 0. [QFontComboBox-字体下拉框.md](./23-QFontComboBox/00-QFontComboBox-字体下拉框.md)
 
 1. [QFontComboBox-功能作用.py](./23-QFontComboBox/01-QFontComboBox-功能作用.py)
 
-### [24-QAbstractSlider](./24-QAbstractSlider)
+### 24 [QAbstractSlider](./24-QAbstractSlider)
 
 0. [QAbstractSlider-滑块控件抽象基类.md](./24-QAbstractSlider/00-QAbstractSlider-滑块控件抽象基类.md)
 
@@ -499,7 +453,7 @@ if __name__ == '__main__':
 
 3. [QAbstractSlider-是否按下、信号.py](./24-QAbstractSlider/03-QAbstractSlider-是否按下、信号.py)
 
-### [25-QSlider](./25-QSlider)
+### 25 [QSlider](./25-QSlider)
 
 0. [QSlider-滑块控件.md](./25-QSlider/00-QSlider-滑块控件.md)
 
@@ -509,19 +463,19 @@ if __name__ == '__main__':
 
 3. [QSlider-鼠标跳转优化.py](./25-QSlider/03-QSlider-鼠标跳转优化.py)
 
-### [26-QScrollBar](./26-QScrollBar)
+### 26 [QScrollBar](./26-QScrollBar)
 
 0. [QScrollBar-滚动条.md](./26-QScrollBar/00-QScrollBar-滚动条.md)
 
 1. [QScrollBar-功能作用.py](./26-QScrollBar/01-QScrollBar-功能作用.py)
 
-### [27-QDial](./27-QDial)
+### 27 [QDial](./27-QDial)
 
 0. [QDial-转盘控件.md](./27-QDial/00-QDial-转盘控件.md)
 
 1. [QDial-功能作用.py](./27-QDial/01-QDial-功能作用.py)
 
-### [28-QRubberBand](./28-QRubberBand)
+### 28 [QRubberBand](./28-QRubberBand)
 
 0. [QRubberBand-选择框线.md](./28-QRubberBand/00-QRubberBand-选择框线.md)
 
@@ -529,7 +483,7 @@ if __name__ == '__main__':
 
 2. [QRubberBand-综合案例.py](./28-QRubberBand/02-QRubberBand-综合案例.py)
 
-### [29-QDialog](./29-QDialog)
+### 29 [QDialog](./29-QDialog)
 
 0. [QDialog-对话框窗口基类.md](./29-QDialog/00-QDialog-对话框窗口基类.md)
 
@@ -539,7 +493,7 @@ if __name__ == '__main__':
 
 3. [QDialog-信号.py](./29-QDialog/03-QDialog-信号.py)
 
-### [30-QFontDialog](./30-QFontDialog)
+### 30 [QFontDialog](./30-QFontDialog)
 
 0. [QFontDialog-字体选择对话框.md](./30-QFontDialog/00-QFontDialog-字体选择对话框.md)
 
@@ -549,7 +503,7 @@ if __name__ == '__main__':
 
 3. [QFontDialog-静态方法.py](./30-QFontDialog/03-QFontDialog-静态方法.py)
 
-### [31-QColorDialog](./31-QColorDialog)
+### 31 [QColorDialog](./31-QColorDialog)
 
 0. [QColorDialog-颜色选择对话框.md](./31-QColorDialog/00-QColorDialog-颜色选择对话框.md)
 
@@ -561,7 +515,7 @@ if __name__ == '__main__':
 
 4. [QColorDialog-信号.py](./31-QColorDialog/04-QColorDialog-信号.py)
 
-### [32-QFileDialog](./32-QFileDialog)
+### 32 [QFileDialog](./32-QFileDialog)
 
 0. [QFileDialog-文件选择对话框.md](./32-QFileDialog/00-QFileDialog-文件选择对话框.md)
 
@@ -575,7 +529,7 @@ if __name__ == '__main__':
 
 5. [QFileDialog-信号.py](./32-QFileDialog/05-QFileDialog-信号.py)
 
-### [33-QInputDialog](./33-QInputDialog)
+### 33 [QInputDialog](./33-QInputDialog)
 
 0. [QInputDialog-输入对话框.md](./33-QInputDialog/00-QInputDialog-输入对话框.md)
 
@@ -585,11 +539,11 @@ if __name__ == '__main__':
 
 3. [QInputDialog-信号.py](./33-QInputDialog/03-QInputDialog-信号.py)
 
-### [34-QCalendarWidget](./34-QCalendarWidget)
+### 34 [QCalendarWidget](./34-QCalendarWidget)
 
 0. [QCalendarWidget-日历控件.md](./34-QCalendarWidget/00-QCalendarWidget-日历控件.md)
 
-### [35-QLabel](./35-QLabel)
+### 35 [QLabel](./35-QLabel)
 
 0. [QLabel-标签控件.md](./35-QLabel/00-QLabel-标签控件.md)
 
@@ -607,11 +561,11 @@ if __name__ == '__main__':
 
 7. [QLabel-信号.py](./35-QLabel/07-QLabel-信号.py)
 
-### [36-QLCDNumber](./36-QLCDNumber)
+### 36 [QLCDNumber](./36-QLCDNumber)
 
 0. [QLCDNumber-液晶数字显示器.md](./36-QLCDNumber/00-QLCDNumber-液晶数字显示器.md)
 
-### [37-QProgressBar](./37-QProgressBar)
+### 37 [QProgressBar](./37-QProgressBar)
 
 0. [QProgressBar-进度条控件.md](./37-QProgressBar/00-QProgressBar-进度条控件.md)
 
@@ -623,7 +577,7 @@ if __name__ == '__main__':
 
 4. [QProgressBar-信号.py](./37-QProgressBar/04-QProgressBar-信号.py)
 
-### [38-QErrorMessage](./38-QErrorMessage)
+### 38 [QErrorMessage](./38-QErrorMessage)
 
 0. [QErrorMessage-错误消息对话框.md](./38-QErrorMessage/00-QErrorMessage-错误消息对话框.md)
 
@@ -631,7 +585,7 @@ if __name__ == '__main__':
 
 2. [QErrorMessage-Debug.py](./38-QErrorMessage/02-QErrorMessage-Debug.py)
 
-### [39-QProgressDialog](./39-QProgressDialog)
+### 39 [QProgressDialog](./39-QProgressDialog)
 
 0. [QProgressDialog-进度条对话框.md](./39-QProgressDialog/00-QProgressDialog-进度条对话框.md)
 
@@ -639,7 +593,7 @@ if __name__ == '__main__':
 
 2. [QProgressDialog-最小等待时间、窗口标题、设置子控件.py](./39-QProgressDialog/02-QProgressDialog-最小等待时间、窗口标题、设置子控件.py)
 
-### [40-QMessageBox](./40-QMessageBox)
+### 40 [QMessageBox](./40-QMessageBox)
 
 0. [QMessageBox-消息提示框.md](./40-QMessageBox/00-QMessageBox-消息提示框.md)
 
@@ -647,7 +601,7 @@ if __name__ == '__main__':
 
 2. [QMessageBox-按钮操作.py](./40-QMessageBox/02-QMessageBox-按钮操作.py)
 
-### [41-Layout](./41-Layout)
+### 41 [Layout](./41-Layout)
 
 0. [Layout-布局管理器.md](./41-Layout/00-Layout-布局管理器.md)
 
@@ -675,11 +629,11 @@ if __name__ == '__main__':
 
 12. [QStackedLayout-切换、展示模式、移除控件.py](./41-Layout/11-QStackedLayout-切换、展示模式、移除控件.py)
 
-### [42-QSS](./42-QSS)
+### 42 [QSS](./42-QSS)
 
 0. [QSS-简介.py](./42-QSS/01-QSS-简介.py)
 
-### [43-pyqtSignal](./43-pyqtSignal)
+### 43 [pyqtSignal](./43-pyqtSignal)
 
 0. [pyqtSignal-自定义信号.py](./43-pyqtSignal/01-pyqtSignal-自定义信号.py)
 
@@ -687,7 +641,7 @@ if __name__ == '__main__':
 
 2. [pyqtSignal-装饰器自动连接.py](./43-pyqtSignal/03-pyqtSignal-装饰器自动连接.py)
 
-### [44-QMainWindow](./44-QMainWindow)
+### 44 [QMainWindow](./44-QMainWindow)
 
 0. [QMainWindow-主窗口控件.md](./44-QMainWindow/00-QMainWindow-主窗口控件.md)
 
@@ -699,15 +653,15 @@ if __name__ == '__main__':
 
 4. [QMainWindow-QStatusBar-状态栏.py](./44-QMainWindow/04-QMainWindow-QStatusBar-状态栏.py)
 
-### [45-QDockWidget](./45-QDockWidget)
+### 45 [QDockWidget](./45-QDockWidget)
 
 0. [QDockWidget-浮动停靠控件.md](./45-QDockWidget/00-QDockWidget-浮动停靠控件.md)
 
-### [46-QAbstractItemView](./46-QAbstractItemView)
+### 46 [QAbstractItemView](./46-QAbstractItemView)
 
 0. [QAbstractItemView-项目视图的抽象基类.md](./46-QAbstractItemView/00-QAbstractItemView-项目视图的抽象基类.md)
 
-### [47-QListView](./47-QListView)
+### 47 [QListView](./47-QListView)
 
 0. [QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md)
 
@@ -715,15 +669,15 @@ if __name__ == '__main__':
 
 2. [QListView-自动换行、布局间距、对齐、单词省略.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词省略.py)
 
-### [48-QTableView](./48-QTableView)
+### 48 [QTableView](./48-QTableView)
 
 0. [QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
 
-### [49-QTreeView](./49-QTreeView)
+### 49 [QTreeView](./49-QTreeView)
 
 0. [QTreeView-树视图.md](./49-QTreeView/00-QTreeView-树视图.md)
 
-### [50-QTabWidget](./50-QTabWidget)
+### 50 [QTabWidget](./50-QTabWidget)
 
 0. [QTabWidget-标签页控件.md](./50-QTabWidget/00-QTabWidget-标签页控件.md)
 
@@ -737,7 +691,7 @@ if __name__ == '__main__':
 
 5. [QTabWidget-信号.py](./50-QTabWidget/05-QTabWidget-信号.py)
 
-### [51-QStackedWidget](./51-QStackedWidget)
+### 51 [QStackedWidget](./51-QStackedWidget)
 
 0. [QStackedWidget-堆载窗口控件.md](./51-QStackedWidget/00-QStackedWidget-堆载窗口控件.md)
 
