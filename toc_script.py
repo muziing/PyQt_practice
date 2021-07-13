@@ -82,10 +82,10 @@ class TocMaker:
 
         if self.tree_dict:
             for dir_name in self.tree_dict:
-                list_counter = 1
+                list_counter = 0
                 write_lines.append(f'### [{dir_name.name}](./{dir_name.name})\n\n')
                 for file_name in self.tree_dict[dir_name]:
-                    write_lines.append(f'{list_counter}. [{file_name.name[3:-3]}](./{file_name.as_posix()})\n\n')
+                    write_lines.append(f'{list_counter}. [{file_name.name[3:]}](./{file_name.as_posix()})\n\n')
                     file_counter += 1
                     list_counter += 1
             counter_info = f"共{len(self.tree_dict)}个目录，{file_counter}个文件."  # 计数器
