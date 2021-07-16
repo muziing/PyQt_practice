@@ -44,6 +44,8 @@
 
 - [Qt5-官方 stylesheet-examples](https://doc.qt.io/qt-5/stylesheet-examples.html)
 
+- [使用QSS美化PyQt5界面 - muzing的杂货铺](https://muzing.top/posts/28a1d80f/)
+
 - [Qt-Material-PyQt5](https://github.com/UN-GCPDS/qt-material)
 
 - [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet)
@@ -54,7 +56,7 @@
 
 - [QssStylesheetEditor-可以实时预览的QSS编辑器](https://github.com/hustlei/QssStylesheetEditor)
 
-- [QSS Editor-实时预览QSS样式的软件](https://sourceforge.net/projects/qsseditor/)
+- [QSS Editor-实时预览QSS样式的软件](https://github.com/HappySeaFox/qsseditor)
 
 
 
