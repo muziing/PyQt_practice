@@ -18,7 +18,7 @@
 | collapseAll()                                              | 折叠所有已经展开的项目                                       |                                                              |
 | expand(QModelIndex &*index*)                               | 展开*index*指定的项目                                        |                                                              |
 | expandAll()                                                | 展开所有可展开的项目                                         |                                                              |
-| expandRescursively(QModelIndex &*index*, int *depth* = -1) | 将给定索引处的项及其所有子项展开为给定深度。深度是相对于给定的索引 | -1表示展开所有深度的子项；0表示只扩展给定的索引；当模型中包含的项目非常多时，执行此方法将花费较长时间 |
+| expandRecursively(QModelIndex &*index*, int *depth* = -1) | 将给定索引处的项及其所有子项展开为给定深度。深度是相对于给定的索引 | -1表示展开所有深度的子项；0表示只扩展给定的索引；当模型中包含的项目非常多时，执行此方法将花费较长时间 |
 | expandToDepth(int *depth*)                                 | 把所有项目展开到给定深度                                     |                                                              |
 | hideColumn(int *column*)                                   | 隐藏给定的列                                                 | 只能在模型初始化（已知模型列数）之后调用                     |
 | resizeColumnToContents(int *column*)                       | 根据列的内容调整列的大小                                     |                                                              |
