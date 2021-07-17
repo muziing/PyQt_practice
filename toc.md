@@ -522,7 +522,9 @@
 
 ### 42 [QSS](./42-QSS)
 
-0. [QSS-简介.py](./42-QSS/01-QSS-简介.py)
+0. [QSS-Qt样式表.md](./42-QSS/00-QSS-Qt样式表.md)
+
+1. [QSS-简介.py](./42-QSS/01-QSS-简介.py)
 
 ### 43 [pyqtSignal](./43-pyqtSignal)
 
@@ -586,4 +588,12 @@
 
 0. [QStackedWidget-堆载窗口控件.md](./51-QStackedWidget/00-QStackedWidget-堆载窗口控件.md)
 
-共51个目录，243个文件.
+### 52 [QListWidget](./52-QListWidget)
+
+0. [QListWidget-列表控件.md](./52-QListWidget/00-QListWidget-列表控件.md)
+
+### 53 [QUndoView](./53-QUndoView)
+
+0. [QUndoView-撤销视图控件.md](./53-QUndoView/00-QUndoView-撤销视图控件.md)
+
+共53个目录，246个文件.
