@@ -107,6 +107,12 @@ if __name__ == '__main__':
 
 ## [仓库文件目录](toc.md)
 
+**点击图片以在线浏览带有超链接的思维导图**
+
+[![](http://processon.com/chart_image/60f231530791291daf471f7f.png)](https://www.processon.com/view/link/60f23569637689739c3a5cbb)
+
+
+
 ### 01 [PyQt基本结构](./01-PyQt基本结构)
 
 0. [PyQt5-初体验.py](./01-PyQt基本结构/01-PyQt5-初体验.py)
