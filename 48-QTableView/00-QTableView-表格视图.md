@@ -8,17 +8,35 @@
 
 [Qt 5.15 官方文档-QTableView](https://doc.qt.io/qt-5.15/qtableview.html)
 
+## 表格设置方法
+
+| 方法                                       | 说明                                   | 备注 |
+| ------------------------------------------ | -------------------------------------- | ---- |
+| setVerticalHeader(QHeaderView **header*)    | 将*header*设置为将要用于垂直表头的控件 |      |
+| setHorizontalHeader(QHeaderView **header*) | 将*header*设置为将要用于水平表头的控件 |      |
+| setRowHeight(int *row*, int *height*)      | 将*row*行的行高设置为*height*          |      |
+| setColumnWidth(int *column*, int *width*)  | 将*column*列的列宽设置为*width*        |      |
+
 
 
 ## 常用设置方法
 
-| 方法                                  | 简介                           | 说明                                                         |
-| ------------------------------------- | ------------------------------ | ------------------------------------------------------------ |
-| setCornerButtonEnabled(bool *enable*) | 控制左上角的全选按钮是否启用   | 默认为True；点击左上角按钮将选中表格视图中的所有单元格       |
-| setWordWrap(bool *on*)                | 设置项目文本的单词自动换行策略 | 如果开启了自动换行，单元格将不会为了适应全部长度的文本而扩大，而是根据textElideMode策略在文本中添加省略号 |
-| setSortingEnabled(bool *enable*)      | 设置是否开启排序               | 默认为False；此属性设置为True则立即触发对sortByColumn()的调用 |
-| setShowGrid(bool *show*)              | 设置是否显示网格               | 默认为True                                                   |
-| setGridStyle(Qt.PenStyle *style*)     | 设置绘制网格的画笔风格         |                                                              |
+| 方法                                                         | 简介                                                         | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| setCornerButtonEnabled(bool *enable*)                        | 控制左上角的全选按钮是否启用                                 | 默认为True；点击左上角按钮将选中表格视图中的所有单元格       |
+| setWordWrap(bool *on*)                                       | 设置项目文本的单词自动换行策略                               | 如果开启了自动换行，单元格将不会为了适应全部长度的文本而扩大，而是根据textElideMode策略在文本中添加省略号 |
+| setSortingEnabled(bool *enable*)                             | 设置是否开启排序                                             | 默认为False；此属性设置为True则立即触发对sortByColumn()的调用 |
+| setShowGrid(bool *show*)                                     | 设置是否显示网格                                             | 默认为True                                                   |
+| setGridStyle(Qt.PenStyle *style*)                            | 设置绘制网格的画笔风格                                       |                                                              |
+| setSpan(int *row*, int *column*, int *rowSpanCount*, int *columnSpanCount*) | 将表元素(*row*, *column*)的跨度设置为(*rowSpanCount*, *columnSpanCount*)指定的行数和列数 |                                                              |
+
+## 常用获取方法
+
+| 方法                                 | 返回值类型 | 说明                          | 备注 |
+| ------------------------------------ | ---------- | ----------------------------- | ---- |
+| columnWidth(int *column*)            | int        | 返回给定列的宽度              |      |
+| columnViewportPosition(int *column*) | int        | 返回给定列的内容坐标中的x坐标 |      |
+|                                      |            |                               |      |
 
 
 
