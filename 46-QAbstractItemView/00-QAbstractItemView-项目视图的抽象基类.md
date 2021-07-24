@@ -6,6 +6,8 @@
 
 QAbstractItemView是所有的使用QAbstractItemModel模型的视图的基类，是一个不能被实例化的抽象类。它通过信号槽机制为与模型的交互操作提供了一个标准化的接口，确保子类视图能够随着模型的变化而及时更新。该类对键盘和鼠标的导航、视窗的滚动、项的编辑以及选择提供了标准的支持。
 
+[QListView](../47-QListView/00-QListView-列表视图.md) 这样的View控件和 [QListWidget](../52-QListWidget/00-QListWidget-列表控件.md) 这样的Widget控件区别在于：View基于Model模型，Widget基于Item项目
+
 ## Qt 官方文档
 
 [Qt 5.15-官方文档-QAbstractItemView](https://doc.qt.io/qt-5.15/qabstractitemview.html)
