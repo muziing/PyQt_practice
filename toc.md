@@ -526,6 +526,8 @@
 
 1. [QSS-简介.py](./42-QSS/01-QSS-简介.py)
 
+2. [QSS-导入外部样式表.py](./42-QSS/02-QSS-导入外部样式表.py)
+
 ### 43 [pyqtSignal](./43-pyqtSignal)
 
 0. [pyqtSignal-自定义信号.py](./43-pyqtSignal/01-pyqtSignal-自定义信号.py)
@@ -562,6 +564,8 @@
 
 2. [QListView-自动换行、布局间距、对齐、单词省略.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词省略.py)
 
+3. [QListView-布局网格、大小调整模式、移动.py](./47-QListView/03-QListView-布局网格、大小调整模式、移动.py)
+
 ### 48 [QTableView](./48-QTableView)
 
 0. [QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
@@ -596,4 +600,8 @@
 
 0. [QUndoView-撤销视图控件.md](./53-QUndoView/00-QUndoView-撤销视图控件.md)
 
-共53个目录，246个文件.
+### 54 [QHeaderView](./54-QHeaderView)
+
+0. [QHeaderView-表头视图.md](./54-QHeaderView/00-QHeaderView-表头视图.md)
+
+共54个目录，249个文件.

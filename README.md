@@ -107,7 +107,7 @@ if __name__ == '__main__':
 
 ## [仓库文件目录](toc.md)
 
-**点击图片以在线浏览带有超链接的思维导图**
+**[点击图片以在线浏览带有超链接的思维导图](https://www.processon.com/view/link/60f23569637689739c3a5cbb)**
 
 [![](http://processon.com/chart_image/60f231530791291daf471f7f.png)](https://www.processon.com/view/link/60f23569637689739c3a5cbb)
 
@@ -641,6 +641,8 @@ if __name__ == '__main__':
 
 1. [QSS-简介.py](./42-QSS/01-QSS-简介.py)
 
+2. [QSS-导入外部样式表.py](./42-QSS/02-QSS-导入外部样式表.py)
+
 ### 43 [pyqtSignal](./43-pyqtSignal)
 
 0. [pyqtSignal-自定义信号.py](./43-pyqtSignal/01-pyqtSignal-自定义信号.py)
@@ -677,6 +679,8 @@ if __name__ == '__main__':
 
 2. [QListView-自动换行、布局间距、对齐、单词省略.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词省略.py)
 
+3. [QListView-布局网格、大小调整模式、移动.py](./47-QListView/03-QListView-布局网格、大小调整模式、移动.py)
+
 ### 48 [QTableView](./48-QTableView)
 
 0. [QTableView-表格视图.md](./48-QTableView/00-QTableView-表格视图.md)
@@ -711,14 +715,18 @@ if __name__ == '__main__':
 
 0. [QUndoView-撤销视图控件.md](./53-QUndoView/00-QUndoView-撤销视图控件.md)
 
-共53个目录，246个文件.
+### 54 [QHeaderView](./54-QHeaderView)
+
+0. [QHeaderView-表头视图.md](./54-QHeaderView/00-QHeaderView-表头视图.md)
+
+共54个目录，249个文件.
 
 -------
 
 | Language | files | blank | comment | code |
 | -------- | ----- | ----- | ------- | ---- |
-| Python   | 200   | 2075  | 1494    | 5114 |
-| Markdown | 50    | 1694  | 0       | 2070 |
-| **SUM**  | 250   | 3769  | 1494    | 7184 |
+| Python   | 202   | 2025  | 1506    | 5176 |
+| Markdown | 51    | 1770  | 0       | 2187 |
+| **SUM**  | 253   | 3865  | 1506    | 7363 |
 
 代码行数统计工具: github.com/AlDanial/cloc v1.90
