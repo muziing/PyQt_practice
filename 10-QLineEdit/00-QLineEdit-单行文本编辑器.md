@@ -2,6 +2,11 @@
 
 单行文本编辑器。只能输入一行内容，无法换行。
 
+![QLineEdit](https://oss.muzing.top/image/Qt-windows-lineedit.png)
+
+如需要输入多行文本、富文本，请使用 [QTextEdit](../13-QTextEdit/00-QTextEdit-文本编辑器.md) 控件
+
+
 ## Qt官方文档
 
 [Qt 5.15 官方文档-QLineEdit](https://doc.qt.io/qt-5.15/qlineedit.html)
@@ -29,7 +34,7 @@ Alignment 对齐方式
 
 [查看代码](./10-QLineEdit-验证器-掩码.py)
 
-见下面的详细说明
+关于掩码，请见下面的详细说明
 
 
 
@@ -37,7 +42,7 @@ Alignment 对齐方式
 >
 > maxLength() -> int
 
-最大长度
+限制用户输入的最大长度
 
 [查看代码](./08-QLineEdit-长度和只读限制.py)
 
@@ -47,10 +52,9 @@ Alignment 对齐方式
 >
 > placeholderText() -> str
 
-PlaceholderText 占位文本
+PlaceholderText 占位文本，即在用户输入内容之前显示在Line Edit中的文字。比如“请输入用户名”
 
 [查看代码](./05-QLineEdit-占位文本设置、清空按钮.py)
-
 
 
 > setEchoMode(QLineEdit.EchoMode)
@@ -73,7 +77,6 @@ EchoMode 显示模式
 
 
 
-
 ### 动作类
 
 > setClearButtonEnabled(bool *enable*)
@@ -92,7 +95,7 @@ ClearButtonEnabled 清空按钮
 
 [查看代码](./15-QLineEdit-编辑功能.py)
 
-默认禁用拖拽
+默认禁用拖拽，即用户不能通过鼠标拖动改变Line Edit中的字符顺序
 
 
 
@@ -127,11 +130,11 @@ ClearButtonEnabled 清空按钮
 
 [查看代码](./07-QLineEdit-自动补全.py)
 
-可以创建一个QCompleter 填充器对象，来帮我们完成自动补全功能
+可以创建一个 [QCompleter](https://doc.qt.io/qt-5.15/qcompleter.html) 填充器对象，来帮我们完成自动补全功能
 
 ## InputMask 掩码
 
-详细见[Qt文档-QLineEdit-InputMask](https://doc.qt.io/qt-5.15/qlineedit.html#inputMask-prop)
+详细见 [Qt文档-QLineEdit-InputMask](https://doc.qt.io/qt-5.15/qlineedit.html#inputMask-prop)
 
 
 
