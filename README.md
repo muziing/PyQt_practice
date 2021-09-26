@@ -38,7 +38,7 @@ class Window(QWidget):
         super().__init__()
         self.setWindowTitle("QListView-自动换行、布局间距、对齐、单词省略")
         self.resize(500, 500)
-        self.data_list = [f'Item{i}' for i in range(15)]  # 将数据列表保存在属性中
+        self.data_list = [f"Item{i}" for i in range(15)]  # 将数据列表保存在属性中
         self.data_list.append("Something very very long")  # 再添加一个特殊的很长的项
         self.setup_ui()
 
@@ -77,7 +77,7 @@ class Window(QWidget):
         # list_view.setTextElideMode(Qt.ElideNone)  # 无省略号，但是最后的内容仍然会被省略
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
     window.show()
