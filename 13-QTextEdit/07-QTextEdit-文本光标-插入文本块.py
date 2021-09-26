@@ -13,7 +13,7 @@ class Window(QWidget):
     def setup_ui(self):
         te = QTextEdit(self)
         self.te = te
-        te.setText('abc')
+        te.setText("abc")
         te.resize(400, 400)
         test_btn = QPushButton("测试按钮", self)
         test_btn.move(410, 140)
@@ -31,7 +31,7 @@ class Window(QWidget):
         # tbf.setIndent(1)  # 缩进1个Tab
 
         tcf = QTextCharFormat()  # QTextCharFormat里面可以设置字体等格式
-        tcf.setFontFamily('Microsoft YaHei')
+        tcf.setFontFamily("Microsoft YaHei")
         tcf.setFontItalic(True)  # 设置为斜体
         tcf.setFontPointSize(60)
 
@@ -39,7 +39,7 @@ class Window(QWidget):
         self.te.setFocus()  # 使文本输入框重新获得焦点，方便观察光标位置的变化
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

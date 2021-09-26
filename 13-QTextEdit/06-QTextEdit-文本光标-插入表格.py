@@ -13,7 +13,7 @@ class Window(QWidget):
     def setup_ui(self):
         te = QTextEdit(self)
         self.te = te
-        te.setText('abc')
+        te.setText("abc")
         test_btn = QPushButton("测试按钮", self)
         test_btn.move(350, 140)
         test_btn.clicked.connect(self.test_btn_cao)
@@ -27,14 +27,18 @@ class Window(QWidget):
         ttf.setAlignment(Qt.AlignRight)  # 右对齐
         ttf.setCellPadding(6)  # 内边距
         ttf.setCellSpacing(3)  # 外边距
-        ttf.setColumnWidthConstraints((QTextLength(QTextLength.PercentageLength, 50),
-                                       QTextLength(QTextLength.PercentageLength, 40),
-                                       QTextLength(QTextLength.PercentageLength, 10)))  # 设置列宽约束，百分比约束
+        ttf.setColumnWidthConstraints(
+            (
+                QTextLength(QTextLength.PercentageLength, 50),
+                QTextLength(QTextLength.PercentageLength, 40),
+                QTextLength(QTextLength.PercentageLength, 10),
+            )
+        )  # 设置列宽约束，百分比约束
         table = tc.insertTable(5, 3, ttf)  # 返回QTextTable
         # table.appendColumns(2)  # 对表格进行追加2列
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -35,14 +35,14 @@ class Window(QWidget):
         # print(self.te.toHtml())  # 转换为HTML4 之后输出
 
         # 设置文本（根据内容自动识别纯文本/富文本）
-        self.te.setText('普通文本')
-        self.te.setText('<h3>富文本</h3>')
+        self.te.setText("普通文本")
+        self.te.setText("<h3>富文本</h3>")
 
         # 追加（自动识别纯文本/富文本）
-        self.te.append('<h3>富文本</h3>')
+        self.te.append("<h3>富文本</h3>")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

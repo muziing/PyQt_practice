@@ -32,9 +32,11 @@ class Window(QTabWidget):
 
         # --------设置图标、图标尺寸-------------
         # 添加标签页时也可以设置图标
-        self.insertTab(2, QWidget(), QIcon('../Icons/python_96px.ico'), 'Another long label')
+        self.insertTab(
+            2, QWidget(), QIcon("../Icons/python_96px.ico"), "Another long label"
+        )
         # 也可以在添加标签页后设置图标
-        self.setTabIcon(0, QIcon('../Icons/OS_Ubuntu_128px.ico'))
+        self.setTabIcon(0, QIcon("../Icons/OS_Ubuntu_128px.ico"))
         self.setIconSize(QSize(40, 40))
         # 设置的是图标尺寸的最大值，更的的图标文件会被缩小到此大小，但更小的图标文件不会被放大
 
@@ -49,7 +51,7 @@ class Window(QTabWidget):
         self.setUsesScrollButtons(False)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
     window.show()

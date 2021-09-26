@@ -10,7 +10,10 @@ class MyLabel(QLabel):
         if evt.modifiers() == Qt.ControlModifier and evt.key() == Qt.Key_S:
             self.setText("Ctrl + S 被点击了")
         # 多个修饰键之间用按位或来连接
-        if evt.modifiers() == Qt.ControlModifier | Qt.ShiftModifier and evt.key() == Qt.Key_S:
+        if (
+            evt.modifiers() == Qt.ControlModifier | Qt.ShiftModifier
+            and evt.key() == Qt.Key_S
+        ):
             self.setText("Ctrl + Shift + S 被点击了")
 
 

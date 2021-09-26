@@ -10,6 +10,7 @@ from PyQt5.QtWidgets import *
 
 class QStackWidgetDemo(QWidget):
     """堆栈窗口控件（QStackWidget）"""
+
     def __init__(self):
         super(QStackWidgetDemo, self).__init__()
         self.setGeometry(300, 50, 10, 10)
@@ -69,7 +70,7 @@ class QStackWidgetDemo(QWidget):
         self.stack3.setLayout(layout)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     main = QStackWidgetDemo()
     main.show()

@@ -32,7 +32,7 @@ class Window(QWidget):
         test_btn.clicked.connect(btn_test)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

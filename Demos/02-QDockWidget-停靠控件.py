@@ -25,7 +25,7 @@ class DockDemo(QMainWindow):
         self.addDockWidget(Qt.RightDockWidgetArea, self.items)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     main = DockDemo()
     main.show()

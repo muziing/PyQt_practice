@@ -25,11 +25,11 @@ class Window(QWidget):
         le_2 = QLineEdit(self)
         le_2.move(250, 200)
 
-        label.setText('账号(&S)')
+        label.setText("账号(&S)")
         label.setBuddy(le_1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

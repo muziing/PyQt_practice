@@ -1,5 +1,6 @@
 from PyQt5.Qt import *
 import sys
+
 """
 QPushButton 默认无排他性
 QRadioButton 默认有排他性

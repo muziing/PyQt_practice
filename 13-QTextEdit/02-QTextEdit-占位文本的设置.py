@@ -20,7 +20,7 @@ class Window(QWidget):
         print(self.te.placeholderText())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

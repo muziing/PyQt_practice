@@ -4,15 +4,15 @@ import sys
 
 class MyObject(QObject):
     def timerEvent(self, evt):
-        print(evt, '1')
+        print(evt, "1")
 
 
 class MyLabel(QLabel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.setText('10')
+        self.setText("10")
         self.move(200, 200)
-        self.setStyleSheet('font-size: 25px;')
+        self.setStyleSheet("font-size: 25px;")
 
     def set_sec(self, sec):
         self.setText(str(sec))
@@ -28,7 +28,7 @@ class MyLabel(QLabel):
         self.setText(str(current_sec))
 
         if current_sec == 0:
-            print('停止')
+            print("停止")
             self.killTimer(self.timer_id)
 
 

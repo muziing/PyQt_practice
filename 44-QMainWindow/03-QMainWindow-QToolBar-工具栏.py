@@ -25,8 +25,12 @@ class Window(QMainWindow):
         self.toolbar.setFloatable(False)  # 是否允许工具栏脱离主窗口悬浮，默认为True
         self.toolbar.addAction("关闭窗口", lambda: self.close())
         # 增加action时可设置图标、名称、槽函数
-        self.toolbar.addAction(QIcon('../Icons/text-icons/undo_96px.ico'), "撤销", self.text_edit.undo)
-        self.toolbar.addAction(QIcon('../Icons/text-icons/redo_96px.ico'), "重做", self.text_edit.redo)
+        self.toolbar.addAction(
+            QIcon("../Icons/text-icons/undo_96px.ico"), "撤销", self.text_edit.undo
+        )
+        self.toolbar.addAction(
+            QIcon("../Icons/text-icons/redo_96px.ico"), "重做", self.text_edit.redo
+        )
 
     def setup_ui(self):
         self.setCentralWidget(self.text_edit)
@@ -35,7 +39,7 @@ class Window(QMainWindow):
         self.addToolBar(Qt.TopToolBarArea, self.toolbar)  # 指定创建时工具栏停靠的区域
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

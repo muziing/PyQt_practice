@@ -43,7 +43,7 @@ class MultiDemo(QMainWindow):
             self.mdi.tileSubWindows()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     main = MultiDemo()
     main.show()

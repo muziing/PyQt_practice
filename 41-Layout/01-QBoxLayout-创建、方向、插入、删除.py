@@ -11,14 +11,14 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
-        lb1 = QLabel('标签1')
-        lb1.setStyleSheet('background-color: cyan;')
-        lb2 = QLabel('标签2')
-        lb2.setStyleSheet('background-color: yellow;')
-        lb3 = QLabel('标签3')
-        lb3.setStyleSheet('background-color: red;')
-        lb4 = QLabel('标签4')
-        lb4.setStyleSheet('background-color: orange;')
+        lb1 = QLabel("标签1")
+        lb1.setStyleSheet("background-color: cyan;")
+        lb2 = QLabel("标签2")
+        lb2.setStyleSheet("background-color: yellow;")
+        lb3 = QLabel("标签3")
+        lb3.setStyleSheet("background-color: red;")
+        lb4 = QLabel("标签4")
+        lb4.setStyleSheet("background-color: orange;")
 
         # 1.创建布局管理器对象
         layout = QBoxLayout(QBoxLayout.LeftToRight)
@@ -35,12 +35,12 @@ class Window(QWidget):
         # layout.insertWidget(1, lb4)  # 插入 Widget
 
         v_layout = QBoxLayout(QBoxLayout.TopToBottom)
-        lb5 = QLabel('标签5')
-        lb5.setStyleSheet('background-color: pink;')
-        lb6 = QLabel('标签6')
-        lb6.setStyleSheet('background-color: blue;')
-        lb7 = QLabel('标签7')
-        lb7.setStyleSheet('background-color: orange;')
+        lb5 = QLabel("标签5")
+        lb5.setStyleSheet("background-color: pink;")
+        lb6 = QLabel("标签6")
+        lb6.setStyleSheet("background-color: blue;")
+        lb7 = QLabel("标签7")
+        lb7.setStyleSheet("background-color: orange;")
         v_layout.addWidget(lb5)
         v_layout.addWidget(lb6)
         v_layout.addWidget(lb7)
@@ -61,10 +61,10 @@ class Window(QWidget):
         lb1.setParent(None)  # 彻底删除释放对象
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
-    
+
     window = Window()
     window.show()
-    
+
     sys.exit(app.exec_())

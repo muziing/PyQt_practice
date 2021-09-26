@@ -56,31 +56,31 @@ class Window(QWidget):
         obj3 = QObject()
         obj4 = QObject()
         obj5 = QObject()
-        print('obj0', obj0)
-        print('obj1', obj1)
-        print('obj2', obj2)
-        print('obj3', obj3)
-        print('obj4', obj4)
-        print('obj5', obj5)
+        print("obj0", obj0)
+        print("obj1", obj1)
+        print("obj2", obj2)
+        print("obj3", obj3)
+        print("obj4", obj4)
+        print("obj5", obj5)
 
         obj1.setParent(obj0)
         obj2.setParent(obj0)
-        obj2.setObjectName('2')
+        obj2.setObjectName("2")
 
         # label = QLabel()
         # label.setParent(obj0)
 
         obj3.setParent(obj1)
-        obj3.setObjectName('3')
+        obj3.setObjectName("3")
         obj4.setParent(obj2)
         obj5.setParent(obj2)
 
         # print(obj4.parent())
         # print(obj0.children())
         print(obj0.findChild(QObject))
-        print(obj0.findChild(QObject, '2'))
-        print(obj0.findChild(QObject, '3'))
-        print(obj0.findChild(QObject, '3', Qt.FindDirectChildrenOnly))
+        print(obj0.findChild(QObject, "2"))
+        print(obj0.findChild(QObject, "3"))
+        print(obj0.findChild(QObject, "3", Qt.FindDirectChildrenOnly))
         print(obj0.findChildren(QObject))
         # print(obj0.findChild(QLabel))  # 会报错
 
@@ -96,7 +96,7 @@ class Window(QWidget):
         del self.obj1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

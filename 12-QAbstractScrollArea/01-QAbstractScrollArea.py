@@ -20,7 +20,7 @@ te.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
 print(te.verticalScrollBarPolicy())
 
 btn = QPushButton(window)
-btn.setIcon(QIcon('../Icons/python_96px.ico'))
+btn.setIcon(QIcon("../Icons/python_96px.ico"))
 
 te.setCornerWidget(btn)  # 设置横纵滚动条构成角落位置的控件
 

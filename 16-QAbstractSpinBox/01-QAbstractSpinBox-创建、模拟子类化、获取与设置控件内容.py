@@ -4,12 +4,13 @@ import sys
 
 class MyASB(QAbstractSpinBox):
     """自定义的子类，实现限制数值范围在0~9的功能"""
+
     def __init__(self, parent, num: int = 0):
         super().__init__(parent)
         self.current_num = 0
-        self.lineEdit().setText(f'{num}')
+        self.lineEdit().setText(f"{num}")
 
-    def stepEnabled(self) -> 'QAbstractSpinBox.StepEnabled':
+    def stepEnabled(self) -> "QAbstractSpinBox.StepEnabled":
         # 目标：限制用户通过箭头输入数值在0-9范围内
         try:
             self.current_num = int(self.text())
@@ -45,17 +46,17 @@ class Window(QWidget):
         asb.resize(120, 30)
         asb.move(150, 100)
 
-        test_btn = QPushButton('测试按钮', self)
+        test_btn = QPushButton("测试按钮", self)
         test_btn.move(300, 100)
         test_btn.clicked.connect(self.btn_test)
 
     def btn_test(self):
         print(self.asb.text())  # 获取文本
-        self.asb.lineEdit().setText('888')  # 设置文本
+        self.asb.lineEdit().setText("888")  # 设置文本
         # 不受MyASB的0~9限制，仍可设置为888
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

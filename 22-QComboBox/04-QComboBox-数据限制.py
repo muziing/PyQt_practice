@@ -21,7 +21,7 @@ class Window(QWidget):
         cbb.setMaxVisibleItems(5)  # 限制每页最多只显示5条
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

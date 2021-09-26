@@ -32,7 +32,7 @@ class Window(QWidget):
                 widget.setStyleSheet("background-color: cyan;")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

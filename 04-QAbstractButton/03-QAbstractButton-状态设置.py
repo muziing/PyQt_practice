@@ -1,5 +1,6 @@
 from PyQt5.Qt import *
 import sys
+
 app = QApplication(sys.argv)
 
 window = QWidget()
@@ -9,13 +10,15 @@ window.resize(500, 500)
 window.move(400, 250)
 
 btn = QPushButton(window)
-icon = QIcon('../Icons/minus_48px.ico')
+icon = QIcon("../Icons/minus_48px.ico")
 btn.setIcon(icon)
 
 push_button = QPushButton(window)
 push_button.setText("这是QPushButton")
 push_button.move(100, 100)
-push_button.setStyleSheet("QPushButton:pressed {background-color: red;}")  # 通过QSS设置了按下时的样式
+push_button.setStyleSheet(
+    "QPushButton:pressed {background-color: red;}"
+)  # 通过QSS设置了按下时的样式
 
 radio_button = QRadioButton(window)
 radio_button.setText("这是QRadioButton")

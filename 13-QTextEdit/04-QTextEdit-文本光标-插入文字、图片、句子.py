@@ -42,11 +42,11 @@ class Window(QWidget):
 
         # ------插入句子----------
         # tdf = QTextDocumentFragment.fromHtml('<h2>muzing</h2>')
-        tdf = QTextDocumentFragment.fromPlainText('<h2>muzing</h2>')
+        tdf = QTextDocumentFragment.fromPlainText("<h2>muzing</h2>")
         tc.insertFragment(tdf)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -20,17 +20,16 @@ class Window(QWidget):
         v_layout.setDirection(QBoxLayout.BottomToTop)
         # v_layout.setDirection(QBoxLayout.RightToLeft)  # 甚至可以改变为水平布局
 
-        lb1 = QLabel('lb1')
-        lb1.setStyleSheet('background-color: cyan;')
-        lb2 = QLabel('lb2')
-        lb2.setStyleSheet('background-color: orange;')
+        lb1 = QLabel("lb1")
+        lb1.setStyleSheet("background-color: cyan;")
+        lb2 = QLabel("lb2")
+        lb2.setStyleSheet("background-color: orange;")
 
         v_layout.addWidget(lb1)
         v_layout.addWidget(lb2)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

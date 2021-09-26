@@ -32,7 +32,7 @@ class Window(QWidget):
         print(obj2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

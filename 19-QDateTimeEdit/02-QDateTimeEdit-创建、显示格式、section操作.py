@@ -36,13 +36,15 @@ class Window(QWidget):
 
         def test_slot():
             """测试按钮的槽函数"""
-            print("current section index:", dte.currentSectionIndex())  # 返回当前选中的section索引
+            print(
+                "current section index:", dte.currentSectionIndex()
+            )  # 返回当前选中的section索引
 
         btn.clicked.connect(test_slot)
         print("section count:", dte.sectionCount())  # 获取section数
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

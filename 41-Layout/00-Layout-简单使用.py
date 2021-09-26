@@ -12,11 +12,11 @@ class Window(QWidget):
 
     def setup_ui(self):
         lb1 = QLabel()
-        lb1.setStyleSheet('background-color: cyan;')
+        lb1.setStyleSheet("background-color: cyan;")
         lb2 = QLabel()
-        lb2.setStyleSheet('background-color: yellow;')
+        lb2.setStyleSheet("background-color: yellow;")
         lb3 = QLabel()
-        lb3.setStyleSheet('background-color: red;')
+        lb3.setStyleSheet("background-color: red;")
 
         v_layout = QVBoxLayout()
         v_layout.addWidget(lb1)
@@ -28,7 +28,7 @@ class Window(QWidget):
         self.setLayout(v_layout)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

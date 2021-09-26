@@ -12,7 +12,9 @@ class Window(QWidget):
 
     def setup_ui(self):
         def test():
-            fd = QFileDialog(self, "选择一个文件", "./", "ALL(*, *);;Images(*.png *.jpg);;Python文件(*.py)")
+            fd = QFileDialog(
+                self, "选择一个文件", "./", "ALL(*, *);;Images(*.png *.jpg);;Python文件(*.py)"
+            )
             fd.setFileMode(QFileDialog.ExistingFiles)
 
             # fd.currentChanged.connect(lambda path: print("当前路径字符串发生改变时", path))
@@ -34,7 +36,7 @@ class Window(QWidget):
         btn.clicked.connect(test)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

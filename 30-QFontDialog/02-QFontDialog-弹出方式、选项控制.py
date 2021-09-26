@@ -11,7 +11,7 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
-        btn = QPushButton('测试按钮', self)
+        btn = QPushButton("测试按钮", self)
         btn.move(100, 100)
         label = QLabel(self)
         label.move(100, 200)
@@ -44,13 +44,15 @@ class Window(QWidget):
         print(fd.testOption(QFontDialog.DontUseNativeDialog))
 
         # -------------弹出方式------------------
-        btn.clicked.connect(lambda: fd.open(font_sel))  # 在open方法中传入一个槽函数，则打开FontDialog后自动连接
+        btn.clicked.connect(
+            lambda: fd.open(font_sel)
+        )  # 在open方法中传入一个槽函数，则打开FontDialog后自动连接
 
         # if fd.exec():  # 用户点击确定键则返回1，取消键和关闭窗口返回0
         #     print(fd.selectedFont().family())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

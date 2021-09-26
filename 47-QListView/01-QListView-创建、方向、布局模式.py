@@ -8,7 +8,7 @@ class Window(QWidget):
         self.setWindowTitle("QListView")
         self.resize(500, 500)
         self.move(400, 250)
-        self.data_list = [f'Item{i}' for i in range(40)]  # 将数据列表保存在属性中
+        self.data_list = [f"Item{i}" for i in range(40)]  # 将数据列表保存在属性中
         self.setup_ui()
 
     def setup_ui(self):
@@ -29,11 +29,13 @@ class Window(QWidget):
 
     def clicked_list(self, model_index):
         # 弹出一个消息提升框，展示用户点击哪个项
-        QMessageBox.information(self, "QListView", "你选择了: " + self.data_list[model_index.row()])
+        QMessageBox.information(
+            self, "QListView", "你选择了: " + self.data_list[model_index.row()]
+        )
         print("点击的是：" + str(model_index.row()))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

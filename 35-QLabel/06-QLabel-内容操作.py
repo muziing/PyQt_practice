@@ -30,7 +30,7 @@ class Window(QWidget):
         # label.setPicture(pic)  # 用于展示QPicture
 
         # -------动图----------
-        movie = QMovie('../Icons/打墙火柴人.gif')
+        movie = QMovie("../Icons/打墙火柴人.gif")
         label.setMovie(movie)
         movie.setSpeed(200)  # 播放速度（百分比）
         movie.start()
@@ -39,7 +39,7 @@ class Window(QWidget):
         # label.clear()  # 清空
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

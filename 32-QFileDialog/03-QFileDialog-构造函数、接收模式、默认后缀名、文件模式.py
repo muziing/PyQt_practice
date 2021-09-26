@@ -12,7 +12,9 @@ class Window(QWidget):
 
     def setup_ui(self):
         def test():
-            fd = QFileDialog(self, "选择一个文件", "./", "ALL(*, *);;Images(*.png *.jpg);;Python文件(*.py)")
+            fd = QFileDialog(
+                self, "选择一个文件", "./", "ALL(*, *);;Images(*.png *.jpg);;Python文件(*.py)"
+            )
             # -------接收模式-----------
             # fd.setAcceptMode(QFileDialog.AcceptOpen)  # 打开
             fd.setAcceptMode(QFileDialog.AcceptSave)  # 保存
@@ -32,7 +34,7 @@ class Window(QWidget):
         btn.clicked.connect(test)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

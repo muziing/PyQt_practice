@@ -27,7 +27,9 @@ class Window(QWidget):
             font = QFont()
             font.setFamily("宋体")
             font.setPointSize(22)
-            result = QFontDialog.getFont(font, self, "选择一个字体", QFontDialog.ScalableFonts)
+            result = QFontDialog.getFont(
+                font, self, "选择一个字体", QFontDialog.ScalableFonts
+            )
             if result[1]:
                 label.setFont(result[0])
                 label.adjustSize()
@@ -36,7 +38,7 @@ class Window(QWidget):
         btn.clicked.connect(font_sel_2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -13,7 +13,7 @@ class Window(QWidget):
     def setup_ui(self):
         te = QTextEdit(self)
         self.te = te
-        te.setText('abc')
+        te.setText("abc")
         test_btn = QPushButton("测试按钮", self)
         test_btn.move(350, 140)
         test_btn.clicked.connect(self.test_btn_cao)
@@ -33,7 +33,7 @@ class Window(QWidget):
         # tc.insertList(QTextListFormat.Style) -> QTextList
         # 在当前位置插入一个新块，并使其成为具有给定格式的新创建列表的第一个列表项。返回创建的列表
 
-        '''
+        """
         QTextListFormat.ListDisc  # 样式为圆圈
         QTextListFormat.ListCircle  # 样式为空心圆圈
         QTextListFormat.ListSquare  # 样式为方块
@@ -42,7 +42,7 @@ class Window(QWidget):
         QTextListFormat.ListUpperAlpha  # 大写拉丁字符，按字母顺序
         QTextListFormat.ListLowerRoman  # 小写罗马数字，最大4999
         QTextListFormat.ListUpperRoman  # 大写罗马数字，最大4999
-        '''
+        """
         tc.insertList(QTextListFormat.ListSquare)  # 样式为方块
 
     def cursor_insert2(self):
@@ -66,7 +66,7 @@ class Window(QWidget):
         tc.createList(tlf)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

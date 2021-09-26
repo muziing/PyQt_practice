@@ -14,7 +14,7 @@ class QSSLoader:
     @staticmethod
     def read_qss_file(qss_file_name):
         """从文件中读取qss的静态方法"""
-        with open(qss_file_name, 'r', encoding='UTF-8') as file:
+        with open(qss_file_name, "r", encoding="UTF-8") as file:
             return file.read()
 
 
@@ -39,11 +39,11 @@ class Window(QWidget):
         sb.move(300, 100)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
 
-    style_file = './flatwhite/style.qss'
+    style_file = "./flatwhite/style.qss"
     style_sheet = QSSLoader.read_qss_file(style_file)
     window.setStyleSheet(style_sheet)
 

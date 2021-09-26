@@ -13,7 +13,7 @@ class Window(QWidget):
     def setup_ui(self):
         label = QLabel("muzing", self)
         label.move(100, 100)
-        label.setStyleSheet('background-color: cyan;')
+        label.setStyleSheet("background-color: cyan;")
         label.resize(200, 200)  # 手动设置大小
         # label.adjustSize()  # 根据内容自适应大小
 
@@ -25,7 +25,7 @@ class Window(QWidget):
         label.setMargin(20)  # 设置内容范围的边框与控件边框的间距，上下左右
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

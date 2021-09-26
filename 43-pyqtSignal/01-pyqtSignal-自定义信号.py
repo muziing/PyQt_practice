@@ -24,11 +24,11 @@ class Window(QWidget):
         btn = Btn("测试按钮", self)
         btn.move(100, 100)
 
-        btn.clicked.connect(lambda: print('按钮被点击了'))
-        btn.rightClicked.connect(lambda: print('按钮被鼠标右键点击击了'))
+        btn.clicked.connect(lambda: print("按钮被点击了"))
+        btn.rightClicked.connect(lambda: print("按钮被鼠标右键点击击了"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

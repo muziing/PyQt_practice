@@ -13,12 +13,14 @@ class Window(QWidget):
 
     def setup_ui(self):
         cd = QColorDialog(QColor(20, 154, 151), self)  # 可以传入创建时的默认颜色
-        cd.setWindowTitle('选择颜色')
+        cd.setWindowTitle("选择颜色")
 
-        btn = QPushButton('测试按钮', self)
+        btn = QPushButton("测试按钮", self)
         btn.move(100, 100)
         # btn.clicked.connect(lambda: print(cd.customCount()))
-        btn.clicked.connect(lambda: print(QColorDialog.customCount()))  # 是静态方法，也可以这样直接使用
+        btn.clicked.connect(
+            lambda: print(QColorDialog.customCount())
+        )  # 是静态方法，也可以这样直接使用
 
         QColorDialog.setCustomColor(4, QColor(20, 154, 151))  # 修改指定索引位置的自定义颜色
         QColorDialog.setStandardColor(0, QColor(255, 0, 0))  # 修改指定索引位置的标准颜色
@@ -26,7 +28,7 @@ class Window(QWidget):
         cd.show()
 
     def setup_color(self):
-        btn = QPushButton('测试按钮', self)
+        btn = QPushButton("测试按钮", self)
         btn.move(100, 100)
 
         def color_1(col):
@@ -43,7 +45,7 @@ class Window(QWidget):
         btn.clicked.connect(test)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

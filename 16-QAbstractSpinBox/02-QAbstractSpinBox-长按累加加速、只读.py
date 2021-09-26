@@ -6,9 +6,9 @@ class MyASB(QAbstractSpinBox):
     def __init__(self, parent, num: int = 0):
         super().__init__(parent)
         self.current_num = 0
-        self.lineEdit().setText(f'{num}')
+        self.lineEdit().setText(f"{num}")
 
-    def stepEnabled(self) -> 'QAbstractSpinBox.StepEnabled':
+    def stepEnabled(self) -> "QAbstractSpinBox.StepEnabled":
         return QAbstractSpinBox.StepUpEnabled | QAbstractSpinBox.StepDownEnabled
 
     def stepBy(self, steps: int) -> None:
@@ -38,7 +38,7 @@ class Window(QWidget):
         print(asb.isReadOnly())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

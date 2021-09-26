@@ -11,7 +11,7 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
-        btn = QPushButton('测试按钮', self)
+        btn = QPushButton("测试按钮", self)
         btn.move(100, 100)
         btn.clicked.connect(lambda: fd.open())
 
@@ -21,7 +21,7 @@ class Window(QWidget):
         fd = QFontDialog(font, self)  # 可以在创建时传入一个QFont对象作为默认字体
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

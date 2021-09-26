@@ -1,5 +1,6 @@
 from PyQt5.Qt import *
 import sys
+
 # 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
@@ -10,7 +11,7 @@ window = QWidget()
 
 window.resize(500, 500)
 window.move(400, 250)
-icon = QIcon('../Icons/Photoshop.ico')
+icon = QIcon("../Icons/Photoshop.ico")
 window.setWindowIcon(icon)  # 设置图标
 # print(window.windowIcon())
 

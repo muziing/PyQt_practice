@@ -24,10 +24,12 @@ class Window(QWidget):
         line_nums = "\n".join([str(i) for i in range(1, 101)])
         line_label.setText(line_nums)
 
-        pte.updateRequest.connect(lambda rect, dy: line_label.move(line_label.x(), line_label.y() + dy))
+        pte.updateRequest.connect(
+            lambda rect, dy: line_label.move(line_label.x(), line_label.y() + dy)
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

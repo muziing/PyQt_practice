@@ -7,7 +7,7 @@ class Window(QWidget):
         super().__init__()
         self.setWindowTitle("QListView-大小调整模式、移动")
         self.resize(500, 500)
-        self.data_list = [f'Item{i}' for i in range(15)]  # 将数据列表保存在属性中
+        self.data_list = [f"Item{i}" for i in range(15)]  # 将数据列表保存在属性中
         self.setup_ui()
 
     def setup_ui(self):
@@ -36,7 +36,7 @@ class Window(QWidget):
         layout.addWidget(list_view, 0, 0)  # 通过布局管理器实现list_view大小随窗口大小改变而变化的效果
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
     window.show()

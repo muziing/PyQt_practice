@@ -17,8 +17,10 @@ class MSlider(QSlider):
     def get_label_pos(self) -> (int, int):
         """计算label应该处于的位置"""
         x = int((self.width() - self.label.width()) / 2)
-        y = int((1 - self.value() / (self.maximum() - self.minimum())) * (
-                self.height() - self.label.height()))
+        y = int(
+            (1 - self.value() / (self.maximum() - self.minimum()))
+            * (self.height() - self.label.height())
+        )
         return x, y
 
     def mousePressEvent(self, ev) -> None:
@@ -53,7 +55,7 @@ class Window(QWidget):
         slider.resize(30, 200)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

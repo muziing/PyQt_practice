@@ -31,7 +31,7 @@ class Window(QWidget):
         tc = self.te.textCursor()  # 创建文本光标
 
         tcf = QTextCharFormat()
-        tcf.setFontFamily('Microsoft YaHei')
+        tcf.setFontFamily("Microsoft YaHei")
         tcf.setFontPointSize(30)  # 设置字体大小
         tcf.setFontOverline(True)  # 设置上划线
         tcf.setFontUnderline(True)  # 设置下划线
@@ -45,7 +45,7 @@ class Window(QWidget):
         tc.setBlockFormat(tbf)  # 设置当前块格式
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -12,11 +12,13 @@ class Window(QWidget):
 
     def setup_ui(self):
         # result = QFileDialog.getExistingDirectory(self, "选择一个文件夹", "../")  # 返回值为文件夹的绝对路径
-        result = QFileDialog.getExistingDirectoryUrl(self, "选择一个文件夹", QUrl("../"))  # 返回值为QUrl
+        result = QFileDialog.getExistingDirectoryUrl(
+            self, "选择一个文件夹", QUrl("../")
+        )  # 返回值为QUrl
         print(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

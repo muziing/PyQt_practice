@@ -12,11 +12,11 @@ class Window(QWidget):
 
     def setup_ui(self):
         cd = QColorDialog(QColor(20, 154, 151), self)  # 可以传入创建时的默认颜色
-        cd.setWindowTitle('选择颜色')
+        cd.setWindowTitle("选择颜色")
         cd.show()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -33,7 +33,7 @@ class Window(QMainWindow):
         self.setMenuBar(self.menu_bar)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

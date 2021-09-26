@@ -30,7 +30,9 @@ class Window(QWidget):
         dt.setTime(QTime(12, 5, 31, 0))  # 设置时间
 
         # -----------计算时间差-----------
-        print("offset from UTC", QDateTime.offsetFromUtc(QDateTime.currentDateTime()))  # 本地时间与UTC时间之差（单位为s）
+        print(
+            "offset from UTC", QDateTime.offsetFromUtc(QDateTime.currentDateTime())
+        )  # 本地时间与UTC时间之差（单位为s）
         print(dt.secsTo(QDateTime.currentDateTime()))  # 计算两个时间之差，单位s
 
         # ----------展示时间-------
@@ -72,7 +74,7 @@ class Window(QWidget):
         print(my_time.elapsed())  # 从开始计时到执行此函数中间所用时间，单位ms
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

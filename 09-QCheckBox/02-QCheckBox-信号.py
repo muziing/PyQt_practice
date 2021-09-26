@@ -14,7 +14,7 @@ window.resize(500, 500)
 window.move(400, 250)
 
 cb = QCheckBox("Python", window)
-cb.setIcon(QIcon('../Icons/python_96px.ico'))
+cb.setIcon(QIcon("../Icons/python_96px.ico"))
 cb.setTristate(True)
 # cb.stateChanged.connect(lambda state: print(state))
 cb.toggled.connect(lambda isChecked: print(isChecked))

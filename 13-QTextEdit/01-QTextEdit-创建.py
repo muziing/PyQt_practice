@@ -14,10 +14,10 @@ class Window(QWidget):
         te = QTextEdit("QTextEdit中的文字", self)
         te.move(50, 50)
         te.resize(300, 300)
-        te.setStyleSheet('background-color: cyan;')
+        te.setStyleSheet("background-color: cyan;")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

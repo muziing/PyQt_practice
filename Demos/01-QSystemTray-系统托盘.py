@@ -1,5 +1,14 @@
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QApplication, QMessageBox, QSystemTrayIcon, QMenu, qApp, QAction, QDesktopWidget, QWidget
+from PyQt5.QtWidgets import (
+    QApplication,
+    QMessageBox,
+    QSystemTrayIcon,
+    QMenu,
+    qApp,
+    QAction,
+    QDesktopWidget,
+    QWidget,
+)
 import sys
 
 
@@ -18,13 +27,14 @@ class SystemTray:
     def initUI(self):
         # 设置托盘图标
 
-        self.tp.setIcon(QIcon('../Icons/python_96px.ico'))
+        self.tp.setIcon(QIcon("../Icons/python_96px.ico"))
 
     def quitApp(self):
         # 退出程序
         self.w.show()  # w.hide() #设置退出时是否显示主窗口
-        re = QMessageBox.question(self.w, "提示", "退出系统", QMessageBox.Yes |
-                                  QMessageBox.No, QMessageBox.No)
+        re = QMessageBox.question(
+            self.w, "提示", "退出系统", QMessageBox.Yes | QMessageBox.No, QMessageBox.No
+        )
         if re == QMessageBox.Yes:
             self.tp.setVisible(False)  # 隐藏托盘控件，托盘图标刷新不及时，提前隐藏
             qApp.quit()  # 退出程序
@@ -41,8 +51,8 @@ class SystemTray:
 
     def run(self):
 
-        a1 = QAction('&显示(Show)', triggered=self.w.show)
-        a2 = QAction('&退出(Exit)', triggered=self.quitApp)
+        a1 = QAction("&显示(Show)", triggered=self.w.show)
+        a2 = QAction("&退出(Exit)", triggered=self.quitApp)
 
         tpMenu = QMenu()
         tpMenu.addAction(a1)
@@ -54,7 +64,7 @@ class SystemTray:
         # 参数1：标题
         # 参数2：内容
         # 参数3：图标（0没有图标 1信息图标 2警告图标 3错误图标），0还是有一个小图标
-        self.tp.showMessage('Hello', '我藏好了', icon=0)
+        self.tp.showMessage("Hello", "我藏好了", icon=0)
         # 绑定提醒信息点击事件
         self.tp.messageClicked.connect(self.message)
         # 绑定托盘菜单点击事件
@@ -71,8 +81,8 @@ class Window(QWidget):
 
     def initUI(self):
         # 主窗口布局实现略。。。
-        self.setWindowTitle('Test')  # 设置标题
-        self.setWindowIcon(QIcon('../Icons/python_96px.ico'))  # 设置标题图标
+        self.setWindowTitle("Test")  # 设置标题
+        self.setWindowIcon(QIcon("../Icons/python_96px.ico"))  # 设置标题图标
         self.resize(300, 250)  # 设置窗体大小
         self.setFixedSize(self.width(), self.height())  # 固定窗口大小
         self.center()  # 窗体屏幕居中显示

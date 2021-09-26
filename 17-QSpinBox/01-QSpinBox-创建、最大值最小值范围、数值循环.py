@@ -23,11 +23,11 @@ class Window(QWidget):
         print(sb.minimum())
 
         # -------数值循环---------
-        print('wrapping默认值为', sb.wrapping())  # 默认为 False
+        print("wrapping默认值为", sb.wrapping())  # 默认为 False
         sb.setWrapping(True)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

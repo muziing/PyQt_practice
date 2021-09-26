@@ -14,11 +14,11 @@ class Window(QWidget):
         label = QLabel(self)
         label.move(100, 100)
         label.resize(80, 80)
-        label.setPixmap(QPixmap('../Icons/OS_Ubuntu_128px.ico'))
+        label.setPixmap(QPixmap("../Icons/OS_Ubuntu_128px.ico"))
         label.setScaledContents(True)  # 设置内容缩放
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

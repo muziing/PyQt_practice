@@ -35,13 +35,17 @@ class Window(QWidget):
 
         self.obj.objectNameChanged.connect(obj_name_slot)  # 建立信号与槽的连接
         self.obj.setObjectName("AAA")
-        print("此时有", self.obj.receivers(self.obj.objectNameChanged), "个槽与该信号连接")  # 该信号连接的槽的数量
+        print(
+            "此时有", self.obj.receivers(self.obj.objectNameChanged), "个槽与该信号连接"
+        )  # 该信号连接的槽的数量
 
         def receivers_test_slot():
             pass
 
         self.obj.objectNameChanged.connect(receivers_test_slot)
-        print("此时有", self.obj.receivers(self.obj.objectNameChanged), "个槽与该信号连接")  # 该信号连接的槽的数量
+        print(
+            "此时有", self.obj.receivers(self.obj.objectNameChanged), "个槽与该信号连接"
+        )  # 该信号连接的槽的数量
 
         # self.obj.objectNameChanged.disconnect()  # 取消信号与槽的连接
 
@@ -57,7 +61,7 @@ class Window(QWidget):
         self.obj.setObjectName("CCC")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

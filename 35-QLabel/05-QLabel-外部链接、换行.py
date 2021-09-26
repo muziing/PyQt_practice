@@ -16,7 +16,7 @@ class Window(QWidget):
         label.resize(200, 200)
         label.setText("muzing的个人博客\n链接为 <a href=https://muzing.top>https://muzing.top")
         label.setTextFormat(Qt.RichText)
-        label.setStyleSheet('background-color: cyan;')
+        label.setStyleSheet("background-color: cyan;")
 
         # ---------链接------------
         label.setOpenExternalLinks(True)
@@ -30,7 +30,7 @@ class Window(QWidget):
         # label.setText("\n".join("123456789"))  # 貌似已经失效
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

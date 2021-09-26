@@ -43,7 +43,7 @@ class Window(QWidget):
         self.setStyleSheet("QPushButton {background-color: orange;}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

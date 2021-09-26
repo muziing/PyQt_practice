@@ -44,13 +44,13 @@ class Window(QWidget):
 
         if state == AccountTool.ACCOUNT_ERROR:
             print("账号错误")
-            self.account_le.setText('')
-            self.pwd_le.setText('')
+            self.account_le.setText("")
+            self.pwd_le.setText("")
             self.account_le.setFocus()
             return None
         if state == AccountTool.PWD_ERROR:
             print("密码错误")
-            self.pwd_le.setText('')
+            self.pwd_le.setText("")
             self.pwd_le.setFocus()  # 让密码输入框获得焦点
             return None
         if state == AccountTool.SUCCESS:
@@ -85,7 +85,7 @@ class Window(QWidget):
         self.login_btn.move(x, self.pwd_le.y() + self.pwd_le.height() + margin)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

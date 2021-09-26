@@ -17,7 +17,7 @@ window.move(400, 250)
 btn = QCommandLinkButton("标题", "描述", window)
 btn.setText("标题2")
 btn.setDescription("这是描述2")
-btn.setIcon(QIcon('../Icons/play_48px.ico'))
+btn.setIcon(QIcon("../Icons/play_48px.ico"))
 
 
 # 2.3展示控件

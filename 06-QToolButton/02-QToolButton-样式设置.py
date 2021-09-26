@@ -19,7 +19,7 @@ window.move(400, 250)
 
 tb = QToolButton(window)
 tb.setText("ToolButton")
-tb.setIcon(QIcon('../Icons/search_48px.ico'))
+tb.setIcon(QIcon("../Icons/search_48px.ico"))
 tb.setIconSize(QSize(50, 50))
 # tb.setToolButtonStyle(Qt.ToolButtonIconOnly)  # 仅显示图标
 # tb.setToolButtonStyle(Qt.ToolButtonTextOnly)  # 仅显示文字

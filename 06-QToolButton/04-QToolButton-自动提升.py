@@ -10,7 +10,7 @@ window.move(400, 250)
 
 tb = QToolButton(window)
 tb.setText("QToolButton")
-tb.setIcon(QIcon('../Icons/image_48px.ico'))
+tb.setIcon(QIcon("../Icons/image_48px.ico"))
 tb.setAutoRaise(True)  # 设置自动提升 （类似 QPushButton 的扁平化）
 print("tb的自动提升状态为", tb.autoRaise())
 

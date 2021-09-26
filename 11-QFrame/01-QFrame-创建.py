@@ -1,5 +1,6 @@
 from PyQt5.Qt import *
 import sys
+
 # 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
@@ -15,7 +16,7 @@ window.move(400, 250)
 frame = QFrame(window)
 frame.resize(100, 100)
 frame.move(100, 100)
-frame.setStyleSheet('background-color: cyan;')
+frame.setStyleSheet("background-color: cyan;")
 
 # 2.3展示控件
 window.show()

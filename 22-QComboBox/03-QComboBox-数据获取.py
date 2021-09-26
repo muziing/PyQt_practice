@@ -20,14 +20,16 @@ class Window(QWidget):
         btn.move(100, 200)
 
         # btn.clicked.connect(lambda: print(cbb.count()))
-        btn.clicked.connect(lambda: print(f'当前Text为 {cbb.currentText()}'))
-        btn.clicked.connect(lambda: print(f'当前Index为 {cbb.currentIndex()}'))
-        btn.clicked.connect(lambda: print(f'当前Data为 {cbb.currentData()}'))
+        btn.clicked.connect(lambda: print(f"当前Text为 {cbb.currentText()}"))
+        btn.clicked.connect(lambda: print(f"当前Index为 {cbb.currentIndex()}"))
+        btn.clicked.connect(lambda: print(f"当前Data为 {cbb.currentData()}"))
         # btn.clicked.connect(lambda: print(f'当前Icon为 {cbb.itemIcon(cbb.currentIndex())}'))
-        btn.clicked.connect(lambda: print(f'最后一项的Text为 {cbb.itemText(cbb.count() - 1)}'))
+        btn.clicked.connect(
+            lambda: print(f"最后一项的Text为 {cbb.itemText(cbb.count() - 1)}")
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

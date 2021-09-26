@@ -13,10 +13,10 @@ class Window(QWidget):
         tw = QTabWidget(self)
         tw.resize(300, 300)
         tw.move(50, 50)
-        tw.addTab(QWidget(), 'tab1')
-        tw.addTab(QWidget(), 'tab2')
-        tw.addTab(QWidget(), 'tab3')
-        tw.addTab(QWidget(), 'tab4')
+        tw.addTab(QWidget(), "tab1")
+        tw.addTab(QWidget(), "tab2")
+        tw.addTab(QWidget(), "tab3")
+        tw.addTab(QWidget(), "tab4")
 
         # ---------信号----------
         tw.currentChanged.connect(lambda index: print(f"当前页面变成了{index}！"))
@@ -32,7 +32,7 @@ class Window(QWidget):
         tw.tabCloseRequested.connect(close_tab)  # 连接关闭的信号与槽
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
     window.show()

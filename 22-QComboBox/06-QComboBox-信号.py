@@ -33,7 +33,7 @@ class Window(QWidget):
         cbb.highlighted.connect(lambda val: print("高亮发生改变", val))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

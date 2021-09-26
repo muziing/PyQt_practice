@@ -21,13 +21,13 @@ action = QAction(le)  # 添加自定义的行为
 def change():
     if le.echoMode() == QLineEdit.Password:
         le.setEchoMode(QLineEdit.Normal)
-        action.setIcon(QIcon('../Icons/eye_48px.ico'))
+        action.setIcon(QIcon("../Icons/eye_48px.ico"))
     else:
         le.setEchoMode(QLineEdit.Password)
-        action.setIcon(QIcon('../Icons/eye_no.ico'))
+        action.setIcon(QIcon("../Icons/eye_no.ico"))
 
 
-action.setIcon(QIcon('../Icons/eye_no.ico'))
+action.setIcon(QIcon("../Icons/eye_no.ico"))
 action.triggered.connect(change)
 # le.addAction(action, QLineEdit.LeadingPosition)  # 在首部添加行为
 le.addAction(action, QLineEdit.TrailingPosition)  # 在尾部添加行为

@@ -37,7 +37,7 @@ class Window(QWidget):
         root_frame.setFrameFormat(tff)  # 设置根框架的样式
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

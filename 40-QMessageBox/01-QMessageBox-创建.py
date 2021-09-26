@@ -30,7 +30,7 @@ class Window(QWidget):
 
         # 设置图标
         # mb.setIcon(QMessageBox.Information)  # 设置标准图标
-        mb.setIconPixmap(QPixmap('../Icons/python_96px.ico').scaled(40, 40))  # 设置自定义图标
+        mb.setIconPixmap(QPixmap("../Icons/python_96px.ico").scaled(40, 40))  # 设置自定义图标
 
         # 设置主标题
         mb.setText("<h3>文件内容已经被修改</h3>")  # 设置主标题
@@ -48,12 +48,12 @@ class Window(QWidget):
 
         # 设置复选框
         mb.setCheckBox(QCheckBox("下次不再提醒", mb))  # 设置复选框
-        mb.checkBox().toggled.connect(lambda: print('复选框被点击了'))
+        mb.checkBox().toggled.connect(lambda: print("复选框被点击了"))
 
         mb.open()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

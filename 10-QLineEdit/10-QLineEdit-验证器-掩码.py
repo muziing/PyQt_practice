@@ -16,7 +16,7 @@ window.move(400, 250)
 
 le_a = QLineEdit(window)
 le_a.move(100, 100)
-le_a.setInputMask('>AA-99')  # 掩码 ';' 后面的字符为占位符
+le_a.setInputMask(">AA-99")  # 掩码 ';' 后面的字符为占位符
 # le_a.setInputMask('>AA-99;#')  # 掩码 ';' 后面的字符为占位符
 
 window.show()

@@ -15,7 +15,9 @@ class Window(QWidget):
             fd = QFileDialog(self, "选择一个文件", "./")
             # ---------名称过滤器------------
             # fd.setNameFilter("图片(*.jpg *.png *.jpeg)")
-            fd.setNameFilters(("Python文件(*.py)", "图片(*.jpg *.png *.jpeg)"))  # 在可迭代对象如元组中写多个过滤器而非使用;;分隔
+            fd.setNameFilters(
+                ("Python文件(*.py)", "图片(*.jpg *.png *.jpeg)")
+            )  # 在可迭代对象如元组中写多个过滤器而非使用;;分隔
 
             # ------显示信息的详细程度-------
             fd.setViewMode(QFileDialog.Detail)
@@ -34,7 +36,7 @@ class Window(QWidget):
         btn.clicked.connect(test)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

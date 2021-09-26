@@ -15,12 +15,12 @@ class Window(QWidget):
         btn.setText("点击我")
 
         def cao():
-            print('点我干哈？')
+            print("点我干哈？")
 
         btn.clicked.connect(cao)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

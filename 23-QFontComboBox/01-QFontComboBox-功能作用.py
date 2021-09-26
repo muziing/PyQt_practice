@@ -33,7 +33,7 @@ class Window(QWidget):
         fcb.currentFontChanged.connect(lambda font: set_font(font))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

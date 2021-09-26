@@ -19,7 +19,7 @@ class Window(QWidget):
         sb.valueChanged[str].connect(lambda val: print("数值发生了改变", val))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

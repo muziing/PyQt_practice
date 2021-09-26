@@ -2,7 +2,7 @@
 
 ***用代码学 PyQt5 !***
 
-![PyQt Version](https://img.shields.io/badge/PyQt-5.15-blue) ![license](https://img.shields.io/badge/license-GPL--2.0-brightgreen) ![Github stars](https://img.shields.io/github/stars/muziing/PyQt_practice.svg) ![GitHub forks](https://img.shields.io/github/forks/muziing/PyQt_practice.svg)
+![PyQt Version](https://img.shields.io/badge/PyQt-5.15-blue) ![license](https://img.shields.io/badge/license-GPL--2.0-brightgreen) ![Github stars](https://img.shields.io/github/stars/muziing/PyQt_practice.svg) ![GitHub forks](https://img.shields.io/github/forks/muziing/PyQt_practice.svg) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
 

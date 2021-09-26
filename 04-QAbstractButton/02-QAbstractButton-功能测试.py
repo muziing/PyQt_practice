@@ -11,7 +11,7 @@ window.move(400, 250)
 btn = QPushButton(window)
 
 # ==============文本操作=============
-btn.setText('1')
+btn.setText("1")
 
 
 def plus_one():
@@ -23,7 +23,7 @@ btn.pressed.connect(plus_one)
 
 
 # ==============图标操作=============
-icon = QIcon('./Icons/cross_48px.ico')  # 通过文件路径设置图标
+icon = QIcon("./Icons/cross_48px.ico")  # 通过文件路径设置图标
 size = QSize(40, 40)  # 通过(int, int)设置图标大小
 btn.setIcon(icon)
 btn.setIconSize(size)

@@ -4,6 +4,7 @@ import sys
 
 class Window(QWidget):
     """自定义的窗口类，继承自QWidget"""
+
     def __init__(self):
         super().__init__()  # 进行父类的初始化
         self.setWindowTitle("面向对象版本的PyQt代码")
@@ -16,7 +17,7 @@ class Window(QWidget):
         label.move(200, 240)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()  # 实例化一个Window对象

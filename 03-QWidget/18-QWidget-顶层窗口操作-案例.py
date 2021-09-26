@@ -11,7 +11,7 @@ class Window(QWidget):
         self.setWindowFlags(Qt.FramelessWindowHint)  # 设置了无边框的Flag
         self.setWindowOpacity(0.85)  # 设置不透明度
         self.setWindowTitle("顶层窗口操作-案例")
-        self.setWindowIcon(QIcon('../Icons/snowflake_128px.ico'))
+        self.setWindowIcon(QIcon("../Icons/snowflake_128px.ico"))
         self.resize(500, 500)
         self.move(400, 240)
         # 公共数据 （通过保存为 self的属性来实现跨方法使用）
@@ -75,7 +75,10 @@ class Window(QWidget):
         self.close_btn.move(self.width() - self.btn_w, self.top_margin)
         self.max_btn.move(self.width() - self.btn_w * 2, self.top_margin)
         self.mini_btn.move(self.width() - self.btn_w * 3, self.top_margin)
-        self.label.move(int((self.width() - self.label.width()) / 2), int((self.height() - self.label.height()) / 2))
+        self.label.move(
+            int((self.width() - self.label.width()) / 2),
+            int((self.height() - self.label.height()) / 2),
+        )
 
     def mousePressEvent(self, evt):
         # print("鼠标按下")

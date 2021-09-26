@@ -13,6 +13,7 @@ window.move(400, 250)
 
 class Btn(QPushButton):
     """自定义的按钮类，重写hitButton方法来实现自定义按钮点击有效区域功能"""
+
     def hitButton(self, point) -> bool:
         # print(point)
         # 案例：仅按钮右半部分为有效点击区域
@@ -28,7 +29,9 @@ class Btn(QPushButton):
         circle_center_y = self.height() / 2
         hit_x = point.x()
         hit_y = point.y()
-        distance = ((hit_x - circle_center_x) ** 2 + (hit_y - circle_center_y) ** 2) ** 0.5
+        distance = (
+            (hit_x - circle_center_x) ** 2 + (hit_y - circle_center_y) ** 2
+        ) ** 0.5
         # print(distance)
         if distance < self.width() / 2:
             return True

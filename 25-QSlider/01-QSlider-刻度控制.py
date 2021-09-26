@@ -30,7 +30,7 @@ class Window(QWidget):
         sd.setTickInterval(5)  # 默认刻度线间距与PageUp/PageDown步长相同，也可以用这个方法单独设置刻度线密度而不影响Page步长
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -1,5 +1,6 @@
 from PyQt5.Qt import *
 import sys
+
 # 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
@@ -15,6 +16,7 @@ window.move(400, 250)
 
 class Btn(QAbstractButton):
     """自定义的按钮控件，体验从按钮抽象基类继承"""
+
     def paintEvent(self, evt) -> None:
         # print("绘制")
         # 绘制按钮上要展示的一个界面内容

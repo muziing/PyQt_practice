@@ -5,6 +5,7 @@ import sys
 # 当缩小到一定程度后，空白伸缩因子会不遵守伸缩比例而一直缩小到最小宽度为止，和控件不同
 # 若一组控件中，某些控件伸缩因子为0（默认值），而其他非零，则这些控件将始终以最小显示
 
+
 class Window(QWidget):
     def __init__(self):
         super().__init__()
@@ -14,14 +15,14 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
-        lb1 = QLabel('标签1')
-        lb1.setStyleSheet('background-color: cyan;')
-        lb2 = QLabel('标签2')
-        lb2.setStyleSheet('background-color: yellow;')
-        lb3 = QLabel('标签3')
-        lb3.setStyleSheet('background-color: red;')
-        lb4 = QLabel('标签4')
-        lb4.setStyleSheet('background-color: orange;')
+        lb1 = QLabel("标签1")
+        lb1.setStyleSheet("background-color: cyan;")
+        lb2 = QLabel("标签2")
+        lb2.setStyleSheet("background-color: yellow;")
+        lb3 = QLabel("标签3")
+        lb3.setStyleSheet("background-color: red;")
+        lb4 = QLabel("标签4")
+        lb4.setStyleSheet("background-color: orange;")
 
         layout = QBoxLayout(QBoxLayout.LeftToRight)
         self.setLayout(layout)
@@ -38,7 +39,7 @@ class Window(QWidget):
         layout.setStretchFactor(lb1, 1)  # 给lb1设置伸缩因子为 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

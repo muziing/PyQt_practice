@@ -1,12 +1,12 @@
 from PyQt5.Qt import *
 import sys
 
-'''
+"""
 修改行
 删除行
 移除行
 标签
-'''
+"""
 
 
 class Window(QWidget):
@@ -23,8 +23,8 @@ class Window(QWidget):
         name_le = QLineEdit()
         age_sb = QSpinBox()
 
-        male_rb = QRadioButton('男')
-        female_rb = QRadioButton('女')
+        male_rb = QRadioButton("男")
+        female_rb = QRadioButton("女")
         h_layout = QHBoxLayout()
         h_layout.addWidget(male_rb)
         h_layout.addWidget(female_rb)
@@ -56,7 +56,7 @@ class Window(QWidget):
         # layout.labelForField(name_le).setText('XXX')  # 可以用提取出的标签直接修改对象
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

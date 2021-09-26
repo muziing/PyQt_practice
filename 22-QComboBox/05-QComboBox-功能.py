@@ -15,7 +15,7 @@ class Window(QWidget):
         cbb.move(100, 100)
         cbb.resize(150, 30)
         cbb.addItems(["muzing", "123", "abc"])
-        cbb.addItem(QIcon('../Icons/android_96px_1.ico'), 'android')
+        cbb.addItem(QIcon("../Icons/android_96px_1.ico"), "android")
 
         btn = QPushButton("测试按钮", self)
         btn.move(300, 200)
@@ -64,7 +64,7 @@ class Window(QWidget):
         # cbb.setValidator()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

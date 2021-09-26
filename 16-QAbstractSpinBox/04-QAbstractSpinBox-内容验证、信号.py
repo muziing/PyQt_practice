@@ -6,9 +6,9 @@ class MyASB(QAbstractSpinBox):
     def __init__(self, parent, num: int = 20):
         super().__init__(parent)
         self.current_num = 20
-        self.lineEdit().setText(f'{num}')
+        self.lineEdit().setText(f"{num}")
 
-    def stepEnabled(self) -> 'QAbstractSpinBox.StepEnabled':
+    def stepEnabled(self) -> "QAbstractSpinBox.StepEnabled":
         return QAbstractSpinBox.StepUpEnabled | QAbstractSpinBox.StepDownEnabled
 
     def stepBy(self, steps: int) -> None:
@@ -48,15 +48,15 @@ class Window(QWidget):
         te = QTextEdit(self)
         te.resize(200, 80)
         te.move(150, 200)
-        te.setPlaceholderText('将焦点移到这里以实现结束SpinBox的编辑，调用fixup方法')
+        te.setPlaceholderText("将焦点移到这里以实现结束SpinBox的编辑，调用fixup方法")
 
         def te_cao():
-            te.setText('SpinBox已经结束编辑！')
+            te.setText("SpinBox已经结束编辑！")
 
         asb.editingFinished.connect(te_cao)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

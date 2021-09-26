@@ -1,5 +1,6 @@
 from PyQt5.Qt import *
 import sys
+
 # 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
@@ -16,7 +17,7 @@ le = QLineEdit(window)
 le.move(100, 100)
 le.resize(300, 300)
 # le .setContentsMargins(100, 0, 0, 0)  # 修改输入框的边距 (左, 上, 右, 下)
-le.setStyleSheet('background-color: cyan;')
+le.setStyleSheet("background-color: cyan;")
 le.setTextMargins(100, -180, 0, 0)  # 修改文字区域的边距 (左, 上, 右, 下)
 print(le.getTextMargins())
 

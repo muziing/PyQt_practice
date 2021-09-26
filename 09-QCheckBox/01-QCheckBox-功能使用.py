@@ -1,5 +1,6 @@
 from PyQt5.Qt import *
 import sys
+
 # 1. 创建一个应用程序对象
 app = QApplication(sys.argv)
 
@@ -14,7 +15,7 @@ window.move(400, 250)
 
 
 cb1 = QCheckBox("&Python", window)
-cb1.setIcon(QIcon('../Icons/python_96px.ico'))
+cb1.setIcon(QIcon("../Icons/python_96px.ico"))
 cb1.setIconSize(QSize(40, 40))
 cb1.move(150, 100)
 cb1.setTristate(True)  # 支持三态
@@ -24,7 +25,7 @@ cb1.setCheckState(Qt.PartiallyChecked)  # 设置为半选中状态
 
 
 cb2 = QCheckBox("&Java", window)
-cb2.setIcon(QIcon('../Icons/Java_96px.ico'))
+cb2.setIcon(QIcon("../Icons/Java_96px.ico"))
 cb2.setIconSize(QSize(40, 40))
 cb2.move(150, 150)
 

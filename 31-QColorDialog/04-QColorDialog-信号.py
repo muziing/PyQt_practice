@@ -11,7 +11,7 @@ class Window(QWidget):
         self.setup_ui()
 
     def setup_ui(self):
-        btn = QPushButton('测试按钮', self)
+        btn = QPushButton("测试按钮", self)
         btn.move(100, 100)
 
         def test():
@@ -30,7 +30,7 @@ class Window(QWidget):
         btn.clicked.connect(test)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

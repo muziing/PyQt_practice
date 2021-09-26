@@ -44,7 +44,7 @@ class Window(QWidget):
         # print(label.selectionStart())  # 被选中文本的起始位置
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -29,7 +29,7 @@ class Window(QWidget):
         pb.setAlignment(Qt.AlignHCenter)  # 显示在进度条内，水平居中
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

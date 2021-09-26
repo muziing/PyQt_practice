@@ -30,10 +30,11 @@ class Window(QWidget):
             print(pb.minimum())
             print(pb.maximum())
             print(pb.value())
+
         btn.clicked.connect(test)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

@@ -22,7 +22,7 @@ class Window(QWidget):
         # em.exec()  # 应用程序级的模态
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     window = Window()

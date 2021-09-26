@@ -50,7 +50,7 @@ class Window(QWidget):
         # tw.setTabShape(QTabWidget.Triangular)  # 三角形（梯形）
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
     window.show()
