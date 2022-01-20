@@ -4,26 +4,20 @@
 
 ![PyQt Version](https://img.shields.io/badge/PyQt-5.15-blue) ![license](https://img.shields.io/badge/license-GPL--2.0-brightgreen) ![Github stars](https://img.shields.io/github/stars/muziing/PyQt_practice.svg) ![GitHub forks](https://img.shields.io/github/forks/muziing/PyQt_practice.svg) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-
-
 ## 基本说明
 
-- 每个.py文件都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
+- 每个模块（`.py`文件）都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
 - 在自己的机器上实际运行一下，仔细观察一下每个属性值的改变会怎样影响控件的外观行为，可能比静态的文档教程更有效。
-- 目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交PR或者 [联系我](https://muzing.top/about/) ）
-- 同步上传至[Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
-
-
+- 目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交 PR 或者 [联系我](https://muzing.top/about/) ）
+- 同步上传至 [Gitee仓库](https://gitee.com/muzing/PyQt_practice) [GitHub仓库](https://github.com/muziing/PyQt_practice)
 
 ## 使用方法
 
-1. Star本仓库
-2. 克隆本仓库到本地，或下载zip并解压
-3. 在命令行执行 `pip install -r requirements.txt` 安装依赖（其实只有一个PyQt-5.15)
-4. 进入你感兴趣的控件对应的文件夹，运行任何一个.py文件观察效果
-5. 对于绝大多数目录，第一个文件都是一个markdown文档，相当于Qt官方文档的中文翻译简单整理版
-
-
+1. Star 本仓库
+2. 克隆本仓库到本地，或下载 zip 并解压
+3. 在命令行执行 `pip install -r requirements.txt` 安装依赖（其实只有一个PyQt-5.15）
+4. 进入你感兴趣的控件对应的文件夹，运行任何一个`.py`文件观察效果
+5. 对于绝大多数目录，第一个文件都是一个 Markdown 文档，相当于 Qt 官方文档的中文翻译简单整理版
 
 以 [47-QListView](./47-QListView) 目录下的 [02-QListView-自动换行、布局间距、对齐、单词省略.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词省略.py) 为例：
 
@@ -85,33 +79,22 @@ if __name__ == "__main__":
 
 ```
 
-
-
-1. 直接运行这段代码即可看到程序窗口和上面的QListView控件
-
-2. 注释/取消注释第26行代码，以观察自动换行属性的效果
-
+1. 直接运行这段代码即可看到程序窗口和上面的 QListView 控件
+2. 注释/取消注释第 26 行代码，以观察自动换行属性的效果
 3. 按下"增大Spacing"按钮，以观察不同的 Spacing 值的显示效果
-
 4. 每次注释掉40/41行代码中的一个，运行另一行，以观察不同的 ItemAlignment 值的对齐效果
 5. 每次注释掉45/46/47行代码中的一个，运行剩下的那行，以观察不同的省略号模式的效果
 6. 在同一目录（[47-QListView](./47-QListView)）下的第一个文件 [00-QListView-列表视图.md](./47-QListView/00-QListView-列表视图.md) 中查看更多信息
 
-
-
 ## PyQt5 相关分享
 
 [我搜集到的一些PyQt5相关文档、教程、Demo、QSS美化等](share.md)
-
-
 
 ## [仓库文件目录](toc.md)
 
 **[点击图片以在线浏览带有超链接的思维导图](https://www.processon.com/view/link/60f23569637689739c3a5cbb)**
 
 [![](http://processon.com/chart_image/60f231530791291daf471f7f.png)](https://www.processon.com/view/link/60f23569637689739c3a5cbb)
-
-
 
 ### 01 [PyQt基本结构](./01-PyQt基本结构)
 
