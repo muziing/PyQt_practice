@@ -19,7 +19,7 @@ import sys
 app = QApplication(sys.argv)
 # print(app.arguments())
 
-print(qApp.arguments())  # 全局变量
+print(app.arguments())  # 全局变量
 
 # 2.控件的操作
 # 创建控件，设置控件（大小，位置，样式……），事件，信号的处理
