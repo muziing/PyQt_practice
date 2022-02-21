@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """继承自QWidget.
 在setContextMenuPolicy()中，

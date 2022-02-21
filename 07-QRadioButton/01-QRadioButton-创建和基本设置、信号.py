@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 # 1. 创建一个应用程序对象
 app = QApplication(sys.argv)

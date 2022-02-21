@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """
 停靠控件，可以把小窗拖入并停靠到主窗口上

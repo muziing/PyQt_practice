@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 # 除名称、方向外，和父类QBoxLayout完全一致
 # 甚至可以通过 setDirection() 方法把水平布局和垂直布局互换

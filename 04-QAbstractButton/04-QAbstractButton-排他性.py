@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """
 QPushButton 默认无排他性

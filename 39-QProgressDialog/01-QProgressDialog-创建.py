@@ -1,7 +1,7 @@
+import sys
 from time import sleep
 
 from PyQt5.Qt import *
-import sys
 
 
 class Window(QWidget):

@@ -1,4 +1,5 @@
 import sys
+
 from PyQt5.Qt import *
 
 """案例要求：将20个大小相同的子控件以3列均匀填满窗口"""

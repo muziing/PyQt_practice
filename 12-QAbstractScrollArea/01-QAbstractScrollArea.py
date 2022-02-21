@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 # 滚动区域的低级抽象
 # 继承自QFrame

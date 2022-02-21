@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """
 本节涉及到的几个方法都和窗口尺寸是否能完整容纳所有内容有关

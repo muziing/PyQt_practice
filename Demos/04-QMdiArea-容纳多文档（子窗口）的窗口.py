@@ -1,6 +1,6 @@
 import sys
-from PyQt5.QtWidgets import *
 
+from PyQt5.QtWidgets import *
 
 """
 容纳多文档的窗口

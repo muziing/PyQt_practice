@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """
 本节示例中使用的QSS样式来自飞扬青云-QWidget-styledemo-白色扁平样式

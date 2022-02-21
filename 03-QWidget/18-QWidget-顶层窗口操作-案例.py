@@ -1,6 +1,7 @@
-from PyQt5.Qt import *
-from PyQt5 import QtGui
 import sys
+
+from PyQt5 import QtGui
+from PyQt5.Qt import *
 
 """案例：创建一个无边框、半透明的窗口；自定义关闭、最大化、最小化三个按钮；实现能够点击用户区域拖动窗口"""
 

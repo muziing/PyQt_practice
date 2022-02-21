@@ -1,4 +1,5 @@
 import sys
+
 from PyQt5.Qt import *
 
 """替换鼠标图标、创建一个Label并使其跟随鼠标移动"""

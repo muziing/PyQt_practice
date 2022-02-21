@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """点击哪个label，哪个label的背景颜色就变红。重写QLabel和QWidget（父控件）两种方法"""
 

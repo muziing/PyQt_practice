@@ -1,6 +1,7 @@
-from PyQt5.Qt import *
-from PyQt5 import QtGui
 import sys
+
+from PyQt5 import QtGui
+from PyQt5.Qt import *
 
 
 class Window(QWidget):

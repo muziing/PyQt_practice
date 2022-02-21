@@ -1,7 +1,7 @@
+import sys
 from pprint import pprint
 
 from PyQt5.Qt import *
-import sys
 
 
 class Window(QWidget):

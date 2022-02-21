@@ -7,14 +7,8 @@ Created on 2018年11月5日
 @description:
 """
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (
-    QSlider,
-    QStyleOptionSlider,
-    QStyle,
-    QWidget,
-    QFormLayout,
-    QLabel,
-)
+from PyQt5.QtWidgets import (QFormLayout, QLabel, QSlider, QStyle,
+                             QStyleOptionSlider, QWidget)
 
 __Author__ = """By: Irony
 QQ: 892768447
@@ -110,8 +104,8 @@ class DemoWindow(QWidget):
 
 
 if __name__ == "__main__":
-    import sys
     import cgitb
+    import sys
 
     cgitb.enable(1, None, 5, "")
     from PyQt5.QtWidgets import QApplication

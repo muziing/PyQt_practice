@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 # 要求： 每次改变窗口标题，都自动加上muzing前缀，能重复使用
 app = QApplication(sys.argv)

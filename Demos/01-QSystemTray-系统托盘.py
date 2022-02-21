@@ -1,15 +1,8 @@
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (
-    QApplication,
-    QMessageBox,
-    QSystemTrayIcon,
-    QMenu,
-    qApp,
-    QAction,
-    QDesktopWidget,
-    QWidget,
-)
 import sys
+
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import (QAction, QApplication, QDesktopWidget, QMenu,
+                             QMessageBox, QSystemTrayIcon, QWidget, qApp)
 
 
 class SystemTray:

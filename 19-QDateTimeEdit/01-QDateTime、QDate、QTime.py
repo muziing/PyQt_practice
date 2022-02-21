@@ -1,7 +1,7 @@
+import sys
 import time
 
 from PyQt5.Qt import *
-import sys
 
 
 class Window(QWidget):

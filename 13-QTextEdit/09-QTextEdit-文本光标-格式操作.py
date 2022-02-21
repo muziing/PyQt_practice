@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """
 setBlockCharFormat(QTextCharFormat)  设置要格式化的当前块（或选择中包含的所有块）的块char格式

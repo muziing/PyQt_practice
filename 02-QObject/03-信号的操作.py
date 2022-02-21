@@ -1,5 +1,6 @@
-from PyQt5.Qt import *
 import sys
+
+from PyQt5.Qt import *
 
 """
 关于PyQt信号(Signal)与槽(Slot)机制，后面还有一个43-pyqtSignal目录讲解
