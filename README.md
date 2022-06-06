@@ -9,6 +9,19 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
+## 重要说明！
+
+本项目的新版 **[「PySide6 代码教程」](https://github.com/muziing/PySide6-Code-Tutorial)** 已经开始动工啦！
+
+相比本项目，有如下升级：
+
+- Python `3.10` + PySide `6.3`，版本更新、功能更强大
+- 项目结构更清晰，不再将控件、信号与槽、QSS 等等各种知识混杂在一起
+- 代码中注释讲解比例更高更清晰
+- PySide 由 Qt 官方提供支持，比 PyQt 许可更宽松、文档更全面
+
+欢迎新老读者[前往](https://github.com/muziing/PySide6-Code-Tutorial)阅读和提供贡献！
+
 ## 基本说明
 
 - 每个模块（`.py`文件）都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
