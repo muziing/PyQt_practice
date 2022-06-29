@@ -15,7 +15,7 @@ class Window(QWidget):
         label = QLabel(self)
         label.move(100, 100)
         label.resize(200, 200)
-        label.setText("muzing的个人博客\n链接为 <a href=https://muzing.top>https://muzing.top")
+        label.setText("muzing的个人博客\n链接为 <a href='https://muzing.top'>https://muzing.top</a>")
         label.setTextFormat(Qt.RichText)
         label.setStyleSheet("background-color: cyan;")
 
