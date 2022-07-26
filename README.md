@@ -1,3 +1,5 @@
+<img src="./Icons/Qt_for_Python_128px.png" alt="logo" height="120" align="right" />
+
 # PyQt5 代码笔记
 
 ***用代码学 PyQt5 !***
@@ -117,7 +119,7 @@ if __name__ == "__main__":
 
 **[点击图片以在线浏览带有超链接的思维导图](https://www.processon.com/view/link/60f23569637689739c3a5cbb)**
 
-[![思维导图目录](http://processon.com/chart_image/60f231530791291daf471f7f.png)](https://www.processon.com/view/link/60f23569637689739c3a5cbb)
+[![思维导图目录](./Images/TOC_mind_mapping.png)](https://www.processon.com/view/link/60f23569637689739c3a5cbb)
 
 ### 01 [PyQt基本结构](./01-PyQt基本结构)
 
@@ -545,4 +547,4 @@ if __name__ == "__main__":
 
 本项目的[主要作者/维护者](https://muzing.top/about/)是一名还没有收入的在校学生，如果本项目对你有帮助，希望可以请他喝一杯冰可乐 :beer:。
 
-![微信收款码](./Resources/Images/muzing-WeChat-Collection-QRCode.png)
+![微信收款码](./Images/muzing-WeChat-Collection-QRCode.png)
