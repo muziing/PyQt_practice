@@ -31,11 +31,14 @@
 
 ## 使用方法
 
-1. Star 本仓库
+1. Star 收藏本仓库，便于查找
 2. 克隆本仓库到本地（ `git clone https://github.com/muziing/PyQt_practice.git` ），或[下载 zip](https://github.com/muziing/PyQt_practice/archive/refs/heads/master.zip) 归档并解压
-3. 在命令行执行 `pip install -r requirements.txt` 安装依赖
-4. 进入你感兴趣的控件对应的文件夹，运行任何一个`.py`文件观察效果
-5. 对于大多数目录，首个文件都是一个 Markdown 文档，为 Qt 官方文档对应的中文翻译并简单整理版
+3. 创建虚拟环境并激活
+   - Windows: `python -m venv venv` `venv\Scripts\activate`
+   - Linux/macOS: `python3 -m venv venv` `. venv/bin/activate`
+4. 在命令行执行 `pip install -r requirements.txt` 安装依赖
+5. 进入你感兴趣的控件对应的文件夹，运行任何一个`.py`文件观察效果
+6. 对于大多数目录，首个文件都是一个 Markdown 文档，为 Qt 官方文档对应的中文翻译并简单整理版
 
 以 [47-QListView](./47-QListView) 目录下的 [02-QListView-自动换行、布局间距、对齐、单词省略.py](./47-QListView/02-QListView-自动换行、布局间距、对齐、单词省略.py) 为例：
 
@@ -537,3 +540,9 @@ if __name__ == "__main__":
 | Markdown |       51 |     1403 |        0 |     2274 |
 | -------- | -------- | -------- | -------- | -------- |
 | SUM:     |      253 |     3542 |     1539 |     7610 |
+
+## 打赏
+
+本项目的[主要作者/维护者](https://muzing.top/about/)是一名还没有收入的在校学生，如果本项目对你有帮助，希望可以请他喝一杯冰可乐 :beer:。
+
+![微信收款码](./Resources/Images/muzing-WeChat-Collection-QRCode.png)
