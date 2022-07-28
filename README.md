@@ -115,6 +115,12 @@ if __name__ == "__main__":
 
 [GitHub PyQt 相关仓库收集](https://github.com/stars/muziing/lists/pyqt)
 
+## 打赏
+
+如果本项目对你有帮助，希望可以请[我](https://muzing.top/about/)喝一杯冰可乐 :beer:。
+
+![微信收款码](./Images/muzing-WeChat-Collection-QRCode.png)
+
 ## [仓库文件目录](toc.md)
 
 **[点击图片以在线浏览带有超链接的思维导图](https://www.processon.com/view/link/60f23569637689739c3a5cbb)**
@@ -538,13 +544,8 @@ if __name__ == "__main__":
 
 | Language |    files |    blank |  comment |     code |
 |:---------|---------:|---------:|---------:|---------:|
-| Python   |      202 |     2139 |     1539 |     5336 |
-| Markdown |       51 |     1403 |        0 |     2274 |
+| Python   |      202 |     2328 |     1540 |     5301 |
+| Markdown |       51 |     1410 |        0 |     2295 |
 | -------- | -------- | -------- | -------- | -------- |
-| SUM:     |      253 |     3542 |     1539 |     7610 |
+| SUM:     |      253 |     3738 |     1540 |     7596 |
 
-## 打赏
-
-本项目的[主要作者/维护者](https://muzing.top/about/)是一名还没有收入的在校学生，如果本项目对你有帮助，希望可以请他喝一杯冰可乐 :beer:。
-
-![微信收款码](./Images/muzing-WeChat-Collection-QRCode.png)
