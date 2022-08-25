@@ -11,15 +11,15 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
-## 重要说明！
+## 重要说明！！
 
-本项目的新版 **[「PySide6 代码教程」](https://github.com/muziing/PySide6-Code-Tutorial)** 已经开始动工啦！
+新版 **[「PySide6 代码教程」](https://github.com/muziing/PySide6-Code-Tutorial)** 初稿已经接近完成！**本项目的更新也渐趋结束**，新内容的补充完善会集中在新版教程。
 
-相比本项目，有如下升级：
+新教程有如下升级：
 
-- Python `3.10` + PySide `6.3`，版本更新、功能更强大
-- 项目结构更清晰，不再将控件、信号与槽、QSS 等等各种知识混杂在一起
-- 代码中注释讲解比例更高更清晰
+- Python `3.10` + PySide `6.3`，版本新、功能更强大
+- 项目组织结构更清晰
+- 代码中注释讲解比例更高、更详细
 - PySide 由 Qt 官方提供支持，比 PyQt 许可更宽松、文档更全面
 
 欢迎新老读者[前往](https://github.com/muziing/PySide6-Code-Tutorial)阅读和提供贡献！
@@ -29,7 +29,7 @@
 - 每个模块（`.py`文件）都可运行，展示了各种控件的各种功能属性作用，代码中有注释讲解
 - 在自己的机器上实际运行一下，仔细观察一下每个属性值的改变会怎样影响控件的外观行为，可能比静态的文档教程更有效。
 - 目前还在更新完善中，也期待小伙伴加入，共同完善这个仓库（提交 PR 或者 [联系作者](https://muzing.top/about/) ）
-- 由于作者精力有限，暂停 [Gitee仓库](https://gitee.com/muzing/PyQt_practice) 的更新维护，最新修改以 [GitHub仓库](https://github.com/muziing/PyQt_practice) 为准
+- 由于作者精力有限，[Gitee仓库](https://gitee.com/muzing/PyQt_practice) 的更新维护可能不及时，最新修改以 [GitHub仓库](https://github.com/muziing/PyQt_practice) 为准
 
 ## 使用方法
 
